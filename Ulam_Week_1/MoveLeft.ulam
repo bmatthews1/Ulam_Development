@@ -1,0 +1,13 @@
+/**
+ \color #0aa
+*/
+
+element MoveLeft{
+  EventWindow ew;
+  Void behave(){
+    ew[4] = ew[0];
+    ew[12] = ew[0];
+    ew[24] = ew[0];
+    ew[40] = ew[0];
+  }
+}

@@ -1,0 +1,15 @@
+/**
+\color #faa
+*/
+
+
+element UWall{
+  EventWindow ew;
+  
+
+  Void behave(){
+    for (Unsigned(6) i = 0; i < 41; i++){
+      if (!(ew[i] is Wall)) ew[i] = ew[0];
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/**
+\symmetries all
+\color #f00
+*/
+
+element SwapX{
+  EventWindow ew;
+  typedef Unsigned(6) SiteNum;
+  SiteNum s0 = (SiteNum)0;
+  SiteNum s4 = (SiteNum)4;
+  Void behave(){
+    if (!ew.isEmpty(s4)){
+      ew.swap(s4, s0);
+    }
+  }
+}

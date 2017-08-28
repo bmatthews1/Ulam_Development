@@ -1,0 +1,60 @@
+/**
+\color #f0f
+*/
+
+element Cool{
+  EventWindow ew;
+  Random rm;
+  C2D c;  
+
+  Void behave(){
+    Int neighbors = 0;
+    
+    for (Unsigned(6) i = 1u; i < 5u; i++){
+      if (ew[i] is Cool) neighbors++;
+    }
+
+    if (neighbors > 1) return;
+    
+    c.y = 0;
+    for (Int(15) x = -4; x < 5; x++){
+      if (x == 0) continue;
+      c.x = x;
+      Unsigned(6) index = ew.getSiteNumber(c);
+      if (ew[index] is Cool){
+        Int(15) dx = -1;
+        if (x > 0) dx = 1;
+        for (Int(15) x2 = 0; x2 != x; x2 += dx){
+          c.x = x2;
+          index = ew.getSiteNumber(c);
+          ew[index] = ew[0];
+        }
+      }
+    }
+
+    c.x = 0;
+    for (Int(15) y = -4; y < 5; y++){
+      if (y == 0) continue;
+      c.y = y;
+      Unsigned(6) index = ew.getSiteNumber(c);
+      if (ew[index] is Cool){
+        Int(15) dy = -1;
+        if (y > 0) dy = 1;
+        for (Int(15) y2 = 0; y2 != y; y2 += dy){
+          c.y = y2;
+          index = ew.getSiteNumber(c);
+          ew[index] = ew[0];
+        }
+      }
+    }
+
+    c.x = (Int(16))rm.between(2, 3);
+    c.y = (Int(16))rm.between(2, 3);
+
+    if (rm.oneIn(2)) c.x *= -1;
+    if (rm.oneIn(2)) c.y *= -1;
+    Unsigned(6) index = ew.getSiteNumber(c);
+    if (index > 40 || index < 0) return;
+    ew[index] = Cool.instanceof;
+  }
+}

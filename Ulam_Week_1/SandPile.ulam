@@ -1,0 +1,53 @@
+//Ben Matthews
+
+element SandPile{
+  EventWindow ew;
+  Unsigned(32) value = 0u;
+  Bool isSeed = true;
+  
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+
+    ret[1] = 64u;
+    ret[2] = 0u;
+    ret[3] = 0u;
+    
+    if (value%4u > 0u){ 
+      ret[1] = 128u;
+      ret[2] = 128u;
+    }
+    if (value%4u > 1u){
+      ret[1] = 0u;
+      ret[2] = 192u;
+    }
+    if (value%4u > 2u) {
+      ret[2] = 0u;
+      ret[3] = 255u;
+    }
+
+    return ret;
+  }
+ 
+  Void behave(){
+    if (isSeed) value += 173;
+    if (value > 4u){
+      Unsigned(32) rem = value%(4u);
+      Unsigned(32) spill = (value - rem)/4u;
+      for (Unsigned(6) i = 0u; i < 5u; i++){
+        if (ew[i] is SandPile){
+          SandPile sp = (SandPile) ew[i];
+          sp.value += spill;
+          ew[i] = sp;
+        }
+        else {
+          SandPile sp = SandPile.instanceof;
+          sp.isSeed = false;
+          sp.value += spill;
+          ew[i] = sp;
+        }  
+      }
+      value = rem;       
+    }
+  }
+}

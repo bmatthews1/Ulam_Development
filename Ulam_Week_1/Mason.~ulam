@@ -1,0 +1,49 @@
+/** brick layer.
+\symbol Ma
+\color #0ff
+\symmetries all
+*/
+
+element Conway
+{
+  EventWindow ew;
+  Int neighbors;
+  Void behave()
+  {
+    neighbors = 0;
+    Int i;
+    for (i = 1; i < 9; i++)
+    {
+      if (ew[i] == Conway){
+        neighbors++;
+      }
+    }
+
+    if (neighbors < 2 || neighbors > 3)
+    {
+      ew[0] = new Agar;
+    }
+  }
+}
+
+element Agar
+{
+  EventWindow ew;
+  Int neighbors;
+  Void behave(){
+    neighbors = 0;
+    Int i;
+    for (i = 0; i < 41; i++){
+      if (i > 0 && i < 9 && ew[i] == Conway){
+        neighbors++;
+      } 
+      if (ew[i] == EMPTY){
+        ew[i] = ew[0];
+      }
+    }
+    if (neighbors == 3)
+    {
+      ew[0] = new Conway;
+    }
+  }
+}

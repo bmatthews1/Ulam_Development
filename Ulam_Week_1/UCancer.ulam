@@ -1,0 +1,25 @@
+element UCancer{
+  EventWindow ew;
+  Unsigned(8) blue = 0u;
+  Unsigned(8) red = 0u;
+
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1]=red;
+    ret[2]=255;
+    ret[3]=blue;
+
+    return ret;
+  }
+
+  Void behave(){
+    blue++;
+    red += 2;
+    if (blue == 255) blue = 0;
+    if (red == 254) red = 0;
+    for (Unsigned(6) i = 0u; i < 41u; i++){
+      ew[i] = ew[0];
+    }
+  }
+}

@@ -1,0 +1,35 @@
+element DCancer{
+  EventWindow ew;
+  Bool done = false;
+  Unsigned(8) life = 255u;
+
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1]=life;
+    ret[2]=life;
+    ret[3]=life;
+
+    return ret;
+  }
+  Void behave(){
+    if (life == 0) ew[0] = Empty.instanceof;
+    if (done){
+      life--;
+      return;
+    }
+
+    Unsigned(3) neighbors;
+    for (Unsigned(6) i = 1u; i < 5u; i++){
+      if (ew[i] is DCancer) neighbors++;
+    }
+
+    if (neighbors == 4u){
+      done = true;
+      return;
+    }
+    for (Unsigned(6) i = 0u; i < 41u; i++){
+      ew[i] = ew[0];
+    }
+  }
+}

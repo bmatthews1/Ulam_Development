@@ -1,0 +1,110 @@
+/**
+ \color #080
+ \symbol XX
+*/
+
+element SecurityFence{
+  typedef Unsigned(6) SiteNumber;
+
+  EventWindow ew;
+  Unsigned(3) dir = 0;
+  Unsigned(3) mode = 0; //0 init, 1 armed, 2 warning, 3 defending
+  C2D c;
+  
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1]=0;
+    ret[2]=0;
+    ret[3]=0;
+    if (mode == 0u){
+      ret[2] = 255;
+    } 
+    else if (mode == 1u){
+      ret[2] = 128;
+      ret[3] = 255;
+    }
+    else if (mode == 2u){
+      ret[1] = 255;
+      ret[2] = 255;
+    }
+    else if (mode == 3u){
+      ret[1] = 255;
+    }
+
+    return ret;
+  }
+
+  Void behave(){
+    if (mode == 0u){
+      Bool needsUpdate = false;
+      for (Unsigned(6) i = 29; i < 37; i += 3){
+        if (i == 35) i -= 2;
+        if (!(ew[i] is SecurityFence)) needsUpdate = true;
+      }
+      if (needsUpdate){
+        for (Unsigned(6) i = 29; i < 37; i += 3){
+          if (i == 35) i -= 2;
+          ew[i] = ew[0u];
+        }
+      }
+      mode++;
+    }
+    if (mode == 1u){
+      for (Unsigned(6) i = 29; i < 37; i += 3){
+        if (i == 35) i -= 2;
+
+        if (!(ew[i] is SecurityFence))
+        {
+          mode = 3u;
+          if (i == 29) dir = 1;
+          else if (i == 32) dir = 3;
+          else if (i == 33) dir = 2;
+          else if (i == 36) dir = 4;
+        }
+      }
+    }
+    if (mode == 3u){
+      if (dir == 1 || dir == 2){ //left up
+        for (Int(16) x = -4; x < 1; x++){
+          c.x = x;
+          for (Int(16) y = (Int(16))((x + 4)*-1); y < 1; y++){
+            c.y = y;
+            SiteNumber s = ew.getSiteNumber(c);
+            if (s < 41) ew[s] = ew[0];
+          }
+        }
+      }
+      if (dir == 2 || dir == 4){ //right up
+        for (Int(16) x = 0; x < 5; x++){
+          c.x = x;
+          for (Int(16) y = (Int(16))(x-4); y < 1; y++){
+            c.y = y;
+            SiteNumber s = ew.getSiteNumber(c);
+            if (s < 41) ew[s] = ew[0];
+          }
+        }
+      }
+      if (dir == 4 || dir == 3){ //right down
+        for (Int(16) x = 0; x < 5; x++){
+          c.x = x;
+          for (Int(16) y = (Int(16))(4 - x); y > -1; y--){
+            c.y = y;
+            SiteNumber s = ew.getSiteNumber(c);
+            if (s < 41) ew[s] = ew[0];
+          }
+        }
+      }
+      if (dir == 3 || dir == 1){ //left down
+        for (Int(16) x = -4; x < 1; x++){
+          c.x = x;
+          for (Int(16) y = (Int(16))(x+4); y > -1; y--){
+            c.y = y;
+            SiteNumber s = ew.getSiteNumber(c);
+            if (s < 41) ew[s] = ew[0];
+          }
+        }
+      }
+    }
+  }
+}

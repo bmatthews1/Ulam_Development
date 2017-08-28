@@ -1,0 +1,30 @@
+/**
+\color #0ff
+\symmetries normal
+*/
+
+element NotLife{
+  EventWindow ew;
+  C2D c;
+  Void behave(){
+    for (Int(15) x = -1; x < 1; x++){
+      for (Int(15) y = -1; y < 1; y++){
+        Unsigned neighbors = 0;
+      	for (Int(15) dx = -1; dx < 1; dx++){
+          for (Int(15) dy = -1; dy < 1; dy++){
+            c.x = x + dx;
+            c.y = y + dy;
+            if (!ew.isEmpty(ew.getSiteNumber(c))){neighbors++;}
+          }
+        }
+        c.x = x;
+        c.y = y;
+        Unsigned(6) s = ew.getSiteNumber(c);
+        if (!ew.isEmpty(s)){
+          if (neighbors < 2u || neighbors > 3u){ ew[s] = Empty.instanceof;}
+        } else if (neighbors == 3u && ew[s] is Empty){ ew[s] = NotLife.instanceof;}
+        
+      }
+    }
+  }
+}
