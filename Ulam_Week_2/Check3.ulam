@@ -1,0 +1,38 @@
+/**
+
+*/
+
+element Check3{
+  typedef Unsigned(6) SiteNumber;
+  EventWindow ew;
+
+  Void behave(){
+    Bool left = (ew[1] is Check3);
+    Bool right = (ew[4] is Check3);
+    Bool up = (ew[2] is Check3);
+    Bool down = (ew[3] is Check3);
+
+    //all empty
+    if (!left && !right && !up && !down){
+      for (SiteNumber i = 1; i < 9; i++){
+        ew[i] = ew[0];
+      }
+      ew[25] = ew[0];
+      ew[26] = ew[0];
+      ew[27] = ew[0];
+      ew[28] = ew[0];
+      return;
+    }
+
+    Bool nw = (ew[5] is Check3);
+    Bool ne = (ew[7] is Check3);
+    Bool sw = (ew[6] is Check3);
+    Bool se = (ew[5] is Check3);
+
+    //north-west
+    if (nw && !ne && !sw && !se){
+      
+    }  
+
+  }
+}

@@ -1,0 +1,79 @@
+/**
+   The goal of Majority element atoms is to all be the same color, red
+   or green, matching whichever was more common after initialization
+   across the entire simulation grid.
+
+   A Majority element initially sets its own color at random, but
+   later may change its own color to try to agree with the majority.
+
+   Note well the following:
+
+   (1) A Majority element is allowed to change ONLY its own state!  In
+       other words, ew[0] (or 'self') is the ONLY site allowed to
+       change during an event.  (Note this rule is enforced by your
+       honor as an ulam programmer, not the architecture.)
+
+   (2) A Majority element may have OTHER DATA MEMBERS beyond just the
+       mUp declared below.  It can fill itself up with whatever it
+       wants that fits in the bit budget.  
+
+   (3) A Majority element never creates or deletes any other Majority
+       elements.  However many Majority atoms there are 'in the
+       beginning', that same number should remain indefinitely.
+
+   (Just to be clear, a Majority element can READ those data members
+   from neighboring Majority atoms if it wishes, it just cannot WRITE
+   them.  It cannot change anything other than ew[0].)
+
+   Note that depending on the size and shape of the grid and the
+   initial layout of Majority atoms, this can be a DIFFICULT or
+   IMPOSSIBLE problem to solve.  (For example, a grid may contain two
+   isolated clumps of Majority atoms with different majorities.)
+
+   Your solution should make its best effort to determine the majority
+   in as many cases as it can, but is not expected to get the correct
+   answer in ALL possible cases.
+
+ */
+
+element Majority {
+  typedef Unsigned(6) SiteCount;
+  typedef Unsigned(6) SiteNumber;
+  typedef Unsigned(8) CoolDown;
+  Once mOnce;
+  Bool mUp;
+  
+  CoolDown cd = 32;
+  
+  EventWindow ew;  
+  Random random;  
+
+  Void behave() {
+    if (mOnce.new()) {
+      mUp = random.oneIn(2);
+    } else if (cd == 0){
+	  SiteCount up = 0;
+      SiteCount down = 0;
+      for (SiteNumber i = 1; i < 41; i++){
+        if (ew[i] is Majority){
+          Majority m = (Majority)ew[i];
+          if (m.mUp) up++;
+          else down++;
+        }
+      }
+      if (up == down){
+        mUp = random.oneIn(2);
+      }
+      else mUp = (up >= down);
+    } else {
+      cd--;
+    }
+
+  }
+
+  ARGB getColor(Unsigned selector) {
+    ColorUtils cu;
+    if (mUp) return cu.color(0x0,0xff,0x0);
+    else  return cu.color(0xff,0x0,0x0);
+  }
+}
