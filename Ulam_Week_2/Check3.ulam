@@ -1,38 +1,78 @@
 /**
+  The Check3 element creates a checkerboard pattern of blocks of 3x3 check3 cells
+  It accomplishes this by looking at the corner cases of a 3x3 block and spawning
+  new 3x3 blocks off of those
 
+ \author ben_matthews
+ \symmetries all
 */
 
 element Check3{
   typedef Unsigned(6) SiteNumber;
+  typedef Unsigned(8) Color;
   EventWindow ew;
+  Bool isRed = false;
+
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1]=255;
+    ret[2]=0;
+    ret[3]=0;
+
+    if (!isRed){
+      ret[1] = 0;
+      ret[2] = 255;
+    }
+    return ret;
+  }
 
   Void behave(){
     Bool left = (ew[1] is Check3);
     Bool right = (ew[4] is Check3);
     Bool up = (ew[2] is Check3);
     Bool down = (ew[3] is Check3);
+	Bool nw = (ew[5] is Check3);
+    Bool ne = (ew[7] is Check3);
+    Bool sw = (ew[6] is Check3);
+    Bool se = (ew[8] is Check3);
 
     //all empty
-    if (!left && !right && !up && !down){
+    if (!left && !right && !up && !down &&
+        !nw && !ne && !sw && !se){
       for (SiteNumber i = 1; i < 9; i++){
         ew[i] = ew[0];
       }
-      ew[25] = ew[0];
-      ew[26] = ew[0];
-      ew[27] = ew[0];
-      ew[28] = ew[0];
       return;
     }
 
-    Bool nw = (ew[5] is Check3);
-    Bool ne = (ew[7] is Check3);
-    Bool sw = (ew[6] is Check3);
-    Bool se = (ew[5] is Check3);
+    //add corner check
+    if (left && up && !right && !down){
+      ew[8] = ew[0];
+      Check3 ch = (Check3)ew[8];
+      ch.isRed = !isRed;
+      ew[8] = ch;
+      return;
+    }
 
     //north-west
     if (nw && !ne && !sw && !se){
-      
-    }  
+      ew[3] = ew[0];
+      ew[4] = ew[0];
+      ew[8] = ew[0];
+      ew[11] = ew[0];
+      ew[12] = ew[0];
+      ew[18] = ew[0];
+      ew[20] = ew[0];
+      ew[28] = ew[0];
+    }
+
+    //update for uniform colors
+    if (left && right && up && down){
+      for (SiteNumber i = 1; i < 9; i++){
+        ew[i] = ew[0];
+      }
+    }
 
   }
 }

@@ -1,0 +1,103 @@
+/**
+
+*/
+
+quark DataHolder{
+  typedef Unsigned(30) Data;
+  typedef Unsigned(6) SiteNumber;
+
+  Data data;
+  Bool hasData = false;
+  Bool cooldown = false;
+
+  EventWindow ew;
+
+  /*
+     hasdata = red
+     cooldown = yellow
+     resting = dark blue
+  */
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1] = 0;
+    ret[2] = 0;
+    ret[3] = 128;
+
+    if (hasData){
+      ret[1] = 255;
+      ret[3] = 0;
+    }
+    else if (cooldown){
+      ret[1] = 255;
+      ret[2] = 255;
+      ret[3] = 0;
+    }
+
+    return ret;
+  }
+
+  /* returns true if the Dataholder is not in a cooldown */
+  Bool canTransmit(){
+    return !cooldown;
+  }
+
+  /* sets the data and the data flag*/
+  Void setData(Data d){
+    if (cooldown) return;
+    data = d;
+    hasData = true;
+  }
+
+  /*
+    attempts to transmit data to other Dataholders around it
+  */
+  Void transmit(){
+    if (!hasData || cooldown) return;
+
+    for (SiteNumber i = 1; i < 5; i++){
+      Atom dh = ew[i];
+      if (dh as DataHolder){
+        if (dh.canTransmit()){
+          dh.setData(data);
+        }
+        ew[i] = (Atom)dh;
+      }
+    }
+    hasData = false;
+    cooldown = true;
+  }
+
+  /* checks to see if the element can go back to transsmiting data 
+     if it can, sets the cooldown to false
+  */
+  Void checkCoolDown(){
+    cooldown = false;
+    for (SiteNumber i = 1; i < 5; i++){
+      Atom dh = ew[i];
+      if (dh as DataHolder){
+        if (dh.hasData) cooldown = true;
+      }
+    }
+  }
+}
+
+element Wire : DataHolder{
+  Void behave(){
+    transmit();
+    checkCoolDown();
+  }
+}
+
+element Transmitter : DataHolder{
+  Random rm;
+  
+  Void behave(){
+    if (rm.oneIn(10)){
+      setData(data);
+    }
+    transmit();
+    checkCoolDown();
+  }
+}
+
