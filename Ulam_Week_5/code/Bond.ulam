@@ -1,0 +1,26 @@
+/**
+*/
+quark Bond{
+  typedef Unsigned(6) SiteNum;
+  typedef Int(4) Coord;
+
+  Coord xBonds[4] = {0, 0, 0, 0};
+  Coord yBonds[4] = {0, 0, 0, 0};
+  
+  Void moveTo(SiteNum s){
+    EventWindow ew;
+    C2D c2d = ew.getCoord(s);
+
+    for (Unsigned(4) i = 0; i < 4; i++){
+      if (distTo(c2d.x, c2d.y, xBonds[i], yBonds[i]) > )
+    }  
+  }
+
+  Unsigned(4) distTo(Coord x1, Coord y1, Coord x2, Coord y2){
+    QMath math;
+    Int(32) xDist = math.abs(x1 - x2);
+    Int(32) yDist = math.abs(y1 - y2);
+
+    return (Unsigned(4))(xDist + yDist);
+  }
+}

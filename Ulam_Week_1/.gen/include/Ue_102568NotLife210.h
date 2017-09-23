@@ -62,22 +62,22 @@ namespace MFM{
 //! NotLife2.ulam:6:   typedef Unsigned(8) ColorValue;
 
 //! NotLife2.ulam:8:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! NotLife2.ulam:9:   DebugUtils du;
-    typedef Uq_10109210DebugUtils10<EC> Ut_Um_2du; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109210DebugUtils10<EC> Ut_Um_2du; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! NotLife2.ulam:10:   C2D c;
-    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! NotLife2.ulam:12:   ColorValue red = 0;
-    typedef UlamRefFixed<EC, 32u, 8u> Up_Um_3red; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 32u, 8u> Up_Um_3red; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! NotLife2.ulam:13:   ColorValue green = 128;
-    typedef UlamRefFixed<EC, 40u, 8u> Up_Um_5green; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 40u, 8u> Up_Um_5green; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! NotLife2.ulam:14:   ColorValue blue = 0;
-    typedef UlamRefFixed<EC, 48u, 8u> Up_Um_4blue; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 48u, 8u> Up_Um_4blue; //gcnl:NodeVarDeclDM.cpp:1108
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

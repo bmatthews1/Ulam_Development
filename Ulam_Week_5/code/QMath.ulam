@@ -1,0 +1,18 @@
+
+
+quark QMath{
+  Int(32) abs(Int(32) i){
+    if (i < 0) return i*-1;
+    return i;
+  }
+  
+  Int(32) max(Int(32) a, Int(32) b){
+    if (b > a) return b;
+    return a;
+  }
+
+  Int(32) min(Int(32) a, Int(32) b){
+    if (b > a) return a;
+    return b;
+  }
+}

@@ -28,16 +28,16 @@ namespace MFM{
     {
 
 //! SandPile.ulam:33:     if (isSeed) value += 173;
-      const u32 Uh_5tlreg42413 = UlamRef<EC>(ur, 32u, 1u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42413 = UlamRef<EC>(ur, 32u, 1u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       if(_Bool32ToCbool(Uh_5tlreg42413, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! SandPile.ulam:33:     if (isSeed) value += 173;
           const u32 Uh_5tlreg42414 = 173; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg42415 = _Int32ToUnsigned32(Uh_5tlreg42414, 9, 32); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42417 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42417 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
           const u32 Uh_5tlreg42418 = _BinOpAddUnsigned32(Uh_5tlreg42417, Uh_5tlreg42415, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-          UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42418); //gcnl:Node.cpp:892
+          UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42418); //gcnl:Node.cpp:898
       } // end if
     }
 
@@ -47,7 +47,7 @@ namespace MFM{
 //! SandPile.ulam:34:     if (value > 4u){
       const u32 Uh_5tlreg42419 = 4u; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg42420 = _Unsigned32ToUnsigned32(Uh_5tlreg42419, 3, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42422 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42422 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg42423 = _BinOpCompareGreaterThanUnsigned32(Uh_5tlreg42422, Uh_5tlreg42420, 32); //gcnl:NodeBinaryOpCompare.cpp:441
       if(_Bool32ToCbool(Uh_5tlreg42423, 1)) //gcnl:NodeControl.cpp:213
       {
@@ -56,20 +56,20 @@ namespace MFM{
 //! SandPile.ulam:35:       Unsigned(32) rem = value%(4u);
           const u32 Uh_5tlreg42424 = 4u; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg42425 = _Unsigned32ToUnsigned32(Uh_5tlreg42424, 3, 32); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42427 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42427 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
           const u32 Uh_5tlreg42428 = _BinOpModUnsigned32(Uh_5tlreg42427, Uh_5tlreg42425, 32); //gcnl:NodeBinaryOp.cpp:805
           const u32 Uh_5tlreg42429 = _Unsigned32ToUnsigned32(Uh_5tlreg42428, 32, 3); //gcnl:NodeCast.cpp:748
           const u32 Uh_5tlreg42430 = _Unsigned32ToUnsigned32(Uh_5tlreg42429, 3, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321u<EC> Uv_3rem(Uh_5tlreg42430); //gcnl:NodeVarDecl.cpp:1081
+          Ui_Ut_102321u<EC> Uv_3rem(Uh_5tlreg42430); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:36:       Unsigned(32) spill = (value - rem)/4u;
           const u32 Uh_5tlreg42431 = 4u; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg42432 = _Unsigned32ToUnsigned32(Uh_5tlreg42431, 3, 32); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42434 = Uv_3rem.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42436 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42434 = Uv_3rem.read(); //gcnl:Node.cpp:704
+          const u32 Uh_5tlreg42436 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
           const u32 Uh_5tlreg42437 = _BinOpSubtractUnsigned32(Uh_5tlreg42436, Uh_5tlreg42434, 32); //gcnl:NodeBinaryOp.cpp:805
           const u32 Uh_5tlreg42438 = _BinOpDivideUnsigned32(Uh_5tlreg42437, Uh_5tlreg42432, 32); //gcnl:NodeBinaryOp.cpp:805
-          Ui_Ut_102321u<EC> Uv_5spill(Uh_5tlreg42438); //gcnl:NodeVarDecl.cpp:1081
+          Ui_Ut_102321u<EC> Uv_5spill(Uh_5tlreg42438); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:37:       for (Unsigned(6) i = 0u; i < 5u; i++){
           {
@@ -77,14 +77,14 @@ namespace MFM{
 //! SandPile.ulam:37:       for (Unsigned(6) i = 0u; i < 5u; i++){
             const u32 Uh_5tlreg42439 = 0u; //gcnl:NodeTerminal.cpp:690
             const u32 Uh_5tlreg42440 = _Unsigned32ToUnsigned32(Uh_5tlreg42439, 1, 6); //gcnl:NodeCast.cpp:748
-            Ui_Ut_10161u<EC> Uv_1i(Uh_5tlreg42440); //gcnl:NodeVarDecl.cpp:1081
+            Ui_Ut_10161u<EC> Uv_1i(Uh_5tlreg42440); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:37:       for (Unsigned(6) i = 0u; i < 5u; i++){
             while(true)
             {
               const u32 Uh_5tlreg42441 = 5u; //gcnl:NodeTerminal.cpp:690
               const u32 Uh_5tlreg42442 = _Unsigned32ToUnsigned32(Uh_5tlreg42441, 3, 6); //gcnl:NodeCast.cpp:748
-              const u32 Uh_5tlreg42444 = Uv_1i.read(); //gcnl:Node.cpp:698
+              const u32 Uh_5tlreg42444 = Uv_1i.read(); //gcnl:Node.cpp:704
               const u32 Uh_5tlreg42445 = _BinOpCompareLessThanUnsigned32(Uh_5tlreg42444, Uh_5tlreg42442, 6); //gcnl:NodeBinaryOpCompare.cpp:441
 
               if(!_Bool32ToCbool(Uh_5tlreg42445, 1))
@@ -98,8 +98,8 @@ namespace MFM{
 
 //! SandPile.ulam:38:         if (ew[i] is SandPile){
                   UlamRef<EC> Uh_3tur42447(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-                  const u32 Uh_5tlreg42449 = Uv_1i.read(); //gcnl:Node.cpp:698
-                  Ui_Ut_10161u<EC> Uh_5tlval42450(Uh_5tlreg42449); //gcnl:Node.cpp:1142
+                  const u32 Uh_5tlreg42449 = Uv_1i.read(); //gcnl:Node.cpp:704
+                  Ui_Ut_10161u<EC> Uh_5tlval42450(Uh_5tlreg42449); //gcnl:Node.cpp:1148
                   Ui_Ut_r102961a<EC> Uh_5tuval42452 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42447, Uh_5tlval42450); //gcnl:NodeFunctionCall.cpp:1043
                   const u32 Uh_5tlreg42453 = Ue_102338SandPile10<EC>::THE_INSTANCE.internalCMethodImplementingIs(Uh_5tuval42452.read()); //gcnl:NodeConditionalIs.cpp:285
                   if(_Bool32ToCbool(Uh_5tlreg42453, 1)) //gcnl:NodeControl.cpp:213
@@ -108,26 +108,26 @@ namespace MFM{
 
 //! SandPile.ulam:39:           SandPile sp = (SandPile) ew[i];
                       UlamRef<EC> Uh_3tur42455(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-                      const u32 Uh_5tlreg42457 = Uv_1i.read(); //gcnl:Node.cpp:698
-                      Ui_Ut_10161u<EC> Uh_5tlval42458(Uh_5tlreg42457); //gcnl:Node.cpp:1142
+                      const u32 Uh_5tlreg42457 = Uv_1i.read(); //gcnl:Node.cpp:704
+                      Ui_Ut_10161u<EC> Uh_5tlval42458(Uh_5tlreg42457); //gcnl:Node.cpp:1148
                       Ui_Ut_r102961a<EC> Uh_5tuval42460 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42455, Uh_5tlval42458); //gcnl:NodeFunctionCall.cpp:1043
                       if(!Ue_102338SandPile10<EC>::THE_INSTANCE.internalCMethodImplementingIs(Uh_5tuval42460.ReadAtom())) //gcnl:NodeCast.cpp:872
                         FAIL(BAD_CAST); //gcnl:NodeCast.cpp:876
-                      Ui_Ue_102338SandPile10<EC> Uv_2sp(Uh_5tuval42460.read()); //gcnl:NodeVarDecl.cpp:1081
+                      Ui_Ue_102338SandPile10<EC> Uv_2sp(Uh_5tuval42460.read()); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:40:           sp.value += spill;
-                      const u32 Uh_5tlreg42462 = Uv_5spill.read(); //gcnl:Node.cpp:698
-                      const u32 Uh_5tlreg42465 = UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Read(); //gcnl:Node.cpp:698
+                      const u32 Uh_5tlreg42462 = Uv_5spill.read(); //gcnl:Node.cpp:704
+                      const u32 Uh_5tlreg42465 = UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Read(); //gcnl:Node.cpp:704
                       const u32 Uh_5tlreg42466 = _BinOpAddUnsigned32(Uh_5tlreg42465, Uh_5tlreg42462, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-                      UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42466); //gcnl:Node.cpp:892
+                      UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42466); //gcnl:Node.cpp:898
 
 //! SandPile.ulam:41:           ew[i] = sp;
-                      const T Uh_3tut42468 = Uv_2sp.read(); //gcnl:Node.cpp:698
+                      const T Uh_3tut42468 = Uv_2sp.read(); //gcnl:Node.cpp:704
                       UlamRef<EC> Uh_3tur42470(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-                      const u32 Uh_5tlreg42472 = Uv_1i.read(); //gcnl:Node.cpp:698
-                      Ui_Ut_10161u<EC> Uh_5tlval42473(Uh_5tlreg42472); //gcnl:Node.cpp:1142
+                      const u32 Uh_5tlreg42472 = Uv_1i.read(); //gcnl:Node.cpp:704
+                      Ui_Ut_10161u<EC> Uh_5tlval42473(Uh_5tlreg42472); //gcnl:Node.cpp:1148
                       Ui_Ut_r102961a<EC> Uh_5tuval42475 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42470, Uh_5tlval42473); //gcnl:NodeFunctionCall.cpp:1043
-                      Uh_5tuval42475.WriteAtom(Uh_3tut42468); //write into atomof ref //gcnl:Node.cpp:992
+                      Uh_5tuval42475.WriteAtom(Uh_3tut42468); //write into atomof ref //gcnl:Node.cpp:998
                     }
                   } // end if
                   else
@@ -136,25 +136,25 @@ namespace MFM{
 
 //! SandPile.ulam:44:           SandPile sp = SandPile.instanceof;
                       Ui_Ue_102338SandPile10<EC> Uh_5tuval42476; //gcnl:NodeInstanceof.cpp:113
-                      Ui_Ue_102338SandPile10<EC> Uv_2sp(Uh_5tuval42476); //gcnl:NodeVarDecl.cpp:1081
+                      Ui_Ue_102338SandPile10<EC> Uv_2sp(Uh_5tuval42476); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:45:           sp.isSeed = false;
                       const u32 Uh_5tlreg42477 = 0u; //gcnl:NodeTerminal.cpp:690
-                      UlamRef<EC>(57u, 1u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42477); //gcnl:Node.cpp:892
+                      UlamRef<EC>(57u, 1u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42477); //gcnl:Node.cpp:898
 
 //! SandPile.ulam:46:           sp.value += spill;
-                      const u32 Uh_5tlreg42481 = Uv_5spill.read(); //gcnl:Node.cpp:698
-                      const u32 Uh_5tlreg42484 = UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Read(); //gcnl:Node.cpp:698
+                      const u32 Uh_5tlreg42481 = Uv_5spill.read(); //gcnl:Node.cpp:704
+                      const u32 Uh_5tlreg42484 = UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Read(); //gcnl:Node.cpp:704
                       const u32 Uh_5tlreg42485 = _BinOpAddUnsigned32(Uh_5tlreg42484, Uh_5tlreg42481, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-                      UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42485); //gcnl:Node.cpp:892
+                      UlamRef<EC>(25u, 32u, Uv_2sp, NULL, UlamRef<EC>::PRIMITIVE, uc).Write(Uh_5tlreg42485); //gcnl:Node.cpp:898
 
 //! SandPile.ulam:47:           ew[i] = sp;
-                      const T Uh_3tut42487 = Uv_2sp.read(); //gcnl:Node.cpp:698
+                      const T Uh_3tut42487 = Uv_2sp.read(); //gcnl:Node.cpp:704
                       UlamRef<EC> Uh_3tur42489(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-                      const u32 Uh_5tlreg42491 = Uv_1i.read(); //gcnl:Node.cpp:698
-                      Ui_Ut_10161u<EC> Uh_5tlval42492(Uh_5tlreg42491); //gcnl:Node.cpp:1142
+                      const u32 Uh_5tlreg42491 = Uv_1i.read(); //gcnl:Node.cpp:704
+                      Ui_Ut_10161u<EC> Uh_5tlval42492(Uh_5tlreg42491); //gcnl:Node.cpp:1148
                       Ui_Ut_r102961a<EC> Uh_5tuval42494 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42489, Uh_5tlval42492); //gcnl:NodeFunctionCall.cpp:1043
-                      Uh_5tuval42494.WriteAtom(Uh_3tut42487); //write into atomof ref //gcnl:Node.cpp:992
+                      Uh_5tuval42494.WriteAtom(Uh_3tut42487); //write into atomof ref //gcnl:Node.cpp:998
                     }
                   } //end else
                 }
@@ -167,15 +167,15 @@ Ul_214endcontrolloop221:
 //! SandPile.ulam:37:       for (Unsigned(6) i = 0u; i < 5u; i++){
               const u32 Uh_5tlreg42495 = 1; //gcnl:NodeTerminal.cpp:690
               const u32 Uh_5tlreg42496 = _Int32ToUnsigned32(Uh_5tlreg42495, 32, 6); //gcnl:NodeCast.cpp:748
-              const u32 Uh_5tlreg42498 = Uv_1i.read(); //gcnl:Node.cpp:698
+              const u32 Uh_5tlreg42498 = Uv_1i.read(); //gcnl:Node.cpp:704
               const u32 Uh_5tlreg42499 = _BinOpAddUnsigned32(Uh_5tlreg42498, Uh_5tlreg42496, 6); //gcnl:NodeBinaryOpEqualArithPostIncr.cpp:196
-              Uv_1i.write(Uh_5tlreg42499); //gcnl:Node.cpp:892
+              Uv_1i.write(Uh_5tlreg42499); //gcnl:Node.cpp:898
             } // end while //gcnl:NodeControlWhile.cpp:145
           }
 
 //! SandPile.ulam:50:       value = rem;       
-          const u32 Uh_5tlreg42501 = Uv_3rem.read(); //gcnl:Node.cpp:698
-          UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42501); //gcnl:Node.cpp:892
+          const u32 Uh_5tlreg42501 = Uv_3rem.read(); //gcnl:Node.cpp:704
+          UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42501); //gcnl:Node.cpp:898
         }
       } // end if
     }
@@ -190,15 +190,15 @@ Ul_214endcontrolloop221:
   {
 
 //! SandPile.ulam:9:     ColorUtils cu;
-    Ui_Uq_10109210ColorUtils10<EC> Uv_2cu; //gcnl:NodeVarDecl.cpp:1118
+    Ui_Uq_10109210ColorUtils10<EC> Uv_2cu; //gcnl:NodeVarDecl.cpp:1132
 
 //! SandPile.ulam:10:     ARGB ret=cu.color(0xff00ff00u);
     UlamRef<EC> Uh_3tur42504(0u, 0u, Uv_2cu, &Uq_10109210ColorUtils10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42505 = 4278255360u; //gcnl:NodeTerminal.cpp:690
-    Ui_Ut_102321u<EC> Uh_5tlval42506(Uh_5tlreg42505); //gcnl:Node.cpp:1142
+    Ui_Ut_102321u<EC> Uh_5tlval42506(Uh_5tlreg42505); //gcnl:Node.cpp:1148
     const Ui_Ut_14181u<EC> Uh_5tlval42508 = Uq_10109210ColorUtils10<EC>::THE_INSTANCE.Uf_5color(uc, Uh_3tur42504, Uh_5tlval42506); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg42509 = Uh_5tlval42508.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_14181u<EC> Uv_3ret(Uh_5tlreg42509); //gcnl:NodeVarDecl.cpp:1081
+    const u32 Uh_5tlreg42509 = Uh_5tlval42508.read(); //gcnl:Node.cpp:1176
+    Ui_Ut_14181u<EC> Uv_3ret(Uh_5tlreg42509); //gcnl:NodeVarDecl.cpp:1095
 
 //! SandPile.ulam:12:     ret[1] = 64u;
     const u32 Uh_5tlreg42510 = 64u; //gcnl:NodeTerminal.cpp:690
@@ -206,7 +206,7 @@ Ul_214endcontrolloop221:
     const u32 Uh_5tlreg42512 = 1; //gcnl:NodeTerminal.cpp:690
     if(Uh_5tlreg42512 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42514(Uv_3ret, Uh_5tlreg42512 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Ui_Ut_r10181u<EC> Uh_6tlref42514(Uv_3ret, Uh_5tlreg42512 * 8u + 0u, uc); //gcnl:Node.cpp:1323
     Uh_6tlref42514.write(Uh_5tlreg42511);
 
 //! SandPile.ulam:13:     ret[2] = 0u;
@@ -215,7 +215,7 @@ Ul_214endcontrolloop221:
     const u32 Uh_5tlreg42517 = 2; //gcnl:NodeTerminal.cpp:690
     if(Uh_5tlreg42517 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42519(Uv_3ret, Uh_5tlreg42517 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Ui_Ut_r10181u<EC> Uh_6tlref42519(Uv_3ret, Uh_5tlreg42517 * 8u + 0u, uc); //gcnl:Node.cpp:1323
     Uh_6tlref42519.write(Uh_5tlreg42516);
 
 //! SandPile.ulam:14:     ret[3] = 0u;
@@ -224,7 +224,7 @@ Ul_214endcontrolloop221:
     const u32 Uh_5tlreg42522 = 3; //gcnl:NodeTerminal.cpp:690
     if(Uh_5tlreg42522 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42524(Uv_3ret, Uh_5tlreg42522 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Ui_Ut_r10181u<EC> Uh_6tlref42524(Uv_3ret, Uh_5tlreg42522 * 8u + 0u, uc); //gcnl:Node.cpp:1323
     Uh_6tlref42524.write(Uh_5tlreg42521);
 
 //! SandPile.ulam:16:     if (value%4u > 0u){ 
@@ -235,7 +235,7 @@ Ul_214endcontrolloop221:
       const u32 Uh_5tlreg42526 = _Unsigned32ToUnsigned32(Uh_5tlreg42525, 1, 32); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42527 = 4u; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg42528 = _Unsigned32ToUnsigned32(Uh_5tlreg42527, 3, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42530 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42530 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg42531 = _BinOpModUnsigned32(Uh_5tlreg42530, Uh_5tlreg42528, 32); //gcnl:NodeBinaryOp.cpp:805
       const u32 Uh_5tlreg42532 = _Unsigned32ToUnsigned32(Uh_5tlreg42531, 32, 3); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42533 = _Unsigned32ToUnsigned32(Uh_5tlreg42532, 3, 32); //gcnl:NodeCast.cpp:748
@@ -249,7 +249,7 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42536 = 1; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42536 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42538(Uv_3ret, Uh_5tlreg42536 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42538(Uv_3ret, Uh_5tlreg42536 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42538.write(Uh_5tlreg42535);
 
 //! SandPile.ulam:18:       ret[2] = 128u;
@@ -257,7 +257,7 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42540 = 2; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42540 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42542(Uv_3ret, Uh_5tlreg42540 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42542(Uv_3ret, Uh_5tlreg42540 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42542.write(Uh_5tlreg42539);
         }
       } // end if
@@ -271,7 +271,7 @@ Ul_214endcontrolloop221:
       const u32 Uh_5tlreg42544 = _Unsigned32ToUnsigned32(Uh_5tlreg42543, 1, 32); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42545 = 4u; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg42546 = _Unsigned32ToUnsigned32(Uh_5tlreg42545, 3, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42548 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42548 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg42549 = _BinOpModUnsigned32(Uh_5tlreg42548, Uh_5tlreg42546, 32); //gcnl:NodeBinaryOp.cpp:805
       const u32 Uh_5tlreg42550 = _Unsigned32ToUnsigned32(Uh_5tlreg42549, 32, 3); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42551 = _Unsigned32ToUnsigned32(Uh_5tlreg42550, 3, 32); //gcnl:NodeCast.cpp:748
@@ -286,7 +286,7 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42555 = 1; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42555 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42557(Uv_3ret, Uh_5tlreg42555 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42557(Uv_3ret, Uh_5tlreg42555 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42557.write(Uh_5tlreg42554);
 
 //! SandPile.ulam:22:       ret[2] = 192u;
@@ -294,7 +294,7 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42559 = 2; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42559 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42561(Uv_3ret, Uh_5tlreg42559 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42561(Uv_3ret, Uh_5tlreg42559 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42561.write(Uh_5tlreg42558);
         }
       } // end if
@@ -308,7 +308,7 @@ Ul_214endcontrolloop221:
       const u32 Uh_5tlreg42563 = _Unsigned32ToUnsigned32(Uh_5tlreg42562, 2, 32); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42564 = 4u; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg42565 = _Unsigned32ToUnsigned32(Uh_5tlreg42564, 3, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42567 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42567 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg42568 = _BinOpModUnsigned32(Uh_5tlreg42567, Uh_5tlreg42565, 32); //gcnl:NodeBinaryOp.cpp:805
       const u32 Uh_5tlreg42569 = _Unsigned32ToUnsigned32(Uh_5tlreg42568, 32, 3); //gcnl:NodeCast.cpp:748
       const u32 Uh_5tlreg42570 = _Unsigned32ToUnsigned32(Uh_5tlreg42569, 3, 32); //gcnl:NodeCast.cpp:748
@@ -323,7 +323,7 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42574 = 2; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42574 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42576(Uv_3ret, Uh_5tlreg42574 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42576(Uv_3ret, Uh_5tlreg42574 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42576.write(Uh_5tlreg42573);
 
 //! SandPile.ulam:26:       ret[3] = 255u;
@@ -331,15 +331,15 @@ Ul_214endcontrolloop221:
           const u32 Uh_5tlreg42578 = 3; //gcnl:NodeTerminal.cpp:690
           if(Uh_5tlreg42578 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42580(Uv_3ret, Uh_5tlreg42578 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Ui_Ut_r10181u<EC> Uh_6tlref42580(Uv_3ret, Uh_5tlreg42578 * 8u + 0u, uc); //gcnl:Node.cpp:1323
           Uh_6tlref42580.write(Uh_5tlreg42577);
         }
       } // end if
     }
 
 //! SandPile.ulam:29:     return ret;
-    const u32 Uh_5tlreg42582 = Uv_3ret.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42583(Uh_5tlreg42582); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg42582 = Uv_3ret.read(); //gcnl:Node.cpp:704
+    Ui_Ut_14181u<EC> Uh_5tlval42583(Uh_5tlreg42582); //gcnl:Node.cpp:1148
     return (Uh_5tlval42583); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_8getColor
@@ -352,9 +352,9 @@ Ul_214endcontrolloop221:
   {
     switch (dataMemberNumber)
     {
-      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 1: { static UlamClassDataMemberInfo i("Ut_102321u", "value", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 2: { static UlamClassDataMemberInfo i("Ut_10111b", "isSeed", 32u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
+      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 1: { static UlamClassDataMemberInfo i("Ut_102321u", "value", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 2: { static UlamClassDataMemberInfo i("Ut_10111b", "isSeed", 32u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
     }; //end switch //gcnl:NodeBlockClass.cpp:2652
     FAIL(ILLEGAL_ARGUMENT); //gcnl:NodeBlockClass.cpp:2655
   } //GetDataMemberInfo

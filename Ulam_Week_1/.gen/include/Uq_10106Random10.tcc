@@ -23,24 +23,24 @@ namespace MFM{
     {
 
 //! Random.ulam:27:     if (lo > hi) {
-      const u32 Uh_5tlreg3535 = Uv_2hi.read(); //gcnl:Node.cpp:698
-      const u32 Uh_5tlreg3537 = Uv_2lo.read(); //gcnl:Node.cpp:698
+      const u32 Uh_5tlreg3535 = Uv_2hi.read(); //gcnl:Node.cpp:704
+      const u32 Uh_5tlreg3537 = Uv_2lo.read(); //gcnl:Node.cpp:704
       const u32 Uh_5tlreg3538 = _BinOpCompareGreaterThanInt32(Uh_5tlreg3537, Uh_5tlreg3535, 32); //gcnl:NodeBinaryOpCompare.cpp:441
       if(_Bool32ToCbool(Uh_5tlreg3538, 1)) //gcnl:NodeControl.cpp:213
       {
         {
 
 //! Random.ulam:28:       Int t = hi;
-          const u32 Uh_5tlreg3540 = Uv_2hi.read(); //gcnl:Node.cpp:698
-          Ui_Ut_102321i<EC> Uv_1t(Uh_5tlreg3540); //gcnl:NodeVarDecl.cpp:1081
+          const u32 Uh_5tlreg3540 = Uv_2hi.read(); //gcnl:Node.cpp:704
+          Ui_Ut_102321i<EC> Uv_1t(Uh_5tlreg3540); //gcnl:NodeVarDecl.cpp:1095
 
 //! Random.ulam:29:       hi = lo;
-          const u32 Uh_5tlreg3542 = Uv_2lo.read(); //gcnl:Node.cpp:698
-          Uv_2hi.write(Uh_5tlreg3542); //gcnl:Node.cpp:892
+          const u32 Uh_5tlreg3542 = Uv_2lo.read(); //gcnl:Node.cpp:704
+          Uv_2hi.write(Uh_5tlreg3542); //gcnl:Node.cpp:898
 
 //! Random.ulam:30:       lo = t;
-          const u32 Uh_5tlreg3545 = Uv_1t.read(); //gcnl:Node.cpp:698
-          Uv_2lo.write(Uh_5tlreg3545); //gcnl:Node.cpp:892
+          const u32 Uh_5tlreg3545 = Uv_1t.read(); //gcnl:Node.cpp:704
+          Uv_2lo.write(Uh_5tlreg3545); //gcnl:Node.cpp:898
         }
       } // end if
     }
@@ -48,17 +48,17 @@ namespace MFM{
 //! Random.ulam:32:     return lo + (Int) create(hi - lo + 1);
     const u32 Uh_5tlreg3548 = 1; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg3549 = _Int32ToInt32(Uh_5tlreg3548, 2, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg3551 = Uv_2lo.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg3553 = Uv_2hi.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg3551 = Uv_2lo.read(); //gcnl:Node.cpp:704
+    const u32 Uh_5tlreg3553 = Uv_2hi.read(); //gcnl:Node.cpp:704
     const u32 Uh_5tlreg3554 = _BinOpSubtractInt32(Uh_5tlreg3553, Uh_5tlreg3551, 32); //gcnl:NodeBinaryOp.cpp:805
     const u32 Uh_5tlreg3555 = _BinOpAddInt32(Uh_5tlreg3554, Uh_5tlreg3549, 32); //gcnl:NodeBinaryOp.cpp:805
-    Ui_Ut_102321i<EC> Uh_5tlval3556(Uh_5tlreg3555); //gcnl:Node.cpp:1142
+    Ui_Ut_102321i<EC> Uh_5tlval3556(Uh_5tlreg3555); //gcnl:Node.cpp:1148
     const Ui_Ut_102321u<EC> Uh_5tlval3558 = THE_INSTANCE.Uf_6create(uc, ur, Uh_5tlval3556); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3559 = Uh_5tlval3558.read(); //gcnl:Node.cpp:1170
+    const u32 Uh_5tlreg3559 = Uh_5tlval3558.read(); //gcnl:Node.cpp:1176
     const u32 Uh_5tlreg3560 = _Unsigned32ToInt32(Uh_5tlreg3559, 32, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg3562 = Uv_2lo.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg3562 = Uv_2lo.read(); //gcnl:Node.cpp:704
     const u32 Uh_5tlreg3563 = _BinOpAddInt32(Uh_5tlreg3562, Uh_5tlreg3560, 32); //gcnl:NodeBinaryOp.cpp:805
-    Ui_Ut_102321i<EC> Uh_5tlval3564(Uh_5tlreg3563); //gcnl:Node.cpp:1142
+    Ui_Ut_102321i<EC> Uh_5tlval3564(Uh_5tlreg3563); //gcnl:Node.cpp:1148
     return (Uh_5tlval3564); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_7between
@@ -73,12 +73,12 @@ namespace MFM{
 //! Random.ulam:42:   Bool oneIn(Unsigned odds) { return oddsOf((Unsigned) 1, odds); }
     const u32 Uh_5tlreg3566 = 1; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg3567 = _Int32ToUnsigned32(Uh_5tlreg3566, 2, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321u<EC> Uh_5tlval3568(Uh_5tlreg3567); //gcnl:Node.cpp:1142
-    const u32 Uh_5tlreg3570 = Uv_4odds.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102321u<EC> Uh_5tlval3571(Uh_5tlreg3570); //gcnl:Node.cpp:1142
+    Ui_Ut_102321u<EC> Uh_5tlval3568(Uh_5tlreg3567); //gcnl:Node.cpp:1148
+    const u32 Uh_5tlreg3570 = Uv_4odds.read(); //gcnl:Node.cpp:704
+    Ui_Ut_102321u<EC> Uh_5tlval3571(Uh_5tlreg3570); //gcnl:Node.cpp:1148
     const Ui_Ut_10111b<EC> Uh_5tlval3573 = THE_INSTANCE.Uf_6oddsOf(uc, ur, Uh_5tlval3568, Uh_5tlval3571); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3574 = Uh_5tlval3573.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_10111b<EC> Uh_5tlval3575(Uh_5tlreg3574); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg3574 = Uh_5tlval3573.read(); //gcnl:Node.cpp:1176
+    Ui_Ut_10111b<EC> Uh_5tlval3575(Uh_5tlreg3574); //gcnl:Node.cpp:1148
     return (Uh_5tlval3575); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_5oneIn
@@ -96,7 +96,7 @@ namespace MFM{
 //! Random.ulam:16:     if (max <= 0) return 0;
       const u32 Uh_5tlreg3576 = 0; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg3577 = _Int32ToInt32(Uh_5tlreg3576, 2, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg3579 = Uv_3max.read(); //gcnl:Node.cpp:698
+      const u32 Uh_5tlreg3579 = Uv_3max.read(); //gcnl:Node.cpp:704
       const u32 Uh_5tlreg3580 = _BinOpCompareLessEqualInt32(Uh_5tlreg3579, Uh_5tlreg3577, 32); //gcnl:NodeBinaryOpCompare.cpp:441
       if(_Bool32ToCbool(Uh_5tlreg3580, 1)) //gcnl:NodeControl.cpp:213
       {
@@ -104,18 +104,18 @@ namespace MFM{
 //! Random.ulam:16:     if (max <= 0) return 0;
           const u32 Uh_5tlreg3581 = 0; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg3582 = _Int32ToUnsigned32(Uh_5tlreg3581, 2, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321u<EC> Uh_5tlval3583(Uh_5tlreg3582); //gcnl:Node.cpp:1142
+          Ui_Ut_102321u<EC> Uh_5tlval3583(Uh_5tlreg3582); //gcnl:Node.cpp:1148
           return (Uh_5tlval3583); //gcnl:NodeReturnStatement.cpp:343
       } // end if
     }
 
 //! Random.ulam:17:     return bits((Unsigned) max);
-    const u32 Uh_5tlreg3586 = Uv_3max.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg3586 = Uv_3max.read(); //gcnl:Node.cpp:704
     const u32 Uh_5tlreg3587 = _Int32ToUnsigned32(Uh_5tlreg3586, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321u<EC> Uh_5tlval3588(Uh_5tlreg3587); //gcnl:Node.cpp:1142
+    Ui_Ut_102321u<EC> Uh_5tlval3588(Uh_5tlreg3587); //gcnl:Node.cpp:1148
     const Ui_Ut_102321u<EC> Uh_5tlval3590 = THE_INSTANCE.Uf_4bits(uc, ur, Uh_5tlval3588); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3591 = Uh_5tlval3590.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_102321u<EC> Uh_5tlval3592(Uh_5tlreg3591); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg3591 = Uh_5tlval3590.read(); //gcnl:Node.cpp:1176
+    Ui_Ut_102321u<EC> Uh_5tlval3592(Uh_5tlreg3591); //gcnl:Node.cpp:1148
     return (Uh_5tlval3592); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_4bits
@@ -133,7 +133,7 @@ namespace MFM{
 //! Random.ulam:22:     if (max <= 0) return 0;
       const u32 Uh_5tlreg3593 = 0; //gcnl:NodeTerminal.cpp:690
       const u32 Uh_5tlreg3594 = _Int32ToInt32(Uh_5tlreg3593, 2, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg3596 = Uv_3max.read(); //gcnl:Node.cpp:698
+      const u32 Uh_5tlreg3596 = Uv_3max.read(); //gcnl:Node.cpp:704
       const u32 Uh_5tlreg3597 = _BinOpCompareLessEqualInt32(Uh_5tlreg3596, Uh_5tlreg3594, 32); //gcnl:NodeBinaryOpCompare.cpp:441
       if(_Bool32ToCbool(Uh_5tlreg3597, 1)) //gcnl:NodeControl.cpp:213
       {
@@ -141,18 +141,18 @@ namespace MFM{
 //! Random.ulam:22:     if (max <= 0) return 0;
           const u32 Uh_5tlreg3598 = 0; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg3599 = _Int32ToUnsigned32(Uh_5tlreg3598, 2, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321u<EC> Uh_5tlval3600(Uh_5tlreg3599); //gcnl:Node.cpp:1142
+          Ui_Ut_102321u<EC> Uh_5tlval3600(Uh_5tlreg3599); //gcnl:Node.cpp:1148
           return (Uh_5tlval3600); //gcnl:NodeReturnStatement.cpp:343
       } // end if
     }
 
 //! Random.ulam:23:     return create((Unsigned) max);
-    const u32 Uh_5tlreg3603 = Uv_3max.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg3603 = Uv_3max.read(); //gcnl:Node.cpp:704
     const u32 Uh_5tlreg3604 = _Int32ToUnsigned32(Uh_5tlreg3603, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321u<EC> Uh_5tlval3605(Uh_5tlreg3604); //gcnl:Node.cpp:1142
+    Ui_Ut_102321u<EC> Uh_5tlval3605(Uh_5tlreg3604); //gcnl:Node.cpp:1148
     const Ui_Ut_102321u<EC> Uh_5tlval3607 = THE_INSTANCE.Uf_6create(uc, ur, Uh_5tlval3605); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3608 = Uh_5tlval3607.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_102321u<EC> Uh_5tlval3609(Uh_5tlreg3608); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg3608 = Uh_5tlval3607.read(); //gcnl:Node.cpp:1176
+    Ui_Ut_102321u<EC> Uh_5tlval3609(Uh_5tlreg3608); //gcnl:Node.cpp:1148
     return (Uh_5tlval3609); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_6create
@@ -165,14 +165,14 @@ namespace MFM{
   {
 
 //! Random.ulam:39:     return ((Int) create(outOfThisMany)) < thisMany;
-    const u32 Uh_5tlreg3611 = Uv_8thisMany.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg3614 = Uv_9213outOfThisMany.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102321i<EC> Uh_5tlval3615(Uh_5tlreg3614); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg3611 = Uv_8thisMany.read(); //gcnl:Node.cpp:704
+    const u32 Uh_5tlreg3614 = Uv_9213outOfThisMany.read(); //gcnl:Node.cpp:704
+    Ui_Ut_102321i<EC> Uh_5tlval3615(Uh_5tlreg3614); //gcnl:Node.cpp:1148
     const Ui_Ut_102321u<EC> Uh_5tlval3617 = THE_INSTANCE.Uf_6create(uc, ur, Uh_5tlval3615); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3618 = Uh_5tlval3617.read(); //gcnl:Node.cpp:1170
+    const u32 Uh_5tlreg3618 = Uh_5tlval3617.read(); //gcnl:Node.cpp:1176
     const u32 Uh_5tlreg3619 = _Unsigned32ToInt32(Uh_5tlreg3618, 32, 32); //gcnl:NodeCast.cpp:748
     const u32 Uh_5tlreg3620 = _BinOpCompareLessThanInt32(Uh_5tlreg3619, Uh_5tlreg3611, 32); //gcnl:NodeBinaryOpCompare.cpp:441
-    Ui_Ut_10111b<EC> Uh_5tlval3621(Uh_5tlreg3620); //gcnl:Node.cpp:1142
+    Ui_Ut_10111b<EC> Uh_5tlval3621(Uh_5tlreg3620); //gcnl:Node.cpp:1148
     return (Uh_5tlval3621); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_6oddsOf
@@ -185,13 +185,13 @@ namespace MFM{
   {
 
 //! Random.ulam:36:     return create(outOfThisMany) < thisMany;
-    const u32 Uh_5tlreg3623 = Uv_8thisMany.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg3626 = Uv_9213outOfThisMany.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102321u<EC> Uh_5tlval3627(Uh_5tlreg3626); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg3623 = Uv_8thisMany.read(); //gcnl:Node.cpp:704
+    const u32 Uh_5tlreg3626 = Uv_9213outOfThisMany.read(); //gcnl:Node.cpp:704
+    Ui_Ut_102321u<EC> Uh_5tlval3627(Uh_5tlreg3626); //gcnl:Node.cpp:1148
     const Ui_Ut_102321u<EC> Uh_5tlval3629 = THE_INSTANCE.Uf_6create(uc, ur, Uh_5tlval3627); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg3630 = Uh_5tlval3629.read(); //gcnl:Node.cpp:1170
+    const u32 Uh_5tlreg3630 = Uh_5tlval3629.read(); //gcnl:Node.cpp:1176
     const u32 Uh_5tlreg3631 = _BinOpCompareLessThanUnsigned32(Uh_5tlreg3630, Uh_5tlreg3623, 32); //gcnl:NodeBinaryOpCompare.cpp:441
-    Ui_Ut_10111b<EC> Uh_5tlval3632(Uh_5tlreg3631); //gcnl:Node.cpp:1142
+    Ui_Ut_10111b<EC> Uh_5tlval3632(Uh_5tlreg3631); //gcnl:Node.cpp:1148
     return (Uh_5tlval3632); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_6oddsOf

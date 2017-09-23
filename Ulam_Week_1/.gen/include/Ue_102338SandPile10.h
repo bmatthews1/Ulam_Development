@@ -58,13 +58,13 @@ namespace MFM{
     static Ue_102338SandPile10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1452
 
 //! SandPile.ulam:4:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! SandPile.ulam:5:   Unsigned(32) value = 0u;
-    typedef UlamRefFixed<EC, 0u, 32u> Up_Um_5value; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 32u> Up_Um_5value; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! SandPile.ulam:6:   Bool isSeed = true;
-    typedef UlamRefFixed<EC, 32u, 1u> Up_Um_6isSeed; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 32u, 1u> Up_Um_6isSeed; //gcnl:NodeVarDeclDM.cpp:1108
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

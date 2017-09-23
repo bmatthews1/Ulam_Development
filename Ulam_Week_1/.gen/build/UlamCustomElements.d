@@ -1,7 +1,7 @@
-/home/ben/Documents/Ulam_Projects/.gen/build/UlamCustomElements.o \
- /home/ben/Documents/Ulam_Projects/.gen/build/UlamCustomElements.d: \
- /home/ben/Documents/Ulam_Projects/.gen/src/UlamCustomElements.cpp \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/UlamCustomElements.h \
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/build/UlamCustomElements.o \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/build/UlamCustomElements.d: \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/UlamCustomElements.cpp \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/UlamCustomElements.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/sim/include/AbstractDriver.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Util.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/itype.h \
@@ -155,6 +155,9 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Wall.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Wanderer_Magenta.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/AbstractElement_Wanderer.h \
+ /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Sorter.h \
+ /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.h \
+ /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Indexed.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Collector.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/FXP.h \
@@ -174,12 +177,9 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_AntiForkBomb.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Block.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_ForkBomb3.h \
- /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Sorter.h \
- /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.h \
- /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.tcc \
+ /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Xtal_Sq1.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_MQBar.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_ForkBomb2.h \
- /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Xtal_Sq1.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Wanderer_Cyan.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/StdElements.inc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Version.h \
@@ -188,7 +188,7 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamRef.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/sim/include/DebugTools.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamClass.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/IsLocal.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/platform-linux/include/IsLocalPlatformSpecific.h \
@@ -197,95 +197,95 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamQuark.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10_native.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamByteWrappers.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10_native.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/MDist.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/StdEventConfig.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/sim/include/ElementLibraryLoader.h
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/UlamCustomElements.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/UlamCustomElements.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/sim/include/AbstractDriver.h:
 
@@ -593,6 +593,12 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/AbstractElement_Wanderer.h:
 
+/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Sorter.h:
+
+/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.h:
+
+/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.tcc:
+
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Indexed.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Collector.h:
@@ -631,17 +637,11 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_ForkBomb3.h:
 
-/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Sorter.h:
-
-/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.h:
-
-/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/ElementUtils.tcc:
+/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Xtal_Sq1.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_MQBar.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_ForkBomb2.h:
-
-/usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Xtal_Sq1.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include/Element_Wanderer_Cyan.h:
 
@@ -659,7 +659,7 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamClass.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h:
 
@@ -677,175 +677,175 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10104Wall10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10104Wall10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105UWall10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105UWall10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_102323C2D10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_102323C2D10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Un_102649216ByteStreamString10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Un_102649216ByteStreamString10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10_native.tcc:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamByteWrappers.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ByteStream10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ByteStream10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10104Fail10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10104Fail10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10105MDist10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10105MDist10_native.tcc:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/MDist.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109211EventWindow10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109211EventWindow10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10108MoveLeft10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10108MoveLeft10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10197DCancer10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10197DCancer10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210ColorUtils10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210ColorUtils10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapE10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapE10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102125SwapX10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102125SwapX10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102167UCancer10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102167UCancer10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102324Cool10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102324Cool10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102327NotLife10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102327NotLife10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102338SandPile10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102338SandPile10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102389213SecurityFence10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102389213SecurityFence10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102568NotLife210.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102568NotLife210.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10109210DebugUtils10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10109210DebugUtils10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_102654Life10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_102654Life10.tcc:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/StdEventConfig.h:
 

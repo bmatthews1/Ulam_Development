@@ -28,12 +28,12 @@ namespace MFM{
 
 //! SwapE.ulam:15:       ew.swap(s4, s0);
       UlamRef<EC> Uh_3tur43129(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-      const u32 Uh_5tlreg43131 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      Ui_Ut_10161u<EC> Uh_5tlval43132(Uh_5tlreg43131); //gcnl:Node.cpp:1142
-      const u32 Uh_5tlreg43134 = UlamRef<EC>(ur, 0u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      Ui_Ut_10161u<EC> Uh_5tlval43135(Uh_5tlreg43134); //gcnl:Node.cpp:1142
+      const u32 Uh_5tlreg43131 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
+      Ui_Ut_10161u<EC> Uh_5tlval43132(Uh_5tlreg43131); //gcnl:Node.cpp:1148
+      const u32 Uh_5tlreg43134 = UlamRef<EC>(ur, 0u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
+      Ui_Ut_10161u<EC> Uh_5tlval43135(Uh_5tlreg43134); //gcnl:Node.cpp:1148
       const Ui_Ut_10111b<EC> Uh_5tlval43137 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4swap(uc, Uh_3tur43129, Uh_5tlval43132, Uh_5tlval43135); //gcnl:NodeFunctionCall.cpp:1043
-      const u32 Uh_5tlreg43138 = Uh_5tlval43137.read(); //gcnl:Node.cpp:1170
+      const u32 Uh_5tlreg43138 = Uh_5tlval43137.read(); //gcnl:Node.cpp:1176
     }
 
   } // Uf_6behave
@@ -46,9 +46,9 @@ namespace MFM{
   {
     switch (dataMemberNumber)
     {
-      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 1: { static UlamClassDataMemberInfo i("Ut_10161u", "s0", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 2: { static UlamClassDataMemberInfo i("Ut_10161u", "s4", 6u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
+      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 1: { static UlamClassDataMemberInfo i("Ut_10161u", "s0", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 2: { static UlamClassDataMemberInfo i("Ut_10161u", "s4", 6u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
     }; //end switch //gcnl:NodeBlockClass.cpp:2652
     FAIL(ILLEGAL_ARGUMENT); //gcnl:NodeBlockClass.cpp:2655
   } //GetDataMemberInfo

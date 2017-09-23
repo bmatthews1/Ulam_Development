@@ -58,13 +58,13 @@ namespace MFM{
     static Ue_102167UCancer10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1452
 
 //! UCancer.ulam:2:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! UCancer.ulam:3:   Unsigned(8) blue = 0u;
-    typedef UlamRefFixed<EC, 0u, 8u> Up_Um_4blue; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 8u> Up_Um_4blue; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! UCancer.ulam:4:   Unsigned(8) red = 0u;
-    typedef UlamRefFixed<EC, 8u, 8u> Up_Um_3red; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 8u, 8u> Up_Um_3red; //gcnl:NodeVarDeclDM.cpp:1108
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

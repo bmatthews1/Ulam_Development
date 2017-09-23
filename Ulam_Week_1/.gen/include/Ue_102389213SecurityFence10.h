@@ -61,16 +61,16 @@ namespace MFM{
 //! SecurityFence.ulam:7:   typedef Unsigned(6) SiteNumber;
 
 //! SecurityFence.ulam:9:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! SecurityFence.ulam:10:   Unsigned(3) dir = 0;
-    typedef UlamRefFixed<EC, 0u, 3u> Up_Um_3dir; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 3u> Up_Um_3dir; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! SecurityFence.ulam:11:   Unsigned(3) mode = 0; //0 init, 1 armed, 2 warning, 3 defending
-    typedef UlamRefFixed<EC, 3u, 3u> Up_Um_4mode; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 3u, 3u> Up_Um_4mode; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! SecurityFence.ulam:12:   C2D c;
-    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 6u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 6u //gcnl:NodeVarDeclDM.cpp:1078
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 
