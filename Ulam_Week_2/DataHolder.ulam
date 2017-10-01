@@ -1,5 +1,5 @@
 /**
-
+ /radius 1
 */
 
 quark DataHolder{
@@ -15,17 +15,18 @@ quark DataHolder{
   /*
      hasdata = red
      cooldown = yellow
-     resting = dark blue
+     resting = gray
   */
   ARGB getColor(Unsigned selector){
     ColorUtils cu;
     ARGB ret=cu.color(0xff00ff00u);
-    ret[1] = 0;
-    ret[2] = 0;
+    ret[1] = 128;
+    ret[2] = 128;
     ret[3] = 128;
 
     if (hasData){
       ret[1] = 255;
+      ret[2] = 0;
       ret[3] = 0;
     }
     else if (cooldown){
@@ -54,24 +55,29 @@ quark DataHolder{
   */
   Void transmit(){
     if (!hasData || cooldown) return;
+    Unsigned(3) count = 0;
 
     for (SiteNumber i = 1; i < 5; i++){
       Atom dh = ew[i];
       if (dh as DataHolder){
         if (dh.canTransmit()){
           dh.setData(data);
+					count++;
         }
         ew[i] = (Atom)dh;
       }
     }
-    hasData = false;
-    cooldown = true;
+    //if (count > 0){
+      hasData = false;
+      cooldown = true;
+    //}
   }
 
   /* checks to see if the element can go back to transsmiting data 
      if it can, sets the cooldown to false
   */
   Void checkCoolDown(){
+    if (!cooldown) return;
     cooldown = false;
     for (SiteNumber i = 1; i < 5; i++){
       Atom dh = ew[i];
@@ -82,6 +88,9 @@ quark DataHolder{
   }
 }
 
+/**
+ /color #888
+*/
 element Wire : DataHolder{
   Void behave(){
     transmit();
@@ -89,13 +98,41 @@ element Wire : DataHolder{
   }
 }
 
+
+/**
+ \color #0e0
+*/
 element Transmitter : DataHolder{
   Random rm;
+  Unsigned(8) fireRate = 0;  
+
+  ARGB getColor(Unsigned selector){
+    ColorUtils cu;
+    ARGB ret=cu.color(0xff00ff00u);
+    ret[1] = 0;
+    ret[2] = 255;
+    ret[3] = 0;
+
+    if (hasData){
+      ret[1] = 255;
+      ret[2] = 0;
+      ret[3] = 0;
+    }
+    else if (cooldown){
+      ret[1] = 255;
+      ret[2] = 255;
+      ret[3] = 0;
+    }
+    
+    return ret;
+  }
   
   Void behave(){
-    if (rm.oneIn(10)){
+    if (fireRate == 0){
       setData(data);
     }
+    fireRate++;
+    if (fireRate == 255) fireRate = 0;
     transmit();
     checkCoolDown();
   }

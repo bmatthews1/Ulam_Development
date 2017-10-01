@@ -1,0 +1,260 @@
+/**
+  How Coordinates work:
+  both coordinate are contained within a the single Coord value
+  by using a modified EventWindow that only goes up 24, we can
+  store this site number using only 5 bits. This decreased range means
+  less felxible bonds but more free bits.
+*/
+
+quark Bond5{
+	typedef Unsigned(5) Coord; 
+	typedef Unsigned(6) SiteNum;
+	typedef Int(16)     Short;
+	typedef Int(32)     Long;
+	typedef Unsigned(3) Index;
+
+	EventWindow ew;
+	AtomUtils au;
+
+	constant SiteNum cMAX = 24;
+
+	Bool active = true;
+	Index bondCount = 0;
+	Coord bonds[4] = {0, 0, 0, 0};
+
+	//swtich between active being off or on
+	Void setActive(Bool state){
+		active = state;
+	}
+
+  //add a coordinate to the bonds list
+	Void addBond(Coord c){
+		if (c == 0) return;
+
+		//check for empty and same
+		for (Index i = 0; i < 3; i++){
+			if (bonds[i] == c) return; //already contains this bond
+			if (bonds[i] == 0){
+				bonds[i] = c;
+				bondCount++;
+				return;
+			}
+		}
+
+		//check for closer bond
+		for (Index i = 0; i < 3; i++){
+			Coord myCoord = bonds[i];
+			if ((c/4) < (myCoord/4) && myCoord != 0){
+				Atom a = ew[myCoord];
+				if (a as Bond){
+					a.removeBond((Coord)reverse(myCoord));
+				}
+
+				bonds[i] = c;
+				return;
+			}
+		}
+	}
+
+	//updates a current bond if bonded
+	Void updateBond(Coord prev, Coord new){
+		for (Index i = 0; i < 4; i++){
+			if (bonds[i] == prev){
+				bonds[i] = new;
+				return;
+			}
+		}
+	}
+
+  //remove a coordinate from the bonds list
+	Void removeBond(Coord c){
+		if (c == 0) return;
+		for(Index i = 0; i < 3; i++){
+			if (bonds[i] == c){
+				bonds[i] = 0;
+				bondCount--;
+				return;
+			}
+		}
+	}
+
+	//remove all bonds
+	Void clearBonds(){
+		for(Index i = 0; i < 3; i++){
+			bonds[i] = 0;
+		}
+		bondCount = 0;
+	}
+
+  //creates bonds with the 4 closest elements
+	Void findBonds(){
+		if (bondCount >= 4) return;
+
+		for (SiteNum s = 1; s <= cMAX; s++){
+			Atom a = ew[s];
+			if (a as Bond){
+				if (a.bondCount < 4){
+					addBond((Coord)s);
+					a.addBond((Coord) reverse(s));
+					// if (a.active) active = false;
+					// else a.setActive(false);
+				}
+			}
+			if (bondCount >= 4) return;
+		}
+	}
+
+  //tests to see if this element is already bonded with the given sitenumber
+	Bool hasBond(Coord c){
+		for (Index i = 0; i < 4; i++){
+			if (bonds[i] == c) return true;
+		}
+		return false;
+	}
+
+  //returns the exact opposite of this sitenumber in the eventwindow
+	SiteNum reverse(SiteNum i){
+		C2D c2d = ew.getCoord(i);
+		c2d.x *= -1;
+		c2d.y *= -1;
+
+		return ew.getSiteNumber(c2d);
+	}
+
+	//returns the manhatten distance between two sites
+	//returns the x and y distances as a C2D
+	SiteNum getDist(SiteNum s1, SiteNum s2){
+		C2D c1 = ew.getCoord(s1);
+		C2D c2 = ew.getCoord(s2);
+
+		Long x = c1.x - c2.x;
+		Long y = c1.y - c2.y;
+		
+		if (x < 0) x *= -1;
+		if (y < 0) y *= -1;
+
+		return (SiteNum)(x + y);
+	}
+
+	//attempts to move the element to this site number
+  Bool moveTo(SiteNum s){
+  	if (s == 0) return false;
+
+		if (canMoveTo(s)){
+			clearSurrounding();
+
+			C2D c = ew.getCoord(s);
+			Int(5) x = (Int(5))c.x;
+			Int(5) y = (Int(5))c.y;
+
+			for (Index i = 0; i < 4; i++){
+				if (bonds[i] != 0){
+					SiteNum s2 = bonds[i];
+					Atom a = ew[s2];
+					if (a as Bond){
+						c = ew.getCoord(s2);
+						c.x += x;
+						c.y += y;
+						SiteNum new = ew.getSiteNumber(c);
+
+						a.updateBond((Coord) reverse(s2), (Coord)reverse(new));
+
+						c = ew.getCoord(s2);
+						c.x -= x;
+						c.y -= y;
+
+						updateBond(bonds[i], (Coord) ew.getSiteNumber(c));
+					}
+				}
+			}
+
+			ew[s] = ew[0];
+			ew[0] = Empty.instanceof;
+
+			fillCellWall();
+			drawBonds();
+			return true;
+		}
+
+		return false;
+	}
+
+	//returns true if the new sitenumber does not
+	//violate any of the bonds e.g.
+	//moving a bond outside the eventwindow or
+	//moving into a bonded element
+	Bool canMoveTo(SiteNum s){
+		if (s == 0 || s > 40) return false;
+		if (ew[s] is Bond) return false;
+
+		for (Index i = 0; i < 4; i++){
+			SiteNum bond = (SiteNum) bonds[i];
+			if (getDist(s, bond) > 3) return false;
+		}
+		return true;
+	}
+
+	//draws a line between all existing bonds
+	Void drawBonds(){
+		// if (active) return;
+		for(Index i = 0; i < 4; i++){
+			SiteNum s = bonds[i];
+			if (!(ew[s] is Bond)){
+				removeBond((Coord)s);
+				continue;
+			}
+			C2D c = ew.getCoord(s);
+			line((Short)0, (Short)0, c.x, c.y);
+		}
+	}
+
+	//draws a line made of Wall between two coordinates
+	//code adapted from: https://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm#C
+	Void line(Short x0, Short y0, Short x1, Short y1) {
+		C2D c2d = ew.getCoord(0);
+
+	  Short dx = (Short)(x1-x0);
+	  Short sx = x0<x1 ? 1 : -1;
+	  Short dy = (Short)(y1-y0);
+	  Short sy = y0<y1 ? 1 : -1;
+
+	  if (dx < 0) dx *= -1;
+	  if (dy < 0) dy *= -1;
+
+	  Short err = (dx>dy ? dx : -dy);
+	  err /= 2;
+	  Short e2 = 0;
+
+	  for(;;){
+	  	c2d.x = x0;
+	  	c2d.y = y0;
+	  	SiteNum site = ew.getSiteNumber(c2d);
+	  	if (canMoveTo(site)) ew[site] = Wall.instanceof;
+
+	    if (x0==x1 && y0==y1) break;
+	    e2 = err;
+	    if (e2 >-dx) { err -= dy; x0 += sx; }
+	    if (e2 < dy) { err += dx; y0 += sy; }
+	  }
+	}
+
+	Void fillCellWall(){
+		for (SiteNum s = 1; s < 41; s++){
+			if (!(ew[s] is Bond)){
+				ew[s] = CellWall.instanceof;
+			}
+		}
+	}
+
+	//erases all non Bond Elements
+	Void clearSurrounding(){
+		for (SiteNum s = 1; s < 41; s++){
+			if (!(ew[s] is Bond)){
+				ew[s] = Empty.instanceof;
+			}
+		}
+	}
+
+
+
+}

@@ -1,0 +1,33 @@
+/**
+  \color #0ff
+*/
+
+element RandomCell : Bond{
+	typedef Unsigned(6) Coord; 
+	typedef Unsigned(6) SiteNum;
+	typedef Int(16)     Short;
+	typedef Int(32)     Long;
+	typedef Unsigned(3) Index;
+
+	Random rm;
+
+  ARGB getColor(Unsigned selector) {
+    ColorUtils cu;
+    ARGB ret = cu.color(0x00000000U);
+    ret[1] = (Unsigned(8))(bondCount*63);
+    // if (active) ret[1] = 128;
+    ret[2] = 0;
+    ret[3] = (Unsigned(8))(bondCount*63);
+    return ret;
+	}
+
+	Void behave(){
+		drawBonds();
+
+		if (active){
+			findBonds();
+			SiteNum s = (SiteNum)rm.between(1, 4);
+			moveTo(s);
+		}
+	}
+}

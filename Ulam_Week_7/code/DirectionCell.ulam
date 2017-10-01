@@ -1,0 +1,44 @@
+/**
+  \color #a0a
+*/
+
+element DirectionCell : Bond{
+	typedef Unsigned(6) Coord; 
+	typedef Unsigned(6) SiteNum;
+	typedef Unsigned(8) Byte;
+	typedef Int(16)     Short;
+	typedef Int(32)     Long;
+	typedef Unsigned(3) Index;
+
+	Random rm;
+
+
+	SiteNum moveType = 0;
+	Once once;
+	//0 - random, 1 - east, 2 - north, 3 - south, 4 - west
+	//purple      yellow    red        blue       green
+
+  ARGB getColor(Unsigned selector) {
+    ColorUtils cu;
+    ARGB ret = cu.color(0x00000000U);
+    if (moveType == 0 || moveType == 1 || moveType == 2) ret[1] = (Byte)(bondCount*63);
+    if (moveType == 1 || moveType == 4) ret[2] = (Byte)(bondCount*63);
+    if (moveType == 0 || moveType == 3) ret[3] = (Byte)(bondCount*63);
+    return ret;
+	}
+
+	Void behave(){
+		if (once.new()){
+			moveType = (SiteNum)rm.between(1, 4);
+		}
+		if (active){
+			findBonds();
+			
+			SiteNum s;
+			if (moveType == 0 || rm.oneIn(20)) s = (SiteNum)rm.between(1, 4);
+			else SiteNum s = moveType;
+			moveTo(s);
+		}
+		drawBonds();
+	}
+}

@@ -1,0 +1,51 @@
+/**
+
+*/
+
+
+element Stretchy {
+  typedef Unsigned(8) Byte;
+  typedef Unsigned(6) SiteNumber;
+
+  EventWindow ew;
+  AtomUtils au;
+
+  Byte max = 20;
+
+  Void behave() {
+    Byte neighbors = 0;
+		Byte adjacent = 0;
+    Byte tempAdjacent = 0;
+
+    for (SiteNumber i = 1; i < 41; i++){
+      if (ew[i] is Stretchy){
+        neighbors++;
+      }
+    }
+
+    for (SiteNumber i = 0; i < 16; i++){
+      if (ew[(SiteNumber)((i%8u) + 1u)] is Stretchy){
+        tempAdjacent++;
+      }
+      else {
+        if (tempAdjacent > adjacent) adjacent = tempAdjacent;
+        tempAdjacent = 0;
+			}
+    }
+
+    if (adjacent < 3 || adjacent > 5) return;
+
+    if (neighbors < max){
+      for (SiteNumber i = 1; i < 5; i++){
+        if (ew[i] is Empty){
+          ew[i] = Stretchy.instanceof;
+					break;
+        }
+      }
+    }
+
+    if (neighbors >= max){
+      ew[0] = Empty.instanceof;
+    }
+  }
+}

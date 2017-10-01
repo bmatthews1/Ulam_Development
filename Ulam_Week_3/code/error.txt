@@ -1,0 +1,99 @@
+ Compile UlamCustomElements.cpp: ERROR: Close failed: 512
+stdout={make: Entering directory '/usr/lib/ulam/MFM'
+Building MFM for Debian package name: ulam
+g++ -shared -fPIC -DELEMENT_PLUG_IN -O99  -ansi -pedantic -Wall -Werror -D SHARED_DIR=\"/usr/lib/ulam/MFM\" -pthread -I /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/platform-linux/include  -I /usr/bin/../lib/ulam/ULAM/bin/../share/tcc/stdlib -I /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/sim/include -I /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/elements/include -I include -I /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include -I /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include -Wno-unused-variable -Wno-error=unused-variable -Wno-error=unused-but-set-variable -DMFM_BUILD_DATE=0x20170915 -DMFM_BUILD_TIME=0x004516 -DMFM_BUILT_BY=ben -DMFM_BUILT_ON=ben-SVT13136CYS -DMFM_VERSION_MAJOR=4 -DMFM_VERSION_MINOR=0 -DMFM_VERSION_REV=5 -DMFM_TREE_VERSION="v4.0.5" -DDEBIAN_PACKAGE_NAME="ulam" -DMAGIC_DEBIAN_PACKAGE_VERSION="" -c -MMD -MP -MF"/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.d" -MT"/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.o" -MT"/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.d" -o"/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.o" "/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp"
+config/Makeulamfile.mk:63: recipe for target '/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.o' failed
+make: Leaving directory '/usr/lib/ulam/MFM'
+}
+stderr=In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc: In instantiation of ‘static void MFM::Ue_10188Stretchy10<EC>::Uf_6behave(const MFM::UlamContext<EC>&, MFM::UlamRef<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]’:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:316:65:   required from ‘void (* MFM::Ue_10188Stretchy10<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >::m_vtable [2])()’
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:324:24:   required from ‘void (* MFM::Ue_10188Stretchy10<EC>::getVTableEntry(MFM::u32) const)() [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>; MFM::VfuncPtr = void (*)(); MFM::u32 = unsigned int]’
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:57:1:   required from here
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:180:59: error: no matching function for call to ‘MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >::Ui_Ut_r102961a(MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&, unsigned int, const MFM::UlamContext<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&)’
+     Ui_Ut_r102961a<EC> Uh_5tuval3102(Uh_5tuval3101, 0u, uc); //gcnl:Node.cpp:1142
+                                                           ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:33:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:564:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(const MFM::Ui_Ut_r102961a<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]
+     Ui_Ut_r102961a(const Ui_Ut_r102961a& arg) : UlamRef<EC>(arg, 0, arg.GetLen(), arg.GetEffectiveSelf(), UlamRef<EC>::ATOMIC) { } //gcnl:UlamTypeAtom.cpp:210
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:564:5: note:   candidate expects 1 argument, 3 provided
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:563:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(const MFM::UlamRef<EC>&, MFM::s32) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>; MFM::s32 = int]
+     Ui_Ut_r102961a(const UlamRef<EC>& arg, s32 idx) : UlamRef<EC>(arg, idx, BPA, NULL, UlamRef<EC>::ATOMIC) { } //gcnl:UlamTypeAtom.cpp:202
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:563:5: note:   candidate expects 2 arguments, 3 provided
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:562:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(MFM::BitStorage<EC>&, MFM::u32, const MFM::UlamContext<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>; MFM::u32 = unsigned int]
+     Ui_Ut_r102961a(BitStorage<EC>& targ, u32 startidx, const UlamContext<EC>& uc) : UlamRef<EC>(startidx, BPA, targ, uc.LookupUlamElementTypeFromContext(targ.ReadAtom(startidx).GetType()), UlamRef<EC>::ATOMIC, uc) { } //gcnl:UlamTypeAtom.cpp:195
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:562:5: note:   no known conversion for argument 1 from ‘MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >’ to ‘MFM::BitStorage<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&’
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:181:126: error: invalid initialization of non-const reference of type ‘MFM::Ui_Ut_102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&’ from an rvalue of type ‘MFM::Ui_Ut_102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >’
+     const Ui_Ut_102321i<EC> Uh_5tlval3104 = Uq_1010919AtomUtils10<EC>::THE_INSTANCE.Uf_7getType(uc, Uh_3tur294, Uh_5tuval3102); //gcnl:NodeFunctionCall.cpp:1043
+                                                                                                                              ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:33:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:587:5: note:   after user-defined conversion: MFM::Ui_Ut_102961a<EC>::Ui_Ut_102961a(const MFM::Ui_Ut_r102961a<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]
+     Ui_Ut_102961a(const Ui_Ut_r102961a<EC>& d) : AtomBitStorage<EC>(d.read()) { } //gcnl:UlamTypeAtom.cpp:359
+     ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_1010919AtomUtils10.h:119:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_10109211EventWindow10.tcc:5,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_10109211EventWindow10.h:195,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:5,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc:9:21: note:   initializing argument 3 of ‘MFM::Ui_Ut_102321i<EC> MFM::Uq_1010919AtomUtils10<EC>::Uf_7getType(const MFM::UlamContext<EC>&, MFM::UlamRef<EC>&, MFM::Ui_Ut_102961a<EC>&) const [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]’
+   Ui_Ut_102321i<EC> Uq_1010919AtomUtils10<EC>::Uf_7getType(const UlamContext<EC> & uc, UlamRef<EC>& ur, Ui_Ut_102961a<EC>& Uv_1a) const
+                     ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:192:59: error: no matching function for call to ‘MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >::Ui_Ut_r102961a(MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&, unsigned int, const MFM::UlamContext<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&)’
+     Ui_Ut_r102961a<EC> Uh_5tuval3115(Uh_5tuval3114, 0u, uc); //gcnl:Node.cpp:1142
+                                                           ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:33:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:564:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(const MFM::Ui_Ut_r102961a<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]
+     Ui_Ut_r102961a(const Ui_Ut_r102961a& arg) : UlamRef<EC>(arg, 0, arg.GetLen(), arg.GetEffectiveSelf(), UlamRef<EC>::ATOMIC) { } //gcnl:UlamTypeAtom.cpp:210
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:564:5: note:   candidate expects 1 argument, 3 provided
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:563:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(const MFM::UlamRef<EC>&, MFM::s32) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>; MFM::s32 = int]
+     Ui_Ut_r102961a(const UlamRef<EC>& arg, s32 idx) : UlamRef<EC>(arg, idx, BPA, NULL, UlamRef<EC>::ATOMIC) { } //gcnl:UlamTypeAtom.cpp:202
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:563:5: note:   candidate expects 2 arguments, 3 provided
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:562:5: note: candidate: MFM::Ui_Ut_r102961a<EC>::Ui_Ut_r102961a(MFM::BitStorage<EC>&, MFM::u32, const MFM::UlamContext<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>; MFM::u32 = unsigned int]
+     Ui_Ut_r102961a(BitStorage<EC>& targ, u32 startidx, const UlamContext<EC>& uc) : UlamRef<EC>(startidx, BPA, targ, uc.LookupUlamElementTypeFromContext(targ.ReadAtom(startidx).GetType()), UlamRef<EC>::ATOMIC, uc) { } //gcnl:UlamTypeAtom.cpp:195
+     ^
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:562:5: note:   no known conversion for argument 1 from ‘MFM::Ui_Ut_r102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >’ to ‘MFM::BitStorage<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&’
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:193:127: error: invalid initialization of non-const reference of type ‘MFM::Ui_Ut_102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >&’ from an rvalue of type ‘MFM::Ui_Ut_102961a<MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u> >’
+     const Ui_Ut_102321i<EC> Uh_5tlval3117 = Uq_1010919AtomUtils10<EC>::THE_INSTANCE.Uf_7getType(uc, Uh_3tur3107, Uh_5tuval3115); //gcnl:NodeFunctionCall.cpp:1043
+                                                                                                                               ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:33:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10_Types.h:587:5: note:   after user-defined conversion: MFM::Ui_Ut_102961a<EC>::Ui_Ut_102961a(const MFM::Ui_Ut_r102961a<EC>&) [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]
+     Ui_Ut_102961a(const Ui_Ut_r102961a<EC>& d) : AtomBitStorage<EC>(d.read()) { } //gcnl:UlamTypeAtom.cpp:359
+     ^
+In file included from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_1010919AtomUtils10.h:119:0,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_10109211EventWindow10.tcc:5,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_10109211EventWindow10.h:195,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.tcc:5,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Ue_10188Stretchy10.h:122,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/UlamCustomElements.h:7,
+                 from /home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/UlamCustomElements.cpp:2:
+/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/src/../include/Uq_1010919AtomUtils10_native.tcc:9:21: note:   initializing argument 3 of ‘MFM::Ui_Ut_102321i<EC> MFM::Uq_1010919AtomUtils10<EC>::Uf_7getType(const MFM::UlamContext<EC>&, MFM::UlamRef<EC>&, MFM::Ui_Ut_102961a<EC>&) const [with EC = MFM::EventConfig<MFM::Site<MFM::P3AtomConfig>, 4u>]’
+   Ui_Ut_102321i<EC> Uq_1010919AtomUtils10<EC>::Uf_7getType(const UlamContext<EC> & uc, UlamRef<EC>& ur, Ui_Ut_102961a<EC>& Uv_1a) const
+                     ^
+make: *** [/home/ben/Documents/Ulam_Development/Ulam_Week_3/code/.gen/build/UlamCustomElements.o] Error 1
+

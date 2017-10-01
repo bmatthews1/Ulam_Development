@@ -1,0 +1,13 @@
+/**
+\color #aaa
+*/
+
+element Check{
+  EventWindow ew;
+
+  Void behave(){
+    for (Unsigned(6) i = 5; i < 9; i++){
+      ew[i] = ew[0];
+    }
+  }
+}
