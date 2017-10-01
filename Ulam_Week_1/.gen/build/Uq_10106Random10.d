@@ -1,7 +1,7 @@
-/home/ben/Documents/Ulam_Projects/.gen/build/Uq_10106Random10.o \
- /home/ben/Documents/Ulam_Projects/.gen/build/Uq_10106Random10.d: \
- /home/ben/Documents/Ulam_Projects/.gen/src/Uq_10106Random10.cpp \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.h \
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/build/Uq_10106Random10.o \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/build/Uq_10106Random10.d: \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/Uq_10106Random10.cpp \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Fail.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/platform-linux/include/FailPlatformSpecific.h \
@@ -94,20 +94,20 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamQuark.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10_Types.h \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_native.tcc \
- /home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10_Types.h \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_native.tcc \
+ /home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_native.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamContext.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Random.h
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h:
 
@@ -293,25 +293,25 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10_Types.h:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10_Types.h:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Ue_10105Empty10.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Ue_10105Empty10.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106UrSelf10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106UrSelf10_native.tcc:
 
-/home/ben/Documents/Ulam_Projects/.gen/src/../include/Uq_10106Random10_native.tcc:
+/home/ben/Ulam_Development/Ulam_Week_1/.gen/src/../include/Uq_10106Random10_native.tcc:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamContext.h:
 

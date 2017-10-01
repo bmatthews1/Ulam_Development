@@ -28,10 +28,10 @@ namespace MFM{
 
 //! SwapX.ulam:12:     if (!ew.isEmpty(s4)){
       UlamRef<EC> Uh_3tur43140(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-      const u32 Uh_5tlreg43142 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      Ui_Ut_10161u<EC> Uh_5tlval43143(Uh_5tlreg43142); //gcnl:Node.cpp:1142
+      const u32 Uh_5tlreg43142 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
+      Ui_Ut_10161u<EC> Uh_5tlval43143(Uh_5tlreg43142); //gcnl:Node.cpp:1148
       const Ui_Ut_10111b<EC> Uh_5tlval43145 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_7isEmpty(uc, Uh_3tur43140, Uh_5tlval43143); //gcnl:NodeFunctionCall.cpp:1043
-      const u32 Uh_5tlreg43146 = Uh_5tlval43145.read(); //gcnl:Node.cpp:1170
+      const u32 Uh_5tlreg43146 = Uh_5tlval43145.read(); //gcnl:Node.cpp:1176
       const u32 Uh_5tlreg43147 = _LogicalBangBool32(Uh_5tlreg43146, 1); //gcnl:NodeUnaryOp.cpp:507
       if(_Bool32ToCbool(Uh_5tlreg43147, 1)) //gcnl:NodeControl.cpp:213
       {
@@ -39,12 +39,12 @@ namespace MFM{
 
 //! SwapX.ulam:13:       ew.swap(s4, s0);
           UlamRef<EC> Uh_3tur43149(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-          const u32 Uh_5tlreg43151 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          Ui_Ut_10161u<EC> Uh_5tlval43152(Uh_5tlreg43151); //gcnl:Node.cpp:1142
-          const u32 Uh_5tlreg43154 = UlamRef<EC>(ur, 0u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          Ui_Ut_10161u<EC> Uh_5tlval43155(Uh_5tlreg43154); //gcnl:Node.cpp:1142
+          const u32 Uh_5tlreg43151 = UlamRef<EC>(ur, 6u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
+          Ui_Ut_10161u<EC> Uh_5tlval43152(Uh_5tlreg43151); //gcnl:Node.cpp:1148
+          const u32 Uh_5tlreg43154 = UlamRef<EC>(ur, 0u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
+          Ui_Ut_10161u<EC> Uh_5tlval43155(Uh_5tlreg43154); //gcnl:Node.cpp:1148
           const Ui_Ut_10111b<EC> Uh_5tlval43157 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4swap(uc, Uh_3tur43149, Uh_5tlval43152, Uh_5tlval43155); //gcnl:NodeFunctionCall.cpp:1043
-          const u32 Uh_5tlreg43158 = Uh_5tlval43157.read(); //gcnl:Node.cpp:1170
+          const u32 Uh_5tlreg43158 = Uh_5tlval43157.read(); //gcnl:Node.cpp:1176
         }
       } // end if
     }
@@ -59,9 +59,9 @@ namespace MFM{
   {
     switch (dataMemberNumber)
     {
-      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 1: { static UlamClassDataMemberInfo i("Ut_10161u", "s0", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 2: { static UlamClassDataMemberInfo i("Ut_10161u", "s4", 6u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
+      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 1: { static UlamClassDataMemberInfo i("Ut_10161u", "s0", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 2: { static UlamClassDataMemberInfo i("Ut_10161u", "s4", 6u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
     }; //end switch //gcnl:NodeBlockClass.cpp:2652
     FAIL(ILLEGAL_ARGUMENT); //gcnl:NodeBlockClass.cpp:2655
   } //GetDataMemberInfo

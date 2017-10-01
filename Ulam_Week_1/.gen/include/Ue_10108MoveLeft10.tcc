@@ -27,53 +27,53 @@ namespace MFM{
     UlamRef<EC> Uh_3tur41987(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg41988 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg41989 = _Int32ToUnsigned32(Uh_5tlreg41988, 2, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval41990(Uh_5tlreg41989); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval41990(Uh_5tlreg41989); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval41992 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur41987, Uh_5tlval41990); //gcnl:NodeFunctionCall.cpp:1043
     UlamRef<EC> Uh_3tur41994(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg41995 = 4; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg41996 = _Int32ToUnsigned32(Uh_5tlreg41995, 4, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval41997(Uh_5tlreg41996); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval41997(Uh_5tlreg41996); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval41999 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur41994, Uh_5tlval41997); //gcnl:NodeFunctionCall.cpp:1043
-    Uh_5tuval41999.WriteAtom(Uh_5tuval41992.read()); //write into atomof ref //gcnl:Node.cpp:992
+    Uh_5tuval41999.WriteAtom(Uh_5tuval41992.read()); //write into atomof ref //gcnl:Node.cpp:998
 
 //! MoveLeft.ulam:9:     ew[12] = ew[0];
     UlamRef<EC> Uh_3tur42001(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42002 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42003 = _Int32ToUnsigned32(Uh_5tlreg42002, 2, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42004(Uh_5tlreg42003); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42004(Uh_5tlreg42003); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42006 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42001, Uh_5tlval42004); //gcnl:NodeFunctionCall.cpp:1043
     UlamRef<EC> Uh_3tur42008(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42009 = 12; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42010 = _Int32ToUnsigned32(Uh_5tlreg42009, 5, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42011(Uh_5tlreg42010); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42011(Uh_5tlreg42010); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42013 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42008, Uh_5tlval42011); //gcnl:NodeFunctionCall.cpp:1043
-    Uh_5tuval42013.WriteAtom(Uh_5tuval42006.read()); //write into atomof ref //gcnl:Node.cpp:992
+    Uh_5tuval42013.WriteAtom(Uh_5tuval42006.read()); //write into atomof ref //gcnl:Node.cpp:998
 
 //! MoveLeft.ulam:10:     ew[24] = ew[0];
     UlamRef<EC> Uh_3tur42015(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42016 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42017 = _Int32ToUnsigned32(Uh_5tlreg42016, 2, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42018(Uh_5tlreg42017); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42018(Uh_5tlreg42017); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42020 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42015, Uh_5tlval42018); //gcnl:NodeFunctionCall.cpp:1043
     UlamRef<EC> Uh_3tur42022(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42023 = 24; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42024 = _Int32ToUnsigned32(Uh_5tlreg42023, 6, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42025(Uh_5tlreg42024); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42025(Uh_5tlreg42024); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42027 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42022, Uh_5tlval42025); //gcnl:NodeFunctionCall.cpp:1043
-    Uh_5tuval42027.WriteAtom(Uh_5tuval42020.read()); //write into atomof ref //gcnl:Node.cpp:992
+    Uh_5tuval42027.WriteAtom(Uh_5tuval42020.read()); //write into atomof ref //gcnl:Node.cpp:998
 
 //! MoveLeft.ulam:11:     ew[40] = ew[0];
     UlamRef<EC> Uh_3tur42029(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42030 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42031 = _Int32ToUnsigned32(Uh_5tlreg42030, 2, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42032(Uh_5tlreg42031); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42032(Uh_5tlreg42031); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42034 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42029, Uh_5tlval42032); //gcnl:NodeFunctionCall.cpp:1043
     UlamRef<EC> Uh_3tur42036(ur, 0u, 0u, &Uq_10109211EventWindow10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
     const u32 Uh_5tlreg42037 = 40; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg42038 = _Int32ToUnsigned32(Uh_5tlreg42037, 7, 6); //gcnl:NodeCast.cpp:748
-    Ui_Ut_10161u<EC> Uh_5tlval42039(Uh_5tlreg42038); //gcnl:Node.cpp:1142
+    Ui_Ut_10161u<EC> Uh_5tlval42039(Uh_5tlreg42038); //gcnl:Node.cpp:1148
     Ui_Ut_r102961a<EC> Uh_5tuval42041 = Uq_10109211EventWindow10<EC>::THE_INSTANCE.Uf_4aref(uc, Uh_3tur42036, Uh_5tlval42039); //gcnl:NodeFunctionCall.cpp:1043
-    Uh_5tuval42041.WriteAtom(Uh_5tuval42034.read()); //write into atomof ref //gcnl:Node.cpp:992
+    Uh_5tuval42041.WriteAtom(Uh_5tuval42034.read()); //write into atomof ref //gcnl:Node.cpp:998
 
   } // Uf_6behave
 
@@ -85,7 +85,7 @@ namespace MFM{
   {
     switch (dataMemberNumber)
     {
-      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
+      case 0: { static UlamClassDataMemberInfo i("Uq_10109211EventWindow10", "ew", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
     }; //end switch //gcnl:NodeBlockClass.cpp:2652
     FAIL(ILLEGAL_ARGUMENT); //gcnl:NodeBlockClass.cpp:2655
   } //GetDataMemberInfo

@@ -21,8 +21,8 @@ namespace MFM{
   {
 
 //! ByteStreamString.ulam:8:     readFrom(s);
-    const u32 Uh_5tlreg43336 = Uv_1s.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102321s<EC> Uh_5tlval43337(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg43336), Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg43336)); //gcnl:Node.cpp:1142
+    const u32 Uh_5tlreg43336 = Uv_1s.read(); //gcnl:Node.cpp:704
+    Ui_Ut_102321s<EC> Uh_5tlval43337(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg43336), Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg43336)); //gcnl:Node.cpp:1148
     THE_INSTANCE.Uf_8readFrom(uc, ur, Uh_5tlval43337); //gcnl:NodeFunctionCall.cpp:1043
 
   } // Uf_4Self
@@ -35,13 +35,13 @@ namespace MFM{
   {
 
 //! ByteStreamString.ulam:13:     m_string = s;
-    const u32 Uh_5tlreg43340 = Uv_1s.read(); //gcnl:Node.cpp:698
-    UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43340); //gcnl:Node.cpp:892
+    const u32 Uh_5tlreg43340 = Uv_1s.read(); //gcnl:Node.cpp:704
+    UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43340); //gcnl:Node.cpp:898
 
 //! ByteStreamString.ulam:14:     m_index = 0;
     const u32 Uh_5tlreg43342 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg43343 = _Int32ToUnsigned32(Uh_5tlreg43342, 2, 32); //gcnl:NodeCast.cpp:748
-    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43343); //gcnl:Node.cpp:892
+    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43343); //gcnl:Node.cpp:898
 
   } // Uf_8readFrom
 
@@ -55,7 +55,7 @@ namespace MFM{
 //! ByteStreamString.ulam:19:     m_index = 0;
     const u32 Uh_5tlreg43345 = 0; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg43346 = _Int32ToUnsigned32(Uh_5tlreg43345, 2, 32); //gcnl:NodeCast.cpp:748
-    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43346); //gcnl:Node.cpp:892
+    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43346); //gcnl:Node.cpp:898
 
   } // Uf_5reset
 
@@ -68,7 +68,7 @@ namespace MFM{
 
 //! ByteStreamString.ulam:23:   Bool canRead() { return true; }
     const u32 Uh_5tlreg43348 = 1u; //gcnl:NodeTerminal.cpp:690
-    Ui_Ut_10111b<EC> Uh_5tlval43349(Uh_5tlreg43348); //gcnl:Node.cpp:1142
+    Ui_Ut_10111b<EC> Uh_5tlval43349(Uh_5tlreg43348); //gcnl:Node.cpp:1148
     return (Uh_5tlval43349); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_7canRead
@@ -82,7 +82,7 @@ namespace MFM{
 
 //! ByteStreamString.ulam:26:   Bool canWrite() { return false; }
     const u32 Uh_5tlreg43350 = 0u; //gcnl:NodeTerminal.cpp:690
-    Ui_Ut_10111b<EC> Uh_5tlval43351(Uh_5tlreg43350); //gcnl:Node.cpp:1142
+    Ui_Ut_10111b<EC> Uh_5tlval43351(Uh_5tlreg43350); //gcnl:Node.cpp:1148
     return (Uh_5tlval43351); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_8canWrite
@@ -98,9 +98,9 @@ namespace MFM{
     {
 
 //! ByteStreamString.ulam:30:     if (m_index >= m_string.lengthof) return -1;
-      const u32 Uh_5tlreg43353 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg43353 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg43354 = uc.GetUlamClassRegistry().GetUlamClassByIndex(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg43353))->GetStringLength(Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg43353)); //gcnl:NodeTerminalProxy.cpp:455
-      const u32 Uh_5tlreg43356 = UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg43356 = UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
       const u32 Uh_5tlreg43357 = _BinOpCompareGreaterEqualUnsigned32(Uh_5tlreg43356, Uh_5tlreg43354, 32); //gcnl:NodeBinaryOpCompare.cpp:441
       if(_Bool32ToCbool(Uh_5tlreg43357, 1)) //gcnl:NodeControl.cpp:213
       {
@@ -108,7 +108,7 @@ namespace MFM{
 //! ByteStreamString.ulam:30:     if (m_index >= m_string.lengthof) return -1;
           const u32 Uh_5tlreg43358 = (u32) -1; //gcnl:NodeTerminal.cpp:690
           const u32 Uh_5tlreg43359 = _Int32ToInt32(Uh_5tlreg43358, 2, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321i<EC> Uh_5tlval43360(Uh_5tlreg43359); //gcnl:Node.cpp:1142
+          Ui_Ut_102321i<EC> Uh_5tlval43360(Uh_5tlreg43359); //gcnl:Node.cpp:1148
           return (Uh_5tlval43360); //gcnl:NodeReturnStatement.cpp:343
       } // end if
     }
@@ -116,16 +116,16 @@ namespace MFM{
 //! ByteStreamString.ulam:31:     return m_string[m_index++];
     const u32 Uh_5tlreg43361 = 1; //gcnl:NodeTerminal.cpp:690
     const u32 Uh_5tlreg43362 = _Int32ToUnsigned32(Uh_5tlreg43361, 32, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg43364 = UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+    const u32 Uh_5tlreg43364 = UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
     const u32 Uh_5tlreg43365 = _BinOpAddUnsigned32(Uh_5tlreg43364, Uh_5tlreg43362, 32); //gcnl:NodeBinaryOpEqualArithPostIncr.cpp:196
-    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43365); //gcnl:Node.cpp:892
-    const u32 Uh_5tlreg43367 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+    UlamRef<EC>(ur, 32u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg43365); //gcnl:Node.cpp:898
+    const u32 Uh_5tlreg43367 = UlamRef<EC>(ur, 0u, 32u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:670
     const u32 Uh_5tlreg43368 = uc.GetUlamClassRegistry().GetUlamClassByIndex(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg43367))->GetStringLength(Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg43367)); //gcnl:NodeSquareBracket.cpp:983
     if(Uh_5tlreg43364 >= Uh_5tlreg43368) //gcnl:NodeSquareBracket.cpp:1014
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:1018
     const unsigned char Uh_5tlreg43369 = *(uc.GetUlamClassRegistry().GetUlamClassByIndex(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg43367))->GetString(Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg43367)) + Uh_5tlreg43364); //gcnl:NodeSquareBracket.cpp:1058
     const u32 Uh_5tlreg43370 = _Unsigned32ToInt32(Uh_5tlreg43369, 8, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321i<EC> Uh_5tlval43371(Uh_5tlreg43370); //gcnl:Node.cpp:1142
+    Ui_Ut_102321i<EC> Uh_5tlval43371(Uh_5tlreg43370); //gcnl:Node.cpp:1148
     return (Uh_5tlval43371); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_8readByte
@@ -138,8 +138,8 @@ namespace MFM{
   {
     switch (dataMemberNumber)
     {
-      case 0: { static UlamClassDataMemberInfo i("Ut_102321s", "m_string", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
-      case 1: { static UlamClassDataMemberInfo i("Ut_102321u", "m_index", 32u); return i; } //gcnl:NodeVarDeclDM.cpp:1131
+      case 0: { static UlamClassDataMemberInfo i("Ut_102321s", "m_string", 0u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
+      case 1: { static UlamClassDataMemberInfo i("Ut_102321u", "m_index", 32u); return i; } //gcnl:NodeVarDeclDM.cpp:1132
     }; //end switch //gcnl:NodeBlockClass.cpp:2652
     FAIL(ILLEGAL_ARGUMENT); //gcnl:NodeBlockClass.cpp:2655
   } //GetDataMemberInfo
@@ -199,7 +199,7 @@ namespace MFM{
       initBV.FromArray(vales); //gcnl:CompilerState.cpp:1417
       static u32 myRegNum = Un_102649216ByteStreamString10<EC>::THE_INSTANCE.GetRegistrationNumber(); //gcnl:CompilerState.cpp:1427
       //correct runtime regnum for strings
-      initBV.Write(0u + 0u, 16u, myRegNum); //Um_8m_string //gcnl:NodeVarDeclDM.cpp:781
+      initBV.Write(0u + 0u, 16u, myRegNum); //Um_8m_string //gcnl:NodeVarDeclDM.cpp:782
     } //gcnl:CompilerState.cpp:1439
     bvsref.WriteBV(pos, initBV); //gcnl:NodeBlockClass.cpp:2233
   } //getDefaultTransient

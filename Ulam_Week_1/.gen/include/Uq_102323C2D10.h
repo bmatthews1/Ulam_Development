@@ -65,10 +65,10 @@ namespace MFM{
 //! C2D.inc:3:   typedef Unsigned(3) Dir;
 
 //! C2D.inc:5:   Coord x = 0;
-    typedef UlamRefFixed<EC, 0u, 16u> Up_Um_1x; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 16u> Up_Um_1x; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! C2D.inc:6:   Coord y = 0;
-    typedef UlamRefFixed<EC, 16u, 16u> Up_Um_1y; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 16u, 16u> Up_Um_1y; //gcnl:NodeVarDeclDM.cpp:1108
 
     void Uf_4Self(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_1s) const; //gcnl:SymbolFunction.cpp:485
 

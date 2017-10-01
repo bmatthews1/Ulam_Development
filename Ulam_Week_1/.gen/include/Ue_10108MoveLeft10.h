@@ -57,7 +57,7 @@ namespace MFM{
     static Ue_10108MoveLeft10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1452
 
 //! MoveLeft.ulam:6:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

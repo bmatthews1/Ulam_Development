@@ -58,10 +58,10 @@ namespace MFM{
     static Ue_102327NotLife10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1452
 
 //! NotLife.ulam:7:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! NotLife.ulam:8:   C2D c;
-    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_102323C2D10<EC> Ut_Um_1c; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

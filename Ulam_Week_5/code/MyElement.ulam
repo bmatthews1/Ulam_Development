@@ -1,0 +1,6 @@
+element MyElement {
+    Void behave() {
+        Fail f;
+        f.fail();
+    }
+}

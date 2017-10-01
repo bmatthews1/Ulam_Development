@@ -57,15 +57,15 @@ namespace MFM{
     static Ue_102125SwapX10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1452
 
 //! SwapX.ulam:7:   EventWindow ew;
-    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! SwapX.ulam:8:   typedef Unsigned(6) SiteNum;
 
 //! SwapX.ulam:9:   SiteNum s0 = (SiteNum)0;
-    typedef UlamRefFixed<EC, 0u, 6u> Up_Um_2s0; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 6u> Up_Um_2s0; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! SwapX.ulam:10:   SiteNum s4 = (SiteNum)4;
-    typedef UlamRefFixed<EC, 6u, 6u> Up_Um_2s4; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 6u, 6u> Up_Um_2s4; //gcnl:NodeVarDeclDM.cpp:1108
 
     static void Uf_6behave(const UlamContext<EC>& uc, UlamRef<EC>& ur); //virtual //gcnl:SymbolFunction.cpp:473
 

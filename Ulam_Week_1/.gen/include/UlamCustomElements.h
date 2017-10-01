@@ -35,7 +35,7 @@
    found in '/usr/bin/../lib/ulam/ULAM/bin/../share/ulam/core/Wall.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -89,7 +89,7 @@ namespace MFM {
    found in '/usr/bin/../lib/ulam/ULAM/bin/../share/ulam/stdlib/Empty.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -136,10 +136,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_10105UWall10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './UWall.ulam'.
+   found in 'UWall.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -186,10 +186,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_10108MoveLeft10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './MoveLeft.ulam'.
+   found in 'MoveLeft.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -236,10 +236,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_10197DCancer10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './DCancer.ulam'.
+   found in 'DCancer.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -286,10 +286,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102125SwapE10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './SwapE.ulam'.
+   found in 'SwapE.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -337,10 +337,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102125SwapX10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './SwapX.ulam'.
+   found in 'SwapX.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -388,10 +388,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102167UCancer10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './UCancer.ulam'.
+   found in 'UCancer.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -438,10 +438,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102324Cool10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './Cool.ulam'.
+   found in 'Cool.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -488,10 +488,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102327NotLife10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './NotLife.ulam'.
+   found in 'NotLife.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -538,10 +538,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102338SandPile10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './SandPile.ulam'.
+   found in 'SandPile.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -588,10 +588,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102389213SecurityFence10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './SecurityFence.ulam'.
+   found in 'SecurityFence.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -638,10 +638,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102568NotLife210 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './NotLife2.ulam'.
+   found in 'NotLife2.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 
@@ -688,10 +688,10 @@ namespace MFM {
 /* Metadata for UlamElementInfoForUe_102654Life10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './Life.ulam'.
+   found in 'Life.ulam'.
    Make any desired changes there!
 
-   Generated on Mon Aug 28 00:56:50 2017 UTC
+   Generated on Fri Sep 22 23:49:46 2017 UTC
    by the ULAM compilation system
 */
 

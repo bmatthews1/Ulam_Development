@@ -57,10 +57,10 @@ namespace MFM{
     static Un_102649216ByteStreamString10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1519
 
 //! ByteStreamString.ulam:4:   String m_string = "";
-    typedef UlamRefFixed<EC, 0u, 32u> Up_Um_8m_string; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 0u, 32u> Up_Um_8m_string; //gcnl:NodeVarDeclDM.cpp:1108
 
 //! ByteStreamString.ulam:5:   Unsigned m_index = 0;
-    typedef UlamRefFixed<EC, 32u, 32u> Up_Um_7m_index; //gcnl:NodeVarDeclDM.cpp:1107
+    typedef UlamRefFixed<EC, 32u, 32u> Up_Um_7m_index; //gcnl:NodeVarDeclDM.cpp:1108
 
     void Uf_4Self(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_102321s<EC>& Uv_1s) const; //gcnl:SymbolFunction.cpp:485
 

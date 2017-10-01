@@ -64,7 +64,7 @@ namespace MFM{
     static Uq_10109211EventWindow10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1388
 
 //! EventWindow.ulam:19:   AtomUtils au;
-    typedef Uq_1010919AtomUtils10<EC> Ut_Um_2au; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
+    typedef Uq_1010919AtomUtils10<EC> Ut_Um_2au; //offset 0u //gcnl:NodeVarDeclDM.cpp:1078
 
 //! EventWindow.ulam:21:   typedef Unsigned(6) SiteNum;
 
