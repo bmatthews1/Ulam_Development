@@ -1,5 +1,6 @@
 /**
-  \color #0ff
+  \color #a0a
+  \symbol CR
 */
 
 element RandomCell : Bond{
@@ -27,6 +28,7 @@ element RandomCell : Bond{
 		if (active){
 			findBonds();
 			SiteNum s = (SiteNum)rm.between(1, 4);
+			if (rm.oneIn(9)) s = (SiteNum)rm.between(2, 4);
 			moveTo(s);
 		}
 	}

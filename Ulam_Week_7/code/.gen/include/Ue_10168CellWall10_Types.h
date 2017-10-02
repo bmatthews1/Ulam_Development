@@ -323,64 +323,64 @@ namespace MFM{
 } //MFM
 #endif /*Ud_Ui_Ut_102961a */
 
-#ifndef Ud_Ui_Uq_r102244Bond10
-#define Ud_Ui_Uq_r102244Bond10
+#ifndef Ud_Ui_Uq_r102294Bond10
+#define Ud_Ui_Uq_r102294Bond10
 namespace MFM{
 
-  template<class EC> class Uq_102244Bond10;  //forward //gcnl:UlamTypeClassQuark.cpp:219
+  template<class EC> class Uq_102294Bond10;  //forward //gcnl:UlamTypeClassQuark.cpp:219
 
   template<class EC>
-  struct Ui_Uq_r102244Bond10 : public UlamRef<EC> //gcnl:UlamTypeClassQuark.cpp:228
+  struct Ui_Uq_r102294Bond10 : public UlamRef<EC> //gcnl:UlamTypeClassQuark.cpp:228
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
     enum { BPA = AC::BITS_PER_ATOM };
 
-    enum { QUARK_SIZE = 24}; //gcnl:UlamTypeClassQuark.cpp:240
+    enum { QUARK_SIZE = 29}; //gcnl:UlamTypeClassQuark.cpp:240
 
-    typedef Uq_102244Bond10<EC> Us; //gcnl:UlamTypeClassQuark.cpp:247
+    typedef Uq_102294Bond10<EC> Us; //gcnl:UlamTypeClassQuark.cpp:247
     const u32 read() const { return UlamRef<EC>::Read(); /* entire quark */ } //gcnl:UlamTypeClassQuark.cpp:358
     void write(const u32& targ) { UlamRef<EC>::Write(targ); /* entire quark */ } //gcnl:UlamTypeClassQuark.cpp:394
-    Ui_Uq_r102244Bond10(BitStorage<EC>& targ, u32 idx, const UlamClass<EC>* effself, const UlamContext<EC>& uc) : UlamRef<EC>(idx, 24u, targ, effself, UlamRef<EC>::CLASSIC, uc) { } //gcnl:UlamTypeClassQuark.cpp:266
-    Ui_Uq_r102244Bond10(const UlamRef<EC>& arg, s32 idx, const UlamClass<EC>* effself) : UlamRef<EC>(arg, idx, 24u, effself, UlamRef<EC>::CLASSIC) { } //gcnl:UlamTypeClassQuark.cpp:278
-    Ui_Uq_r102244Bond10(BitStorage<EC>& targ, u32 idx, const UlamClass<EC>* effself, const typename UlamRef<EC>::UsageType usage, const UlamContext<EC>& uc) : UlamRef<EC>(idx, 24u, targ, effself, usage, uc) { } //gcnl:UlamTypeClassQuark.cpp:288
-    Ui_Uq_r102244Bond10(const UlamRef<EC>& arg, s32 idx, const UlamClass<EC>* effself, const typename UlamRef<EC>::UsageType usage) : UlamRef<EC>(arg, idx, 24u, effself, usage) { } //gcnl:UlamTypeClassQuark.cpp:297
-    Ui_Uq_r102244Bond10(const UlamRef<EC>& r) : UlamRef<EC>(r, 24u) { } //gcnl:UlamTypeClassQuark.cpp:305
-    Ui_Uq_r102244Bond10(const Ui_Uq_r102244Bond10<EC>& r) : UlamRef<EC>(r, r.GetLen()) { } //gcnl:UlamTypeClassQuark.cpp:314
-    Ui_Uq_r102244Bond10& operator=(const Ui_Uq_r102244Bond10& rhs); //declare away //gcnl:UlamTypeClassQuark.cpp:323
+    Ui_Uq_r102294Bond10(BitStorage<EC>& targ, u32 idx, const UlamClass<EC>* effself, const UlamContext<EC>& uc) : UlamRef<EC>(idx, 29u, targ, effself, UlamRef<EC>::CLASSIC, uc) { } //gcnl:UlamTypeClassQuark.cpp:266
+    Ui_Uq_r102294Bond10(const UlamRef<EC>& arg, s32 idx, const UlamClass<EC>* effself) : UlamRef<EC>(arg, idx, 29u, effself, UlamRef<EC>::CLASSIC) { } //gcnl:UlamTypeClassQuark.cpp:278
+    Ui_Uq_r102294Bond10(BitStorage<EC>& targ, u32 idx, const UlamClass<EC>* effself, const typename UlamRef<EC>::UsageType usage, const UlamContext<EC>& uc) : UlamRef<EC>(idx, 29u, targ, effself, usage, uc) { } //gcnl:UlamTypeClassQuark.cpp:288
+    Ui_Uq_r102294Bond10(const UlamRef<EC>& arg, s32 idx, const UlamClass<EC>* effself, const typename UlamRef<EC>::UsageType usage) : UlamRef<EC>(arg, idx, 29u, effself, usage) { } //gcnl:UlamTypeClassQuark.cpp:297
+    Ui_Uq_r102294Bond10(const UlamRef<EC>& r) : UlamRef<EC>(r, 29u) { } //gcnl:UlamTypeClassQuark.cpp:305
+    Ui_Uq_r102294Bond10(const Ui_Uq_r102294Bond10<EC>& r) : UlamRef<EC>(r, r.GetLen()) { } //gcnl:UlamTypeClassQuark.cpp:314
+    Ui_Uq_r102294Bond10& operator=(const Ui_Uq_r102294Bond10& rhs); //declare away //gcnl:UlamTypeClassQuark.cpp:323
   };
 } //MFM
-#endif /*Ud_Ui_Uq_r102244Bond10 */
+#endif /*Ud_Ui_Uq_r102294Bond10 */
 
-#ifndef Ud_Ui_Uq_102244Bond10
-#define Ud_Ui_Uq_102244Bond10
+#ifndef Ud_Ui_Uq_102294Bond10
+#define Ud_Ui_Uq_102294Bond10
 namespace MFM{
 
-  template<class EC> class Uq_102244Bond10; //forward //gcnl:UlamTypeClassQuark.cpp:455
+  template<class EC> class Uq_102294Bond10; //forward //gcnl:UlamTypeClassQuark.cpp:455
 
   template<class EC>
-  struct Ui_Uq_102244Bond10 : public BitVectorBitStorage<EC, BitVector<24> >
+  struct Ui_Uq_102294Bond10 : public BitVectorBitStorage<EC, BitVector<29> >
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
     enum { BPA = AC::BITS_PER_ATOM };
 
-    enum { QUARK_SIZE = 24}; //gcnl:UlamTypeClassQuark.cpp:480
-    typedef BitVector<24> BV; //gcnl:UlamTypeClassQuark.cpp:488
+    enum { QUARK_SIZE = 29}; //gcnl:UlamTypeClassQuark.cpp:480
+    typedef BitVector<29> BV; //gcnl:UlamTypeClassQuark.cpp:488
     typedef BitVectorBitStorage<EC, BV> BVS; //gcnl:UlamTypeClassQuark.cpp:491
 
-    typedef Uq_102244Bond10<EC> Us; //gcnl:UlamTypeClassQuark.cpp:510
+    typedef Uq_102294Bond10<EC> Us; //gcnl:UlamTypeClassQuark.cpp:510
 
     const u32 read() const { return BVS::Read(0u, QUARK_SIZE); } //gcnl:UlamTypeClassQuark.cpp:604
     void write(const u32 v) { BVS::Write(0u, QUARK_SIZE, v); } //gcnl:UlamTypeClassQuark.cpp:661
-    Ui_Uq_102244Bond10() { write(Us::THE_INSTANCE.getDefaultQuark()); } //gcnl:UlamTypeClassQuark.cpp:527
-    Ui_Uq_102244Bond10(const u32 d) { write(d); } //gcnl:UlamTypeClassQuark.cpp:553
-    Ui_Uq_102244Bond10(const Ui_Uq_102244Bond10<EC> & arg) { write(arg.read()); } //gcnl:UlamTypeClassQuark.cpp:562
-    Ui_Uq_102244Bond10(const Ui_Uq_r102244Bond10<EC>& d) { write(d.read()); } //gcnl:UlamTypeClassQuark.cpp:570
-    virtual const char * GetUlamTypeMangledName() const { return "Uq_102244Bond10"; } //gcnl:UlamType.cpp:890
+    Ui_Uq_102294Bond10() { write(Us::THE_INSTANCE.getDefaultQuark()); } //gcnl:UlamTypeClassQuark.cpp:527
+    Ui_Uq_102294Bond10(const u32 d) { write(d); } //gcnl:UlamTypeClassQuark.cpp:553
+    Ui_Uq_102294Bond10(const Ui_Uq_102294Bond10<EC> & arg) { write(arg.read()); } //gcnl:UlamTypeClassQuark.cpp:562
+    Ui_Uq_102294Bond10(const Ui_Uq_r102294Bond10<EC>& d) { write(d.read()); } //gcnl:UlamTypeClassQuark.cpp:570
+    virtual const char * GetUlamTypeMangledName() const { return "Uq_102294Bond10"; } //gcnl:UlamType.cpp:890
   };
 } //MFM
-#endif /*Ud_Ui_Uq_102244Bond10 */
+#endif /*Ud_Ui_Uq_102294Bond10 */
 
 #ifndef Ud_Ui_Uq_r10109211EventWindow10
 #define Ud_Ui_Uq_r10109211EventWindow10

@@ -1,7 +1,7 @@
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/build/Ue_102319213DirectionCell10.o \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/build/Ue_102319213DirectionCell10.d: \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/Ue_102319213DirectionCell10.cpp \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10.h \
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/build/Uq_102294Bond10.o \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/build/Uq_102294Bond10.d: \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/Uq_102294Bond10.cpp \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Fail.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/platform-linux/include/FailPlatformSpecific.h \
@@ -94,8 +94,8 @@
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamQuark.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.h \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10.tcc \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10_Types.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.tcc \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10_Types.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10.tcc \
@@ -103,9 +103,9 @@
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10105Empty10_Types.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10105Empty10.tcc \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10_native.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10.tcc \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10_Types.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10.tcc \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10_Types.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10.tcc \
@@ -138,28 +138,20 @@
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10105MDist10_native.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/MDist.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10_native.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10.tcc \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10_Types.h \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10.tcc \
  /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10_native.tcc \
  /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Random.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10.tcc \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10_Types.h \
- /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10.tcc
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10_Types.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.tcc \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10_Types.h \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10.tcc \
+ /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.h
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.h:
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamDefs.h:
 
@@ -345,9 +337,9 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/UlamTransient.tcc:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10_Types.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10_Types.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_102319213DirectionCell10.tcc:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.tcc:
 
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10.h:
 
@@ -363,11 +355,11 @@
 
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106UrSelf10_native.tcc:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10_Types.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10_Types.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102244Bond10.tcc:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10109214BondParameters10.tcc:
 
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10.h:
 
@@ -433,18 +425,6 @@
 
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109211EventWindow10_native.tcc:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10_Types.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.tcc:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10_Types.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10108CellWall10.tcc:
-
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10.h:
 
 /home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10106Random10_Types.h:
@@ -455,20 +435,16 @@
 
 /usr/bin/../lib/ulam/ULAM/bin/../../MFM/src/core/include/Random.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10_Types.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10_Types.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10114Once10.tcc:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10104Wall10.tcc:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10_Types.h:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10_Types.h:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10115OnceT11102151y10.tcc:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Ue_10168CellWall10.tcc:
 
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10_Types.h:
-
-/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_10109210ColorUtils10.tcc:
+/home/ben/Documents/Ulam_Development/Ulam_Week_7/code/.gen/src/../include/Uq_102294Bond10.h:

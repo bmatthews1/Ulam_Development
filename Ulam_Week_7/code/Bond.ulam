@@ -1,3 +1,34 @@
+
+/**
+  a small element for Bond Paramters
+
+  \symbol BP
+*/
+element BondParameters{
+	/**
+    Show Bonds as Walls
+	*/
+  parameter Bool cSHOW_BONDS = false;
+
+	/**
+     How many bonds Elements can have
+
+     \unit Bond Number
+     \range 1..5
+	*/
+	parameter Unsigned cMAX_BONDS = 2;
+
+	/**
+     How far out a bond can be
+
+     \unit Site Number
+     \range 4..40
+	*/
+	parameter Unsigned cMAX = 24;
+}
+
+
+
 /**
   How Coordinates work:
   both coordinate are contained within a the single Coord value
@@ -5,7 +36,6 @@
   store this site number using only 5 bits. This decreased range means
   less felxible bonds but more free bits.
 */
-
 quark Bond{
 	typedef Unsigned(5) Coord; 
 	typedef Unsigned(6) SiteNum;
@@ -16,11 +46,10 @@ quark Bond{
 	EventWindow ew;
 	AtomUtils au;
 
-	constant SiteNum cMAX = 24;
 
 	Bool active = true;
 	Index bondCount = 0;
-	Coord bonds[4] = {0, 0, 0, 0};
+	Coord bonds[5] = {0, 0, 0, 0, 0};
 
 	//swtich between active being off or on
 	Void setActive(Bool state){
@@ -78,6 +107,18 @@ quark Bond{
 		}
 	}
 
+	//check bonds to ensure there is still a bonded element
+	//in that area
+	Void checkBonds(){
+		for(Index i = 0; i < 4; i++){
+			SiteNum s = bonds[i];
+			if (!(ew[s] is Bond)){
+				removeBond((Coord)s);
+				continue;
+			}
+		}
+	}
+
 	//remove all bonds
 	Void clearBonds(){
 		for(Index i = 0; i < 3; i++){
@@ -88,19 +129,28 @@ quark Bond{
 
   //creates bonds with the 4 closest elements
 	Void findBonds(){
-		if (bondCount >= 4) return;
+		BondParameters bp;
+		if (bondCount == bp.cMAX_BONDS) return;
 
-		for (SiteNum s = 1; s <= cMAX; s++){
+	  Random rm;
+		while (bondCount > bp.cMAX_BONDS){
+			Index i = (Index)rm.between(0, 5);
+			if (bonds[i] != 0){
+				removeBond(bonds[i]);
+			}
+		}
+
+		for (SiteNum s = 1; s <= bp.cMAX; s++){
 			Atom a = ew[s];
 			if (a as Bond){
-				if (a.bondCount < 4){
+				if (a.bondCount < bp.cMAX_BONDS){
 					addBond((Coord)s);
 					a.addBond((Coord) reverse(s));
 					// if (a.active) active = false;
 					// else a.setActive(false);
 				}
 			}
-			if (bondCount >= 4) return;
+			if (bondCount >= bp.cMAX_BONDS) return;
 		}
 	}
 
@@ -184,7 +234,8 @@ quark Bond{
 	//moving a bond outside the eventwindow or
 	//moving into a bonded element
 	Bool canMoveTo(SiteNum s){
-		if (s == 0 || s > 40) return false;
+		BondParameters bp;
+		if (s == 0 || s > bp.cMAX) return false;
 		if (ew[s] is Bond) return false;
 
 		for (Index i = 0; i < 4; i++){
@@ -196,13 +247,11 @@ quark Bond{
 
 	//draws a line between all existing bonds
 	Void drawBonds(){
-		// if (active) return;
+		BondParameters bp;
+		if (!bp.cSHOW_BONDS) return;
+		
 		for(Index i = 0; i < 4; i++){
 			SiteNum s = bonds[i];
-			if (!(ew[s] is Bond)){
-				removeBond((Coord)s);
-				continue;
-			}
 			C2D c = ew.getCoord(s);
 			line((Short)0, (Short)0, c.x, c.y);
 		}

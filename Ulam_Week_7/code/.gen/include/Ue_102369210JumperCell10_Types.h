@@ -276,6 +276,51 @@ namespace MFM{
 } //MFM
 #endif /*Ud_Ui_Ut_10171i */
 
+#ifndef Ud_Ui_Ut_r102101i
+#define Ud_Ui_Ut_r102101i
+namespace MFM{
+  template<class EC>
+  struct Ui_Ut_r102101i : public UlamRef<EC>
+  {
+    typedef typename EC::ATOM_CONFIG AC;
+    typedef typename AC::ATOM_TYPE T;
+    enum { BPA = AC::BITS_PER_ATOM };
+
+    const u32 read() const { return UlamRef<EC>::Read(); /* entire */ } //gcnl:UlamTypePrimitive.cpp:323
+    void write(const u32& targ) { UlamRef<EC>::Write(targ); /* entire */ } //gcnl:UlamTypePrimitive.cpp:355
+    Ui_Ut_r102101i(BitStorage<EC>& targ, u32 idx, const UlamContext<EC>& uc) : UlamRef<EC>(idx, 10u, targ, NULL, UlamRef<EC>::PRIMITIVE, uc) { } //gcnl:UlamTypePrimitive.cpp:241
+    Ui_Ut_r102101i(const UlamRef<EC>& arg, s32 idx) : UlamRef<EC>(arg, idx, 10u, NULL, UlamRef<EC>::PRIMITIVE) { } //gcnl:UlamTypePrimitive.cpp:253
+    Ui_Ut_r102101i(const Ui_Ut_r102101i<EC>& arg) : UlamRef<EC>(arg, 0, arg.GetLen(), NULL, UlamRef<EC>::PRIMITIVE) { MFM_API_ASSERT_ARG(arg.GetLen() == 10); } //gcnl:UlamTypePrimitive.cpp:268
+    Ui_Ut_r102101i& operator=(const Ui_Ut_r102101i& rhs); //declare away //gcnl:UlamTypePrimitive.cpp:277
+  };
+} //MFM
+#endif /*Ud_Ui_Ut_r102101i */
+
+#ifndef Ud_Ui_Ut_102101i
+#define Ud_Ui_Ut_102101i
+namespace MFM{
+
+  template<class EC>
+  struct Ui_Ut_102101i : public BitVectorBitStorage<EC, BitVector<10u> >
+  {
+    typedef typename EC::ATOM_CONFIG AC;
+    typedef typename AC::ATOM_TYPE T;
+    enum { BPA = AC::BITS_PER_ATOM };
+
+    typedef BitVector<10> BV; //gcnl:UlamTypePrimitive.cpp:476
+    typedef BitVectorBitStorage<EC, BV> BVS; //gcnl:UlamTypePrimitive.cpp:479
+
+    const u32 read() const { return BVS::Read(0u, 10u); } //gcnl:UlamTypePrimitive.cpp:568
+    void write(const u32& v) { BVS::Write(0u, 10u, v); } //gcnl:UlamTypePrimitive.cpp:605
+    Ui_Ut_102101i() { } //gcnl:UlamTypePrimitive.cpp:492
+    Ui_Ut_102101i(const u32 d) { write(d); } //gcnl:UlamTypePrimitive.cpp:500
+    Ui_Ut_102101i(const Ui_Ut_102101i& other) { this->write(other.read()); } //gcnl:UlamTypePrimitive.cpp:523
+    Ui_Ut_102101i(const Ui_Ut_r102101i<EC>& d) { this->write(d.read()); } //gcnl:UlamTypePrimitive.cpp:532
+    virtual const char * GetUlamTypeMangledName() const { return "Ut_102101i"; } //gcnl:UlamType.cpp:890
+  };
+} //MFM
+#endif /*Ud_Ui_Ut_102101i */
+
 #ifndef Ud_Ui_Ut_r102111i
 #define Ud_Ui_Ut_r102111i
 namespace MFM{

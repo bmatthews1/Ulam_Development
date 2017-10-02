@@ -23,17 +23,17 @@ namespace MFM{
 
 //! Fail.ulam:7:     ByteStreamString sbs(string);
     Ui_Un_102649216ByteStreamString10<EC> Uv_3sbs; //gcnl:NodeVarDecl.cpp:1037
-    UlamRef<EC> Uh_3tur42622(0u, 64u, Uv_3sbs, &Un_102649216ByteStreamString10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
-    const u32 Uh_5tlreg42624 = Uv_6string.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102321s<EC> Uh_5tlval42625(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg42624), Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg42624)); //gcnl:Node.cpp:1142
-    Un_102649216ByteStreamString10<EC>::THE_INSTANCE.Uf_4Self(uc, Uh_3tur42622, Uh_5tlval42625); //gcnl:NodeFunctionCall.cpp:1043
+    UlamRef<EC> Uh_3tur42764(0u, 64u, Uv_3sbs, &Un_102649216ByteStreamString10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
+    const u32 Uh_5tlreg42766 = Uv_6string.read(); //gcnl:Node.cpp:698
+    Ui_Ut_102321s<EC> Uh_5tlval42767(Ui_Ut_102321s<EC>::getRegNum(Uh_5tlreg42766), Ui_Ut_102321s<EC>::getStrIdx(Uh_5tlreg42766)); //gcnl:Node.cpp:1142
+    Un_102649216ByteStreamString10<EC>::THE_INSTANCE.Uf_4Self(uc, Uh_3tur42764, Uh_5tlval42767); //gcnl:NodeFunctionCall.cpp:1043
 
 //! Fail.ulam:8:     fail(sbs);
     if(! Un_102649216ByteStreamString10<EC>::THE_INSTANCE.internalCMethodImplementingIs(&Uq_10109210ByteStream10<EC>::THE_INSTANCE))
       FAIL(BAD_CAST); //gcnl:NodeCast.cpp:1253
-    Ui_Uq_r10109210ByteStream10<EC> Uh_5tlval42629(Uv_3sbs, 0u, &Un_102649216ByteStreamString10<EC>::THE_INSTANCE, uc); //gcnl:NodeCast.cpp:1332
-    Ui_Uq_r10109210ByteStream10<EC> Uh_6tlref42630(Uh_5tlval42629); //gcnl:Node.cpp:1442
-    THE_INSTANCE.Uf_4fail(uc, ur, Uh_6tlref42630); //gcnl:NodeFunctionCall.cpp:1043
+    Ui_Uq_r10109210ByteStream10<EC> Uh_5tlval42771(Uv_3sbs, 0u, &Un_102649216ByteStreamString10<EC>::THE_INSTANCE, uc); //gcnl:NodeCast.cpp:1332
+    Ui_Uq_r10109210ByteStream10<EC> Uh_6tlref42772(Uh_5tlval42771); //gcnl:Node.cpp:1442
+    THE_INSTANCE.Uf_4fail(uc, ur, Uh_6tlref42772); //gcnl:NodeFunctionCall.cpp:1043
 
   } // Uf_4fail
 
@@ -45,10 +45,10 @@ namespace MFM{
   {
 
 //! Fail.ulam:5:   Void fail(Unsigned u) { fail((Bits) u); }
-    const u32 Uh_5tlreg42634 = Uv_1u.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42635 = _Unsigned32ToBits32(Uh_5tlreg42634, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321t<EC> Uh_5tlval42636(Uh_5tlreg42635); //gcnl:Node.cpp:1142
-    THE_INSTANCE.Uf_4fail(uc, ur, Uh_5tlval42636); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg42776 = Uv_1u.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42777 = _Unsigned32ToBits32(Uh_5tlreg42776, 32, 32); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102321t<EC> Uh_5tlval42778(Uh_5tlreg42777); //gcnl:Node.cpp:1142
+    THE_INSTANCE.Uf_4fail(uc, ur, Uh_5tlval42778); //gcnl:NodeFunctionCall.cpp:1043
 
   } // Uf_4fail
 
@@ -60,10 +60,10 @@ namespace MFM{
   {
 
 //! Fail.ulam:4:   Void fail(Bits bits) { fail((Int) bits); }
-    const u32 Uh_5tlreg42640 = Uv_4bits.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42641 = _Bits32ToInt32(Uh_5tlreg42640, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321i<EC> Uh_5tlval42642(Uh_5tlreg42641); //gcnl:Node.cpp:1142
-    THE_INSTANCE.Uf_4fail(uc, ur, Uh_5tlval42642); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg42782 = Uv_4bits.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42783 = _Bits32ToInt32(Uh_5tlreg42782, 32, 32); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102321i<EC> Uh_5tlval42784(Uh_5tlreg42783); //gcnl:Node.cpp:1142
+    THE_INSTANCE.Uf_4fail(uc, ur, Uh_5tlval42784); //gcnl:NodeFunctionCall.cpp:1043
 
   } // Uf_4fail
 

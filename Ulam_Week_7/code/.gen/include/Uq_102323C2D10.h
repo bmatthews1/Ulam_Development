@@ -74,6 +74,8 @@ namespace MFM{
 
     void Uf_4Self(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_102161i<EC>& Uv_2ax, Ui_Ut_102161i<EC>& Uv_2ay) const; //gcnl:SymbolFunction.cpp:485
 
+    Ui_Uq_102323C2D10<EC> Uf_3max(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_5other) const; //gcnl:SymbolFunction.cpp:485
+
     void Uf_3set(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_1c) const; //gcnl:SymbolFunction.cpp:485
 
     void Uf_3set(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_102321i<EC>& Uv_2ax, Ui_Ut_102321i<EC>& Uv_2ay) const; //gcnl:SymbolFunction.cpp:485
@@ -101,8 +103,6 @@ namespace MFM{
     Ui_Ut_10111b<EC> Uf_9213_operator3d3d(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_5other) const; //gcnl:SymbolFunction.cpp:485
 
     Ui_Ut_10111b<EC> Uf_9213_operator213d(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_5other) const; //gcnl:SymbolFunction.cpp:485
-
-    Ui_Uq_102323C2D10<EC> Uf_3max(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_5other) const; //gcnl:SymbolFunction.cpp:485
 
     Ui_Uq_102323C2D10<EC> Uf_9211_operator7c(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Uq_102323C2D10<EC>& Uv_5other) const; //gcnl:SymbolFunction.cpp:485
 

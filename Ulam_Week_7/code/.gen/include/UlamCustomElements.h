@@ -5,10 +5,11 @@
 
 #include "Ue_10104Wall10.h"
 #include "Ue_10105Empty10.h"
-#include "Ue_10108CellWall10.h"
-#include "Ue_102249210RandomCell10.h"
-#include "Ue_102319210JumperCell10.h"
-#include "Ue_102319213DirectionCell10.h"
+#include "Ue_10109214BondParameters10.h"
+#include "Ue_10168CellWall10.h"
+#include "Ue_102299210RandomCell10.h"
+#include "Ue_102369210JumperCell10.h"
+#include "Ue_102369213DirectionCell10.h"
 #include "Uq_10104Fail10.h"
 #include "Uq_10105MDist10.h"
 #include "Uq_10106Random10.h"
@@ -19,7 +20,7 @@
 #include "Uq_10109211EventWindow10.h"
 #include "Uq_10114Once10.h"
 #include "Uq_10115OnceT11102151y10.h"
-#include "Uq_102244Bond10.h"
+#include "Uq_102294Bond10.h"
 #include "Uq_102323C2D10.h"
 #include "Un_102649216ByteStreamString10.h"
 
@@ -29,7 +30,7 @@
    found in '/usr/bin/../lib/ulam/ULAM/bin/../share/ulam/core/Wall.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -83,7 +84,7 @@ namespace MFM {
    found in '/usr/bin/../lib/ulam/ULAM/bin/../share/ulam/stdlib/Empty.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -127,13 +128,13 @@ namespace MFM {
 } // MFM
 
 
-/* Metadata for UlamElementInfoForUe_10108CellWall10 */
+/* Metadata for UlamElementInfoForUe_10109214BondParameters10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
-   found in './CellWall.ulam'.
+   found in './Bond.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -141,21 +142,115 @@ namespace MFM {
 
 namespace MFM {
   template <class EC>
-  struct UlamElementInfoForUe_10108CellWall10 : public UlamElementInfo<EC>
+  struct UlamElementInfoForUe_10109214BondParameters10 : public UlamElementInfo<EC>
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
 
     UlamElement<EC> & m_ulamElement;
-    UlamElementInfoForUe_10108CellWall10(UlamElement<EC> & ue)
+    UlamElementInfoForUe_10109214BondParameters10(UlamElement<EC> & ue)
         : m_ulamElement(ue)
     {
       AddModelParameters();
     }
 
-    UlamElementInfoForUe_10108CellWall10() { }
+    UlamElementInfoForUe_10109214BondParameters10() { }
+    const char * GetName() const { return "BondParameters"; }
+    const char * GetSymbol() const { return "BP"; }
+    const char * GetSummary() const { return "a small element for Bond Paramters"; }
+    const char * GetDetails() const { return "(no details provided)"; }
+    const char * GetAuthor() const { return "--none specified--"; }
+    const char * GetCopyright() const { return "--none specified--"; }
+    const char * GetLicense() const { return "--none specified--"; }
+    bool GetPlaceable() const { return true; }
+    const u32 GetVersion() const { return 0; }
+
+    const u32 GetElementColor() const { return 0xFFFFFFFF; }
+    const u32 GetEventWindowBoundary() const { return 4 + 1; }
+    const u32 GetSymmetry(const UlamContext<EC>& uc) const {
+      return 0;
+    }
+
+    void AddModelParameters()
+    {
+    {
+        u32 _min = (u32) 4;
+        u32 _def = (u32) 0x18;
+        u32 _max = (u32) 40;
+        static UlamTypeInfoModelParameterU32<EC> parm(
+            m_ulamElement,
+            "Ut_102321u",
+            "cMAX",
+            "How far out a bond can be",
+            "(no details provided)",
+            &_min,
+            &_def,
+            &_max,
+            "Site Number");
+        //ctor registers itself on element..
+        Ue_10109214BondParameters10<EC>::THE_INSTANCE.Up_4cMAX.init(parm.GetAtom());
+    }
+    {
+        u32 _min = (u32) 1;
+        u32 _def = (u32) 0x2;
+        u32 _max = (u32) 5;
+        static UlamTypeInfoModelParameterU32<EC> parm(
+            m_ulamElement,
+            "Ut_102321u",
+            "cMAX_BONDS",
+            "How many bonds Elements can have",
+            "(no details provided)",
+            &_min,
+            &_def,
+            &_max,
+            "Bond Number");
+        //ctor registers itself on element..
+        Ue_10109214BondParameters10<EC>::THE_INSTANCE.Up_9210cMAX_BONDS.init(parm.GetAtom());
+    }
+    {
+        static UlamTypeInfoModelParameterBool<EC> parm(
+            m_ulamElement,
+            "Ut_10111b",
+            "cSHOW_BONDS",
+            "Show Bonds as Walls",
+            "(no details provided)",
+            0x0);
+        Ue_10109214BondParameters10<EC>::THE_INSTANCE.Up_9211cSHOW_BONDS.init(parm.GetAtom());
+    }
+    }
+  };
+} // MFM
+
+
+/* Metadata for UlamElementInfoForUe_10168CellWall10 */
+/* This is generated code!  Avoid hand editing!
+   The content of this file is based on the information
+   found in './CellWall.ulam'.
+   Make any desired changes there!
+
+   Generated on Sun Oct  1 19:53:57 2017 UTC
+   by the ULAM compilation system
+*/
+
+#include "UlamDefs.h"
+
+namespace MFM {
+  template <class EC>
+  struct UlamElementInfoForUe_10168CellWall10 : public UlamElementInfo<EC>
+  {
+    typedef typename EC::ATOM_CONFIG AC;
+    typedef typename AC::ATOM_TYPE T;
+
+    UlamElement<EC> & m_ulamElement;
+    UlamElementInfoForUe_10168CellWall10(UlamElement<EC> & ue)
+        : m_ulamElement(ue)
+    {
+      AddModelParameters();
+    }
+
+    UlamElementInfoForUe_10168CellWall10() { }
     const char * GetName() const { return "CellWall"; }
-    const char * GetSymbol() const { return "Ce"; }
+    const char * GetSymbol() const { return "CW"; }
     const char * GetSummary() const { return "CellWall (no summary provided)"; }
     const char * GetDetails() const { return "(no details provided)"; }
     const char * GetAuthor() const { return "--none specified--"; }
@@ -177,13 +272,13 @@ namespace MFM {
 } // MFM
 
 
-/* Metadata for UlamElementInfoForUe_102249210RandomCell10 */
+/* Metadata for UlamElementInfoForUe_102299210RandomCell10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
    found in './RandomCell.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -191,21 +286,21 @@ namespace MFM {
 
 namespace MFM {
   template <class EC>
-  struct UlamElementInfoForUe_102249210RandomCell10 : public UlamElementInfo<EC>
+  struct UlamElementInfoForUe_102299210RandomCell10 : public UlamElementInfo<EC>
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
 
     UlamElement<EC> & m_ulamElement;
-    UlamElementInfoForUe_102249210RandomCell10(UlamElement<EC> & ue)
+    UlamElementInfoForUe_102299210RandomCell10(UlamElement<EC> & ue)
         : m_ulamElement(ue)
     {
       AddModelParameters();
     }
 
-    UlamElementInfoForUe_102249210RandomCell10() { }
+    UlamElementInfoForUe_102299210RandomCell10() { }
     const char * GetName() const { return "RandomCell"; }
-    const char * GetSymbol() const { return "Ra"; }
+    const char * GetSymbol() const { return "CR"; }
     const char * GetSummary() const { return "RandomCell (no summary provided)"; }
     const char * GetDetails() const { return "(no details provided)"; }
     const char * GetAuthor() const { return "--none specified--"; }
@@ -214,7 +309,7 @@ namespace MFM {
     bool GetPlaceable() const { return true; }
     const u32 GetVersion() const { return 0; }
 
-    const u32 GetElementColor() const { return 0xff00ffff; }
+    const u32 GetElementColor() const { return 0xffaa00aa; }
     const u32 GetEventWindowBoundary() const { return 4 + 1; }
     const u32 GetSymmetry(const UlamContext<EC>& uc) const {
       return 0;
@@ -227,13 +322,13 @@ namespace MFM {
 } // MFM
 
 
-/* Metadata for UlamElementInfoForUe_102319210JumperCell10 */
+/* Metadata for UlamElementInfoForUe_102369210JumperCell10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
    found in './JumperCell.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -241,21 +336,21 @@ namespace MFM {
 
 namespace MFM {
   template <class EC>
-  struct UlamElementInfoForUe_102319210JumperCell10 : public UlamElementInfo<EC>
+  struct UlamElementInfoForUe_102369210JumperCell10 : public UlamElementInfo<EC>
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
 
     UlamElement<EC> & m_ulamElement;
-    UlamElementInfoForUe_102319210JumperCell10(UlamElement<EC> & ue)
+    UlamElementInfoForUe_102369210JumperCell10(UlamElement<EC> & ue)
         : m_ulamElement(ue)
     {
       AddModelParameters();
     }
 
-    UlamElementInfoForUe_102319210JumperCell10() { }
+    UlamElementInfoForUe_102369210JumperCell10() { }
     const char * GetName() const { return "JumperCell"; }
-    const char * GetSymbol() const { return "Ju"; }
+    const char * GetSymbol() const { return "CJ"; }
     const char * GetSummary() const { return "JumperCell (no summary provided)"; }
     const char * GetDetails() const { return "(no details provided)"; }
     const char * GetAuthor() const { return "--none specified--"; }
@@ -264,7 +359,7 @@ namespace MFM {
     bool GetPlaceable() const { return true; }
     const u32 GetVersion() const { return 0; }
 
-    const u32 GetElementColor() const { return 0xff000077; }
+    const u32 GetElementColor() const { return 0xff00aaff; }
     const u32 GetEventWindowBoundary() const { return 4 + 1; }
     const u32 GetSymmetry(const UlamContext<EC>& uc) const {
       return 0;
@@ -277,13 +372,13 @@ namespace MFM {
 } // MFM
 
 
-/* Metadata for UlamElementInfoForUe_102319213DirectionCell10 */
+/* Metadata for UlamElementInfoForUe_102369213DirectionCell10 */
 /* This is generated code!  Avoid hand editing!
    The content of this file is based on the information
    found in './DirectionCell.ulam'.
    Make any desired changes there!
 
-   Generated on Sun Oct  1 18:16:31 2017 UTC
+   Generated on Sun Oct  1 19:53:57 2017 UTC
    by the ULAM compilation system
 */
 
@@ -291,21 +386,21 @@ namespace MFM {
 
 namespace MFM {
   template <class EC>
-  struct UlamElementInfoForUe_102319213DirectionCell10 : public UlamElementInfo<EC>
+  struct UlamElementInfoForUe_102369213DirectionCell10 : public UlamElementInfo<EC>
   {
     typedef typename EC::ATOM_CONFIG AC;
     typedef typename AC::ATOM_TYPE T;
 
     UlamElement<EC> & m_ulamElement;
-    UlamElementInfoForUe_102319213DirectionCell10(UlamElement<EC> & ue)
+    UlamElementInfoForUe_102369213DirectionCell10(UlamElement<EC> & ue)
         : m_ulamElement(ue)
     {
       AddModelParameters();
     }
 
-    UlamElementInfoForUe_102319213DirectionCell10() { }
+    UlamElementInfoForUe_102369213DirectionCell10() { }
     const char * GetName() const { return "DirectionCell"; }
-    const char * GetSymbol() const { return "Di"; }
+    const char * GetSymbol() const { return "CD"; }
     const char * GetSummary() const { return "DirectionCell (no summary provided)"; }
     const char * GetDetails() const { return "(no details provided)"; }
     const char * GetAuthor() const { return "--none specified--"; }
@@ -314,7 +409,7 @@ namespace MFM {
     bool GetPlaceable() const { return true; }
     const u32 GetVersion() const { return 0; }
 
-    const u32 GetElementColor() const { return 0xffaa00aa; }
+    const u32 GetElementColor() const { return 0xffff0000; }
     const u32 GetEventWindowBoundary() const { return 4 + 1; }
     const u32 GetSymmetry(const UlamContext<EC>& uc) const {
       return 0;

@@ -1,14 +1,18 @@
 /**
  \color #421
+ \symbol CW
 */
 
 element CellWall{
 	typedef Unsigned(6) SiteNum;
 
 	EventWindow ew;
+	SiteNum borderCount = 0;
+
 
   Void behave(){
   	Bool alive = false;
+
   	for (SiteNum s = 1; s < 41; s++){
   		if (ew[s] is Bond) alive = true;
   	}

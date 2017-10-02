@@ -24,34 +24,34 @@ namespace MFM{
     Ui_Uq_10104Fail10<EC> Uv_1f; //gcnl:NodeVarDecl.cpp:1118
 
 //! AtomUtils.ulam:19:     Int i = getType(a);
-    const T Uh_3tut41123 = Uv_1a.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102961a<EC> Uh_5tuval41124(Uh_3tut41123); //gcnl:Node.cpp:1142
-    const Ui_Ut_102321i<EC> Uh_5tlval41126 = THE_INSTANCE.Uf_7getType(uc, ur, Uh_5tuval41124); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg41127 = Uh_5tlval41126.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg41127); //gcnl:NodeVarDecl.cpp:1081
+    const T Uh_3tut41194 = Uv_1a.read(); //gcnl:Node.cpp:698
+    Ui_Ut_102961a<EC> Uh_5tuval41195(Uh_3tut41194); //gcnl:Node.cpp:1142
+    const Ui_Ut_102321i<EC> Uh_5tlval41197 = THE_INSTANCE.Uf_7getType(uc, ur, Uh_5tuval41195); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg41198 = Uh_5tlval41197.read(); //gcnl:Node.cpp:1170
+    Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg41198); //gcnl:NodeVarDecl.cpp:1081
 
 //! AtomUtils.ulam:20:     if (i < 0) f.fail();
     {
 
 //! AtomUtils.ulam:20:     if (i < 0) f.fail();
-      const u32 Uh_5tlreg41128 = 0; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg41129 = _Int32ToInt32(Uh_5tlreg41128, 2, 32); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg41131 = Uv_1i.read(); //gcnl:Node.cpp:698
-      const u32 Uh_5tlreg41132 = _BinOpCompareLessThanInt32(Uh_5tlreg41131, Uh_5tlreg41129, 32); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg41132, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg41199 = 0; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg41200 = _Int32ToInt32(Uh_5tlreg41199, 2, 32); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg41202 = Uv_1i.read(); //gcnl:Node.cpp:698
+      const u32 Uh_5tlreg41203 = _BinOpCompareLessThanInt32(Uh_5tlreg41202, Uh_5tlreg41200, 32); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg41203, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! AtomUtils.ulam:20:     if (i < 0) f.fail();
-          UlamRef<EC> Uh_3tur41134(0u, 0u, Uv_1f, &Uq_10104Fail10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
-          Uq_10104Fail10<EC>::THE_INSTANCE.Uf_4fail(uc, Uh_3tur41134); //gcnl:NodeFunctionCall.cpp:1043
+          UlamRef<EC> Uh_3tur41205(0u, 0u, Uv_1f, &Uq_10104Fail10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
+          Uq_10104Fail10<EC>::THE_INSTANCE.Uf_4fail(uc, Uh_3tur41205); //gcnl:NodeFunctionCall.cpp:1043
       } // end if
     }
 
 //! AtomUtils.ulam:21:     return (Type) i;
-    const u32 Uh_5tlreg41137 = Uv_1i.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg41138 = _Int32ToUnsigned32(Uh_5tlreg41137, 32, 16); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102161u<EC> Uh_5tlval41139(Uh_5tlreg41138); //gcnl:Node.cpp:1142
-    return (Uh_5tlval41139); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg41208 = Uv_1i.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg41209 = _Int32ToUnsigned32(Uh_5tlreg41208, 32, 16); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102161u<EC> Uh_5tlval41210(Uh_5tlreg41209); //gcnl:Node.cpp:1142
+    return (Uh_5tlval41210); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_9212getValidType
 
@@ -66,12 +66,12 @@ namespace MFM{
     Ui_Ue_10105Empty10<EC> Uv_1a; //gcnl:NodeVarDecl.cpp:1118
 
 //! AtomUtils.ulam:30:     return getValidType((Atom) a);
-    const T Uh_3tut41142 = Uv_1a.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102961a<EC> Uh_5tuval41143(Uh_3tut41142); //gcnl:Node.cpp:1142
-    const Ui_Ut_102161u<EC> Uh_5tlval41145 = THE_INSTANCE.Uf_9212getValidType(uc, ur, Uh_5tuval41143); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg41146 = Uh_5tlval41145.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_102161u<EC> Uh_5tlval41147(Uh_5tlreg41146); //gcnl:Node.cpp:1142
-    return (Uh_5tlval41147); //gcnl:NodeReturnStatement.cpp:343
+    const T Uh_3tut41213 = Uv_1a.read(); //gcnl:Node.cpp:698
+    Ui_Ut_102961a<EC> Uh_5tuval41214(Uh_3tut41213); //gcnl:Node.cpp:1142
+    const Ui_Ut_102161u<EC> Uh_5tlval41216 = THE_INSTANCE.Uf_9212getValidType(uc, ur, Uh_5tuval41214); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg41217 = Uh_5tlval41216.read(); //gcnl:Node.cpp:1170
+    Ui_Ut_102161u<EC> Uh_5tlval41218(Uh_5tlreg41217); //gcnl:Node.cpp:1142
+    return (Uh_5tlval41218); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_9212getEmptyType
 
@@ -83,16 +83,16 @@ namespace MFM{
   {
 
 //! AtomUtils.ulam:38:     return getType(a)==getEmptyType();
-    const Ui_Ut_102161u<EC> Uh_5tlval41150 = THE_INSTANCE.Uf_9212getEmptyType(uc, ur); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg41151 = Uh_5tlval41150.read(); //gcnl:Node.cpp:1170
-    const u32 Uh_5tlreg41152 = _Unsigned32ToInt32(Uh_5tlreg41151, 16, 32); //gcnl:NodeCast.cpp:748
-    const T Uh_3tut41155 = Uv_1a.read(); //gcnl:Node.cpp:698
-    Ui_Ut_102961a<EC> Uh_5tuval41156(Uh_3tut41155); //gcnl:Node.cpp:1142
-    const Ui_Ut_102321i<EC> Uh_5tlval41158 = THE_INSTANCE.Uf_7getType(uc, ur, Uh_5tuval41156); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg41159 = Uh_5tlval41158.read(); //gcnl:Node.cpp:1170
-    const u32 Uh_5tlreg41160 = _BinOpCompareEqEqInt32(Uh_5tlreg41159, Uh_5tlreg41152, 32); //gcnl:NodeBinaryOpCompare.cpp:441
-    Ui_Ut_10111b<EC> Uh_5tlval41161(Uh_5tlreg41160); //gcnl:Node.cpp:1142
-    return (Uh_5tlval41161); //gcnl:NodeReturnStatement.cpp:343
+    const Ui_Ut_102161u<EC> Uh_5tlval41221 = THE_INSTANCE.Uf_9212getEmptyType(uc, ur); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg41222 = Uh_5tlval41221.read(); //gcnl:Node.cpp:1170
+    const u32 Uh_5tlreg41223 = _Unsigned32ToInt32(Uh_5tlreg41222, 16, 32); //gcnl:NodeCast.cpp:748
+    const T Uh_3tut41226 = Uv_1a.read(); //gcnl:Node.cpp:698
+    Ui_Ut_102961a<EC> Uh_5tuval41227(Uh_3tut41226); //gcnl:Node.cpp:1142
+    const Ui_Ut_102321i<EC> Uh_5tlval41229 = THE_INSTANCE.Uf_7getType(uc, ur, Uh_5tuval41227); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg41230 = Uh_5tlval41229.read(); //gcnl:Node.cpp:1170
+    const u32 Uh_5tlreg41231 = _BinOpCompareEqEqInt32(Uh_5tlreg41230, Uh_5tlreg41223, 32); //gcnl:NodeBinaryOpCompare.cpp:441
+    Ui_Ut_10111b<EC> Uh_5tlval41232(Uh_5tlreg41231); //gcnl:Node.cpp:1142
+    return (Uh_5tlval41232); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_7isEmpty
 

@@ -1,5 +1,6 @@
 /**
-  \color #007
+  \color #0af
+  \symbol CJ
 */
 
 element JumperCell : Bond{
@@ -22,8 +23,12 @@ element JumperCell : Bond{
     ColorUtils cu;
     ARGB ret = cu.color(0x00000000U);
     if (moveType == 5 || moveType == 6) ret[1] = (Byte)(bondCount*63);
-    if (moveType == 5 || moveType == 8) ret[2] = (Byte)(bondCount*63);
+    if (moveType == 8) ret[1] = (Byte)(bondCount*31);
+    if (moveType == 5 || moveType == 7) ret[2] = (Byte)(bondCount*31);
+    if (moveType == 8) ret[2] = (Byte)(bondCount*63);
+
     if (moveType == 7) ret[3] = (Byte)(bondCount*63);
+    if (moveType == 6) ret[2] = (Byte)(bondCount*31);
     return ret;
 	}
 
@@ -32,8 +37,8 @@ element JumperCell : Bond{
 			moveType = (SiteNum)rm.between(5, 8);
 		}
 		if (active){
+			checkBonds();
 			findBonds();
-			
 			moveTo(moveType);
 		}
 		drawBonds();

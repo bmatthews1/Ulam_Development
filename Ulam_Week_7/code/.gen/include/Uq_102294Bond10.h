@@ -26,24 +26,26 @@
 * @license GPL-3.0+ <http://spdx.org/licenses/GPL-3.0+>
 */
 
-#ifndef UQ_102244BOND10_H
-#define UQ_102244BOND10_H
+#ifndef UQ_102294BOND10_H
+#define UQ_102294BOND10_H
 
 #include "UlamDefs.h"
-#include "Uq_102244Bond10_Types.h"
+#include "Uq_102294Bond10_Types.h"
 //Forward Defs of other classes: //gcnl:SymbolTableOfClasses.cpp:595
 namespace MFM { template <class EC> struct Uq_10106UrSelf10; }  //FORWARD
+namespace MFM { template <class EC> struct Ue_10109214BondParameters10; }  //FORWARD
 namespace MFM { template <class EC> struct Uq_10109211EventWindow10; }  //FORWARD
 namespace MFM { template <class EC> struct Uq_1010919AtomUtils10; }  //FORWARD
+namespace MFM { template <class EC> struct Uq_10106Random10; }  //FORWARD
 namespace MFM { template <class EC> struct Uq_102323C2D10; }  //FORWARD
 namespace MFM { template <class EC> struct Ue_10105Empty10; }  //FORWARD
 namespace MFM { template <class EC> struct Ue_10104Wall10; }  //FORWARD
-namespace MFM { template <class EC> struct Ue_10108CellWall10; }  //FORWARD
+namespace MFM { template <class EC> struct Ue_10168CellWall10; }  //FORWARD
 
 namespace MFM{
 
   template <class EC> //gcnl:NodeBlockClass.cpp:1338
-  struct Uq_102244Bond10 : public UlamQuark<EC> /*, Uq_10106UrSelf10 */
+  struct Uq_102294Bond10 : public UlamQuark<EC> /*, Uq_10106UrSelf10 */
   {
 
     // Extract short names for parameter types
@@ -55,42 +57,40 @@ namespace MFM{
     typedef BitField<BitVector<BPA>, VD::BITS, T::ATOM_FIRST_STATE_BIT, 0> BFTYP; //gcnl:NodeBlockClass.cpp:1624
 
     enum { 
-      QUARK_SIZE = 24 /* Requiring quarks to advertise their size in a std way.) */
+      QUARK_SIZE = 29 /* Requiring quarks to advertise their size in a std way.) */
     }; //gcnl:NodeBlockClass.cpp:1367
 
     typedef UlamRefFixed<EC, 0u, QUARK_SIZE> Up_Us; //entire quark //gcnl:NodeBlockClass.cpp:1371
 
-    Uq_102244Bond10(); //gcnl:NodeBlockClass.cpp:1377
-    ~Uq_102244Bond10(); //gcnl:NodeBlockClass.cpp:1382
+    Uq_102294Bond10(); //gcnl:NodeBlockClass.cpp:1377
+    ~Uq_102294Bond10(); //gcnl:NodeBlockClass.cpp:1382
 
-    static Uq_102244Bond10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1388
+    static Uq_102294Bond10 THE_INSTANCE; //gcnl:NodeBlockClass.cpp:1388
 
-//! Bond.ulam:10: 	typedef Unsigned(5) Coord; 
+//! Bond.ulam:40: 	typedef Unsigned(5) Coord; 
 
-//! Bond.ulam:11: 	typedef Unsigned(6) SiteNum;
+//! Bond.ulam:41: 	typedef Unsigned(6) SiteNum;
 
-//! Bond.ulam:12: 	typedef Int(16)     Short;
+//! Bond.ulam:42: 	typedef Int(16)     Short;
 
-//! Bond.ulam:13: 	typedef Int(32)     Long;
+//! Bond.ulam:43: 	typedef Int(32)     Long;
 
-//! Bond.ulam:14: 	typedef Unsigned(3) Index;
+//! Bond.ulam:44: 	typedef Unsigned(3) Index;
 
-//! Bond.ulam:16: 	EventWindow ew;
+//! Bond.ulam:46: 	EventWindow ew;
     typedef Uq_10109211EventWindow10<EC> Ut_Um_2ew; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
 
-//! Bond.ulam:17: 	AtomUtils au;
+//! Bond.ulam:47: 	AtomUtils au;
     typedef Uq_1010919AtomUtils10<EC> Ut_Um_2au; //offset 0u //gcnl:NodeVarDeclDM.cpp:1077
 
-//! Bond.ulam:19: 	constant SiteNum cMAX = 24;
-
-//! Bond.ulam:21: 	Bool active = true;
+//! Bond.ulam:50: 	Bool active = true;
     typedef UlamRefFixed<EC, 0u, 1u> Up_Um_6active; //gcnl:NodeVarDeclDM.cpp:1107
 
-//! Bond.ulam:22: 	Index bondCount = 0;
+//! Bond.ulam:51: 	Index bondCount = 0;
     typedef UlamRefFixed<EC, 1u, 3u> Up_Um_919bondCount; //gcnl:NodeVarDeclDM.cpp:1107
 
-//! Bond.ulam:23: 	Coord bonds[4] = {0, 0, 0, 0};
-    typedef UlamRefFixed<EC, 4u, 20u> Up_Um_5bonds; //gcnl:NodeVarDeclDM.cpp:1107
+//! Bond.ulam:52: 	Coord bonds[5] = {0, 0, 0, 0, 0};
+    typedef UlamRefFixed<EC, 4u, 25u> Up_Um_5bonds; //gcnl:NodeVarDeclDM.cpp:1107
 
     void Uf_919setActive(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_10111b<EC>& Uv_5state) const; //gcnl:SymbolFunction.cpp:485
 
@@ -101,6 +101,8 @@ namespace MFM{
     Ui_Ut_10161u<EC> Uf_7reverse(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_10161u<EC>& Uv_1i) const; //gcnl:SymbolFunction.cpp:485
 
     void Uf_9210updateBond(const UlamContext<EC>& uc, UlamRef<EC>& ur, Ui_Ut_10151u<EC>& Uv_4prev, Ui_Ut_10151u<EC>& Uv_3new) const; //gcnl:SymbolFunction.cpp:485
+
+    void Uf_9210checkBonds(const UlamContext<EC>& uc, UlamRef<EC>& ur) const; //gcnl:SymbolFunction.cpp:485
 
     void Uf_9210clearBonds(const UlamContext<EC>& uc, UlamRef<EC>& ur) const; //gcnl:SymbolFunction.cpp:485
 
@@ -154,11 +156,11 @@ namespace MFM{
   };
 
   template<class EC>
-  Uq_102244Bond10<EC> Uq_102244Bond10<EC>::THE_INSTANCE;
+  Uq_102294Bond10<EC> Uq_102294Bond10<EC>::THE_INSTANCE;
 
 
 
 } //MFM
 
-#include "Uq_102244Bond10.tcc"
-#endif //UQ_102244BOND10_H
+#include "Uq_102294Bond10.tcc"
+#endif //UQ_102294BOND10_H

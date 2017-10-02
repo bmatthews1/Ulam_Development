@@ -1,5 +1,6 @@
 /**
-  \color #a0a
+  \color #f00
+  \symbol CD
 */
 
 element DirectionCell : Bond{
@@ -35,7 +36,7 @@ element DirectionCell : Bond{
 			findBonds();
 			
 			SiteNum s;
-			if (moveType == 0 || rm.oneIn(20)) s = (SiteNum)rm.between(1, 4);
+			if (moveType == 0 || rm.oneIn(3)) s = (SiteNum)rm.between(1, 4);
 			else SiteNum s = moveType;
 			moveTo(s);
 		}
