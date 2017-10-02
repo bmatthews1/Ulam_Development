@@ -23,53 +23,53 @@ namespace MFM{
     Ui_Ut_14181u<EC> Uv_3ret; //gcnl:NodeVarDecl.cpp:1118
 
 //! ColorUtils.ulam:26:     ret[0] = (Channel) 0xff;
-    const u32 Uh_5tlreg42257 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42258 = 0; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42258 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42338 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42339 = 0; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42339 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42260(Uv_3ret, Uh_5tlreg42258 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42260.write(Uh_5tlreg42257);
+    Ui_Ut_r10181u<EC> Uh_6tlref42341(Uv_3ret, Uh_5tlreg42339 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42341.write(Uh_5tlreg42338);
 
 //! ColorUtils.ulam:27:     ret[1] = (Channel) (red & 0xff);
-    const u32 Uh_5tlreg42261 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42262 = _Unsigned32ToBits32(Uh_5tlreg42261, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42264 = Uv_3red.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42265 = _BitwiseAndBits32(Uh_5tlreg42264, Uh_5tlreg42262, 8); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42266 = _Bits32ToUnsigned32(Uh_5tlreg42265, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42267 = 1; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42267 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42342 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42343 = _Unsigned32ToBits32(Uh_5tlreg42342, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42345 = Uv_3red.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42346 = _BitwiseAndBits32(Uh_5tlreg42345, Uh_5tlreg42343, 8); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42347 = _Bits32ToUnsigned32(Uh_5tlreg42346, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42348 = 1; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42348 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42269(Uv_3ret, Uh_5tlreg42267 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42269.write(Uh_5tlreg42266);
+    Ui_Ut_r10181u<EC> Uh_6tlref42350(Uv_3ret, Uh_5tlreg42348 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42350.write(Uh_5tlreg42347);
 
 //! ColorUtils.ulam:28:     ret[2] = (Channel) (green & 0xff);
-    const u32 Uh_5tlreg42270 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42271 = _Unsigned32ToBits32(Uh_5tlreg42270, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42273 = Uv_5green.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42274 = _BitwiseAndBits32(Uh_5tlreg42273, Uh_5tlreg42271, 8); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42275 = _Bits32ToUnsigned32(Uh_5tlreg42274, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42276 = 2; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42276 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42351 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42352 = _Unsigned32ToBits32(Uh_5tlreg42351, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42354 = Uv_5green.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42355 = _BitwiseAndBits32(Uh_5tlreg42354, Uh_5tlreg42352, 8); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42356 = _Bits32ToUnsigned32(Uh_5tlreg42355, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42357 = 2; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42357 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42278(Uv_3ret, Uh_5tlreg42276 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42278.write(Uh_5tlreg42275);
+    Ui_Ut_r10181u<EC> Uh_6tlref42359(Uv_3ret, Uh_5tlreg42357 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42359.write(Uh_5tlreg42356);
 
 //! ColorUtils.ulam:29:     ret[3] = (Channel) (blue & 0xff);
-    const u32 Uh_5tlreg42279 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42280 = _Unsigned32ToBits32(Uh_5tlreg42279, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42282 = Uv_4blue.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42283 = _BitwiseAndBits32(Uh_5tlreg42282, Uh_5tlreg42280, 8); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42284 = _Bits32ToUnsigned32(Uh_5tlreg42283, 8, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42285 = 3; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42285 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42360 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42361 = _Unsigned32ToBits32(Uh_5tlreg42360, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42363 = Uv_4blue.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42364 = _BitwiseAndBits32(Uh_5tlreg42363, Uh_5tlreg42361, 8); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42365 = _Bits32ToUnsigned32(Uh_5tlreg42364, 8, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42366 = 3; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42366 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42287(Uv_3ret, Uh_5tlreg42285 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42287.write(Uh_5tlreg42284);
+    Ui_Ut_r10181u<EC> Uh_6tlref42368(Uv_3ret, Uh_5tlreg42366 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42368.write(Uh_5tlreg42365);
 
 //! ColorUtils.ulam:30:     return ret;
-    const u32 Uh_5tlreg42289 = Uv_3ret.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42290(Uh_5tlreg42289); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42290); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42370 = Uv_3ret.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42371(Uh_5tlreg42370); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42371); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_5color
 
@@ -81,13 +81,13 @@ namespace MFM{
   {
 
 //! ColorUtils.ulam:9:     return color((Bits) hex);
-    const u32 Uh_5tlreg42293 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42294 = _Int32ToBits32(Uh_5tlreg42293, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321t<EC> Uh_5tlval42295(Uh_5tlreg42294); //gcnl:Node.cpp:1142
-    const Ui_Ut_14181u<EC> Uh_5tlval42297 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42295); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg42298 = Uh_5tlval42297.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_14181u<EC> Uh_5tlval42299(Uh_5tlreg42298); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42299); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42374 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42375 = _Int32ToBits32(Uh_5tlreg42374, 32, 32); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102321t<EC> Uh_5tlval42376(Uh_5tlreg42375); //gcnl:Node.cpp:1142
+    const Ui_Ut_14181u<EC> Uh_5tlval42378 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42376); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg42379 = Uh_5tlval42378.read(); //gcnl:Node.cpp:1170
+    Ui_Ut_14181u<EC> Uh_5tlval42380(Uh_5tlreg42379); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42380); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_5color
 
@@ -99,13 +99,13 @@ namespace MFM{
   {
 
 //! ColorUtils.ulam:13:     return color((Bits) hex);
-    const u32 Uh_5tlreg42302 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42303 = _Unsigned32ToBits32(Uh_5tlreg42302, 32, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321t<EC> Uh_5tlval42304(Uh_5tlreg42303); //gcnl:Node.cpp:1142
-    const Ui_Ut_14181u<EC> Uh_5tlval42306 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42304); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg42307 = Uh_5tlval42306.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_14181u<EC> Uh_5tlval42308(Uh_5tlreg42307); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42308); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42383 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42384 = _Unsigned32ToBits32(Uh_5tlreg42383, 32, 32); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102321t<EC> Uh_5tlval42385(Uh_5tlreg42384); //gcnl:Node.cpp:1142
+    const Ui_Ut_14181u<EC> Uh_5tlval42387 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42385); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg42388 = Uh_5tlval42387.read(); //gcnl:Node.cpp:1170
+    Ui_Ut_14181u<EC> Uh_5tlval42389(Uh_5tlreg42388); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42389); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_5color
 
@@ -120,69 +120,69 @@ namespace MFM{
     Ui_Ut_14181u<EC> Uv_3ret; //gcnl:NodeVarDecl.cpp:1118
 
 //! ColorUtils.ulam:18:     ret[0] = (Channel) ((hex >> 24) & 0xff);
-    const u32 Uh_5tlreg42309 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42310 = _Unsigned32ToBits32(Uh_5tlreg42309, 8, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42311 = 24; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42312 = _Int32ToUnsigned32(Uh_5tlreg42311, 6, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42314 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42315 = _ShiftOpRightBits32(Uh_5tlreg42314, Uh_5tlreg42312, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42316 = _BitwiseAndBits32(Uh_5tlreg42315, Uh_5tlreg42310, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42317 = _Bits32ToUnsigned32(Uh_5tlreg42316, 32, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42318 = 0; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42318 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42390 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42391 = _Unsigned32ToBits32(Uh_5tlreg42390, 8, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42392 = 24; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42393 = _Int32ToUnsigned32(Uh_5tlreg42392, 6, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42395 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42396 = _ShiftOpRightBits32(Uh_5tlreg42395, Uh_5tlreg42393, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42397 = _BitwiseAndBits32(Uh_5tlreg42396, Uh_5tlreg42391, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42398 = _Bits32ToUnsigned32(Uh_5tlreg42397, 32, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42399 = 0; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42399 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42320(Uv_3ret, Uh_5tlreg42318 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42320.write(Uh_5tlreg42317);
+    Ui_Ut_r10181u<EC> Uh_6tlref42401(Uv_3ret, Uh_5tlreg42399 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42401.write(Uh_5tlreg42398);
 
 //! ColorUtils.ulam:19:     ret[1] = (Channel) ((hex >> 16) & 0xff);
-    const u32 Uh_5tlreg42321 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42322 = _Unsigned32ToBits32(Uh_5tlreg42321, 8, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42323 = 16; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42324 = _Int32ToUnsigned32(Uh_5tlreg42323, 6, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42326 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42327 = _ShiftOpRightBits32(Uh_5tlreg42326, Uh_5tlreg42324, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42328 = _BitwiseAndBits32(Uh_5tlreg42327, Uh_5tlreg42322, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42329 = _Bits32ToUnsigned32(Uh_5tlreg42328, 32, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42330 = 1; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42330 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42402 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42403 = _Unsigned32ToBits32(Uh_5tlreg42402, 8, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42404 = 16; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42405 = _Int32ToUnsigned32(Uh_5tlreg42404, 6, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42407 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42408 = _ShiftOpRightBits32(Uh_5tlreg42407, Uh_5tlreg42405, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42409 = _BitwiseAndBits32(Uh_5tlreg42408, Uh_5tlreg42403, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42410 = _Bits32ToUnsigned32(Uh_5tlreg42409, 32, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42411 = 1; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42411 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42332(Uv_3ret, Uh_5tlreg42330 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42332.write(Uh_5tlreg42329);
+    Ui_Ut_r10181u<EC> Uh_6tlref42413(Uv_3ret, Uh_5tlreg42411 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42413.write(Uh_5tlreg42410);
 
 //! ColorUtils.ulam:20:     ret[2] = (Channel) ((hex >>  8) & 0xff);
-    const u32 Uh_5tlreg42333 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42334 = _Unsigned32ToBits32(Uh_5tlreg42333, 8, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42335 = 8; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42336 = _Int32ToUnsigned32(Uh_5tlreg42335, 5, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42338 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42339 = _ShiftOpRightBits32(Uh_5tlreg42338, Uh_5tlreg42336, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42340 = _BitwiseAndBits32(Uh_5tlreg42339, Uh_5tlreg42334, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42341 = _Bits32ToUnsigned32(Uh_5tlreg42340, 32, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42342 = 2; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42342 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42414 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42415 = _Unsigned32ToBits32(Uh_5tlreg42414, 8, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42416 = 8; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42417 = _Int32ToUnsigned32(Uh_5tlreg42416, 5, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42419 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42420 = _ShiftOpRightBits32(Uh_5tlreg42419, Uh_5tlreg42417, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42421 = _BitwiseAndBits32(Uh_5tlreg42420, Uh_5tlreg42415, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42422 = _Bits32ToUnsigned32(Uh_5tlreg42421, 32, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42423 = 2; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42423 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42344(Uv_3ret, Uh_5tlreg42342 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42344.write(Uh_5tlreg42341);
+    Ui_Ut_r10181u<EC> Uh_6tlref42425(Uv_3ret, Uh_5tlreg42423 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42425.write(Uh_5tlreg42422);
 
 //! ColorUtils.ulam:21:     ret[3] = (Channel) ((hex >>  0) & 0xff);
-    const u32 Uh_5tlreg42345 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42346 = _Unsigned32ToBits32(Uh_5tlreg42345, 8, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42347 = 0; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42348 = _Int32ToUnsigned32(Uh_5tlreg42347, 2, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42350 = Uv_3hex.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42351 = _ShiftOpRightBits32(Uh_5tlreg42350, Uh_5tlreg42348, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42352 = _BitwiseAndBits32(Uh_5tlreg42351, Uh_5tlreg42346, 32); //gcnl:NodeBinaryOp.cpp:805
-    const u32 Uh_5tlreg42353 = _Bits32ToUnsigned32(Uh_5tlreg42352, 32, 8); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42354 = 3; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42354 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42426 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42427 = _Unsigned32ToBits32(Uh_5tlreg42426, 8, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42428 = 0; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42429 = _Int32ToUnsigned32(Uh_5tlreg42428, 2, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42431 = Uv_3hex.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42432 = _ShiftOpRightBits32(Uh_5tlreg42431, Uh_5tlreg42429, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42433 = _BitwiseAndBits32(Uh_5tlreg42432, Uh_5tlreg42427, 32); //gcnl:NodeBinaryOp.cpp:805
+    const u32 Uh_5tlreg42434 = _Bits32ToUnsigned32(Uh_5tlreg42433, 32, 8); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42435 = 3; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42435 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42356(Uv_3ret, Uh_5tlreg42354 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42356.write(Uh_5tlreg42353);
+    Ui_Ut_r10181u<EC> Uh_6tlref42437(Uv_3ret, Uh_5tlreg42435 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42437.write(Uh_5tlreg42434);
 
 //! ColorUtils.ulam:22:     return ret;
-    const u32 Uh_5tlreg42358 = Uv_3ret.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42359(Uh_5tlreg42358); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42359); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42439 = Uv_3ret.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42440(Uh_5tlreg42439); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42440); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_5color
 
@@ -194,65 +194,65 @@ namespace MFM{
   {
 
 //! ColorUtils.ulam:34:     Unsigned rest = (Unsigned) 100 - percent;
-    const u32 Uh_5tlreg42361 = Uv_7percent.read(); //gcnl:Node.cpp:698
-    const u32 Uh_5tlreg42362 = 100; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42363 = _Int32ToUnsigned32(Uh_5tlreg42362, 8, 32); //gcnl:NodeCast.cpp:748
-    const u32 Uh_5tlreg42364 = _BinOpSubtractUnsigned32(Uh_5tlreg42363, Uh_5tlreg42361, 32); //gcnl:NodeBinaryOp.cpp:805
-    Ui_Ut_102321u<EC> Uv_4rest(Uh_5tlreg42364); //gcnl:NodeVarDecl.cpp:1081
+    const u32 Uh_5tlreg42442 = Uv_7percent.read(); //gcnl:Node.cpp:698
+    const u32 Uh_5tlreg42443 = 100; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42444 = _Int32ToUnsigned32(Uh_5tlreg42443, 8, 32); //gcnl:NodeCast.cpp:748
+    const u32 Uh_5tlreg42445 = _BinOpSubtractUnsigned32(Uh_5tlreg42444, Uh_5tlreg42442, 32); //gcnl:NodeBinaryOp.cpp:805
+    Ui_Ut_102321u<EC> Uv_4rest(Uh_5tlreg42445); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
     {
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
-      const u32 Uh_5tlreg42365 = 1; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42366 = _Int32ToInt32(Uh_5tlreg42365, 2, 32); //gcnl:NodeCast.cpp:748
-      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42366); //gcnl:NodeVarDecl.cpp:1081
+      const u32 Uh_5tlreg42446 = 1; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42447 = _Int32ToInt32(Uh_5tlreg42446, 2, 32); //gcnl:NodeCast.cpp:748
+      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42447); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
       while(true)
       {
-        const u32 Uh_5tlreg42367 = 4; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42368 = _Int32ToInt32(Uh_5tlreg42367, 4, 32); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42370 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42371 = _BinOpCompareLessThanInt32(Uh_5tlreg42370, Uh_5tlreg42368, 32); //gcnl:NodeBinaryOpCompare.cpp:441
+        const u32 Uh_5tlreg42448 = 4; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42449 = _Int32ToInt32(Uh_5tlreg42448, 4, 32); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42451 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42452 = _BinOpCompareLessThanInt32(Uh_5tlreg42451, Uh_5tlreg42449, 32); //gcnl:NodeBinaryOpCompare.cpp:441
 
-        if(!_Bool32ToCbool(Uh_5tlreg42371, 1))
+        if(!_Bool32ToCbool(Uh_5tlreg42452, 1))
           break; //gcnl:NodeControlWhile.cpp:135
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
         {
 
 //! ColorUtils.ulam:36:       Unsigned old = (Unsigned) this[i];
-          const u32 Uh_5tlreg42373 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42373 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42454 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42454 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42375(Uv_4this, Uh_5tlreg42373 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          const u32 Uh_5tlreg42376 = Uh_6tlref42375.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42377 = _Unsigned32ToUnsigned32(Uh_5tlreg42376, 8, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321u<EC> Uv_3old(Uh_5tlreg42377); //gcnl:NodeVarDecl.cpp:1081
+          Ui_Ut_r10181u<EC> Uh_6tlref42456(Uv_4this, Uh_5tlreg42454 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          const u32 Uh_5tlreg42457 = Uh_6tlref42456.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42458 = _Unsigned32ToUnsigned32(Uh_5tlreg42457, 8, 32); //gcnl:NodeCast.cpp:748
+          Ui_Ut_102321u<EC> Uv_3old(Uh_5tlreg42458); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:37:       Unsigned new = (old * rest + (Unsigned) 0xff * percent) / 100u;
-          const u32 Uh_5tlreg42378 = 100u; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42379 = _Unsigned32ToUnsigned32(Uh_5tlreg42378, 7, 32); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42381 = Uv_7percent.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42382 = 255u; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42383 = _Unsigned32ToUnsigned32(Uh_5tlreg42382, 8, 32); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42384 = _BinOpMultiplyUnsigned32(Uh_5tlreg42383, Uh_5tlreg42381, 32); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42386 = Uv_4rest.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42388 = Uv_3old.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42389 = _BinOpMultiplyUnsigned32(Uh_5tlreg42388, Uh_5tlreg42386, 32); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42390 = _BinOpAddUnsigned32(Uh_5tlreg42389, Uh_5tlreg42384, 32); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42391 = _BinOpDivideUnsigned32(Uh_5tlreg42390, Uh_5tlreg42379, 32); //gcnl:NodeBinaryOp.cpp:805
-          Ui_Ut_102321u<EC> Uv_3new(Uh_5tlreg42391); //gcnl:NodeVarDecl.cpp:1081
+          const u32 Uh_5tlreg42459 = 100u; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42460 = _Unsigned32ToUnsigned32(Uh_5tlreg42459, 7, 32); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42462 = Uv_7percent.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42463 = 255u; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42464 = _Unsigned32ToUnsigned32(Uh_5tlreg42463, 8, 32); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42465 = _BinOpMultiplyUnsigned32(Uh_5tlreg42464, Uh_5tlreg42462, 32); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42467 = Uv_4rest.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42469 = Uv_3old.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42470 = _BinOpMultiplyUnsigned32(Uh_5tlreg42469, Uh_5tlreg42467, 32); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42471 = _BinOpAddUnsigned32(Uh_5tlreg42470, Uh_5tlreg42465, 32); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42472 = _BinOpDivideUnsigned32(Uh_5tlreg42471, Uh_5tlreg42460, 32); //gcnl:NodeBinaryOp.cpp:805
+          Ui_Ut_102321u<EC> Uv_3new(Uh_5tlreg42472); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:38:       this[i] = (Channel) new;
-          const u32 Uh_5tlreg42393 = Uv_3new.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42394 = _Unsigned32ToUnsigned32(Uh_5tlreg42393, 32, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42396 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42396 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42474 = Uv_3new.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42475 = _Unsigned32ToUnsigned32(Uh_5tlreg42474, 32, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42477 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42477 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42398(Uv_4this, Uh_5tlreg42396 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42398.write(Uh_5tlreg42394);
+          Ui_Ut_r10181u<EC> Uh_6tlref42479(Uv_4this, Uh_5tlreg42477 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42479.write(Uh_5tlreg42475);
         }
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
@@ -260,17 +260,17 @@ Ul_214endcontrolloop217:
         __attribute__((__unused__)); //gcnl:NodeLabel.cpp:68
 
 //! ColorUtils.ulam:35:     for (Int i = 1; i < 4; ++i) {
-        const u32 Uh_5tlreg42399 = 1; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42401 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42402 = _BinOpAddInt32(Uh_5tlreg42401, Uh_5tlreg42399, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-        Uv_1i.write(Uh_5tlreg42402); //gcnl:Node.cpp:892
+        const u32 Uh_5tlreg42480 = 1; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42482 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42483 = _BinOpAddInt32(Uh_5tlreg42482, Uh_5tlreg42480, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
+        Uv_1i.write(Uh_5tlreg42483); //gcnl:Node.cpp:892
       } // end while //gcnl:NodeControlWhile.cpp:145
     }
 
 //! ColorUtils.ulam:40:     return this;
-    const u32 Uh_5tlreg42404 = Uv_4this.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42405(Uh_5tlreg42404); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42405); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42485 = Uv_4this.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42486(Uh_5tlreg42485); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42486); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_6modify
 
@@ -282,65 +282,65 @@ Ul_214endcontrolloop217:
   {
 
 //! ColorUtils.ulam:52:     than[0] = 0xff;
-    const u32 Uh_5tlreg42406 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42407 = 0; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42407 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42487 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42488 = 0; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42488 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42409(Uv_4than, Uh_5tlreg42407 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42409.write(Uh_5tlreg42406);
+    Ui_Ut_r10181u<EC> Uh_6tlref42490(Uv_4than, Uh_5tlreg42488 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42490.write(Uh_5tlreg42487);
 
 //! ColorUtils.ulam:53:     if (than[1] == 0 && than[2] == 0 && than[3] == 0)
     {
 
 //! ColorUtils.ulam:53:     if (than[1] == 0 && than[2] == 0 && than[3] == 0)
-      u32 Uh_5tlreg42410 = false; //gcnl:NodeBinaryOpLogicalAnd.cpp:118
-      u32 Uh_5tlreg42411 = false; //gcnl:NodeBinaryOpLogicalAnd.cpp:118
-      const u32 Uh_5tlreg42412 = 0; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42413 = _Int32ToInt32(Uh_5tlreg42412, 2, 9); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42414 = 1; //gcnl:NodeTerminal.cpp:690
-      if(Uh_5tlreg42414 >= 4) //gcnl:NodeSquareBracket.cpp:874
+      u32 Uh_5tlreg42491 = false; //gcnl:NodeBinaryOpLogicalAnd.cpp:118
+      u32 Uh_5tlreg42492 = false; //gcnl:NodeBinaryOpLogicalAnd.cpp:118
+      const u32 Uh_5tlreg42493 = 0; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42494 = _Int32ToInt32(Uh_5tlreg42493, 2, 9); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42495 = 1; //gcnl:NodeTerminal.cpp:690
+      if(Uh_5tlreg42495 >= 4) //gcnl:NodeSquareBracket.cpp:874
         FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-      Ui_Ut_r10181u<EC> Uh_6tlref42416(Uv_4than, Uh_5tlreg42414 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-      const u32 Uh_5tlreg42417 = Uh_6tlref42416.read(); //gcnl:Node.cpp:698
-      const u32 Uh_5tlreg42418 = _Unsigned32ToInt32(Uh_5tlreg42417, 8, 9); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42419 = _BinOpCompareEqEqInt32(Uh_5tlreg42418, Uh_5tlreg42413, 9); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg42419, 1)) //gcnl:NodeBinaryOpLogicalAnd.cpp:137
+      Ui_Ut_r10181u<EC> Uh_6tlref42497(Uv_4than, Uh_5tlreg42495 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+      const u32 Uh_5tlreg42498 = Uh_6tlref42497.read(); //gcnl:Node.cpp:698
+      const u32 Uh_5tlreg42499 = _Unsigned32ToInt32(Uh_5tlreg42498, 8, 9); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42500 = _BinOpCompareEqEqInt32(Uh_5tlreg42499, Uh_5tlreg42494, 9); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg42500, 1)) //gcnl:NodeBinaryOpLogicalAnd.cpp:137
       {
-        const u32 Uh_5tlreg42420 = 0; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42421 = _Int32ToInt32(Uh_5tlreg42420, 2, 9); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42422 = 2; //gcnl:NodeTerminal.cpp:690
-        if(Uh_5tlreg42422 >= 4) //gcnl:NodeSquareBracket.cpp:874
+        const u32 Uh_5tlreg42501 = 0; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42502 = _Int32ToInt32(Uh_5tlreg42501, 2, 9); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42503 = 2; //gcnl:NodeTerminal.cpp:690
+        if(Uh_5tlreg42503 >= 4) //gcnl:NodeSquareBracket.cpp:874
           FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-        Ui_Ut_r10181u<EC> Uh_6tlref42424(Uv_4than, Uh_5tlreg42422 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-        const u32 Uh_5tlreg42425 = Uh_6tlref42424.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42426 = _Unsigned32ToInt32(Uh_5tlreg42425, 8, 9); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42427 = _BinOpCompareEqEqInt32(Uh_5tlreg42426, Uh_5tlreg42421, 9); //gcnl:NodeBinaryOpCompare.cpp:441
-        Uh_5tlreg42411 = Uh_5tlreg42427; //gcnl:NodeBinaryOpLogicalAnd.cpp:151
+        Ui_Ut_r10181u<EC> Uh_6tlref42505(Uv_4than, Uh_5tlreg42503 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+        const u32 Uh_5tlreg42506 = Uh_6tlref42505.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42507 = _Unsigned32ToInt32(Uh_5tlreg42506, 8, 9); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42508 = _BinOpCompareEqEqInt32(Uh_5tlreg42507, Uh_5tlreg42502, 9); //gcnl:NodeBinaryOpCompare.cpp:441
+        Uh_5tlreg42492 = Uh_5tlreg42508; //gcnl:NodeBinaryOpLogicalAnd.cpp:151
       }
-      if(_Bool32ToCbool(Uh_5tlreg42411, 1)) //gcnl:NodeBinaryOpLogicalAnd.cpp:137
+      if(_Bool32ToCbool(Uh_5tlreg42492, 1)) //gcnl:NodeBinaryOpLogicalAnd.cpp:137
       {
-        const u32 Uh_5tlreg42428 = 0; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42429 = _Int32ToInt32(Uh_5tlreg42428, 2, 9); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42430 = 3; //gcnl:NodeTerminal.cpp:690
-        if(Uh_5tlreg42430 >= 4) //gcnl:NodeSquareBracket.cpp:874
+        const u32 Uh_5tlreg42509 = 0; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42510 = _Int32ToInt32(Uh_5tlreg42509, 2, 9); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42511 = 3; //gcnl:NodeTerminal.cpp:690
+        if(Uh_5tlreg42511 >= 4) //gcnl:NodeSquareBracket.cpp:874
           FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-        Ui_Ut_r10181u<EC> Uh_6tlref42432(Uv_4than, Uh_5tlreg42430 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-        const u32 Uh_5tlreg42433 = Uh_6tlref42432.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42434 = _Unsigned32ToInt32(Uh_5tlreg42433, 8, 9); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42435 = _BinOpCompareEqEqInt32(Uh_5tlreg42434, Uh_5tlreg42429, 9); //gcnl:NodeBinaryOpCompare.cpp:441
-        Uh_5tlreg42410 = Uh_5tlreg42435; //gcnl:NodeBinaryOpLogicalAnd.cpp:151
+        Ui_Ut_r10181u<EC> Uh_6tlref42513(Uv_4than, Uh_5tlreg42511 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+        const u32 Uh_5tlreg42514 = Uh_6tlref42513.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42515 = _Unsigned32ToInt32(Uh_5tlreg42514, 8, 9); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42516 = _BinOpCompareEqEqInt32(Uh_5tlreg42515, Uh_5tlreg42510, 9); //gcnl:NodeBinaryOpCompare.cpp:441
+        Uh_5tlreg42491 = Uh_5tlreg42516; //gcnl:NodeBinaryOpLogicalAnd.cpp:151
       }
-      if(_Bool32ToCbool(Uh_5tlreg42410, 1)) //gcnl:NodeControl.cpp:213
+      if(_Bool32ToCbool(Uh_5tlreg42491, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! ColorUtils.ulam:54:       return color((Unsigned) 0x030303);
-          const u32 Uh_5tlreg42437 = 197379u; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42438 = _Unsigned32ToUnsigned32(Uh_5tlreg42437, 18, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321u<EC> Uh_5tlval42439(Uh_5tlreg42438); //gcnl:Node.cpp:1142
-          const Ui_Ut_14181u<EC> Uh_5tlval42441 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42439); //gcnl:NodeFunctionCall.cpp:1043
-          const u32 Uh_5tlreg42442 = Uh_5tlval42441.read(); //gcnl:Node.cpp:1170
-          Ui_Ut_14181u<EC> Uh_5tlval42443(Uh_5tlreg42442); //gcnl:Node.cpp:1142
-          return (Uh_5tlval42443); //gcnl:NodeReturnStatement.cpp:343
+          const u32 Uh_5tlreg42518 = 197379u; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42519 = _Unsigned32ToUnsigned32(Uh_5tlreg42518, 18, 32); //gcnl:NodeCast.cpp:748
+          Ui_Ut_102321u<EC> Uh_5tlval42520(Uh_5tlreg42519); //gcnl:Node.cpp:1142
+          const Ui_Ut_14181u<EC> Uh_5tlval42522 = THE_INSTANCE.Uf_5color(uc, ur, Uh_5tlval42520); //gcnl:NodeFunctionCall.cpp:1043
+          const u32 Uh_5tlreg42523 = Uh_5tlval42522.read(); //gcnl:Node.cpp:1170
+          Ui_Ut_14181u<EC> Uh_5tlval42524(Uh_5tlreg42523); //gcnl:Node.cpp:1142
+          return (Uh_5tlval42524); //gcnl:NodeReturnStatement.cpp:343
       } // end if
     }
 
@@ -348,19 +348,19 @@ Ul_214endcontrolloop217:
     {
 
 //! ColorUtils.ulam:55:     for (Int i = 1; i < 4; ++i) {
-      const u32 Uh_5tlreg42444 = 1; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42445 = _Int32ToInt32(Uh_5tlreg42444, 2, 32); //gcnl:NodeCast.cpp:748
-      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42445); //gcnl:NodeVarDecl.cpp:1081
+      const u32 Uh_5tlreg42525 = 1; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42526 = _Int32ToInt32(Uh_5tlreg42525, 2, 32); //gcnl:NodeCast.cpp:748
+      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42526); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:55:     for (Int i = 1; i < 4; ++i) {
       while(true)
       {
-        const u32 Uh_5tlreg42446 = 4; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42447 = _Int32ToInt32(Uh_5tlreg42446, 4, 32); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42449 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42450 = _BinOpCompareLessThanInt32(Uh_5tlreg42449, Uh_5tlreg42447, 32); //gcnl:NodeBinaryOpCompare.cpp:441
+        const u32 Uh_5tlreg42527 = 4; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42528 = _Int32ToInt32(Uh_5tlreg42527, 4, 32); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42530 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42531 = _BinOpCompareLessThanInt32(Uh_5tlreg42530, Uh_5tlreg42528, 32); //gcnl:NodeBinaryOpCompare.cpp:441
 
-        if(!_Bool32ToCbool(Uh_5tlreg42450, 1))
+        if(!_Bool32ToCbool(Uh_5tlreg42531, 1))
           break; //gcnl:NodeControlWhile.cpp:135
 
 //! ColorUtils.ulam:55:     for (Int i = 1; i < 4; ++i) {
@@ -370,48 +370,48 @@ Ul_214endcontrolloop217:
           {
 
 //! ColorUtils.ulam:56:       if (than[i] < 3) than[i] = 3;
-            const u32 Uh_5tlreg42451 = 3; //gcnl:NodeTerminal.cpp:690
-            const u32 Uh_5tlreg42452 = _Int32ToInt32(Uh_5tlreg42451, 3, 9); //gcnl:NodeCast.cpp:748
-            const u32 Uh_5tlreg42454 = Uv_1i.read(); //gcnl:Node.cpp:698
-            if(Uh_5tlreg42454 >= 4) //gcnl:NodeSquareBracket.cpp:874
+            const u32 Uh_5tlreg42532 = 3; //gcnl:NodeTerminal.cpp:690
+            const u32 Uh_5tlreg42533 = _Int32ToInt32(Uh_5tlreg42532, 3, 9); //gcnl:NodeCast.cpp:748
+            const u32 Uh_5tlreg42535 = Uv_1i.read(); //gcnl:Node.cpp:698
+            if(Uh_5tlreg42535 >= 4) //gcnl:NodeSquareBracket.cpp:874
               FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-            Ui_Ut_r10181u<EC> Uh_6tlref42456(Uv_4than, Uh_5tlreg42454 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-            const u32 Uh_5tlreg42457 = Uh_6tlref42456.read(); //gcnl:Node.cpp:698
-            const u32 Uh_5tlreg42458 = _Unsigned32ToInt32(Uh_5tlreg42457, 8, 9); //gcnl:NodeCast.cpp:748
-            const u32 Uh_5tlreg42459 = _BinOpCompareLessThanInt32(Uh_5tlreg42458, Uh_5tlreg42452, 9); //gcnl:NodeBinaryOpCompare.cpp:441
-            if(_Bool32ToCbool(Uh_5tlreg42459, 1)) //gcnl:NodeControl.cpp:213
+            Ui_Ut_r10181u<EC> Uh_6tlref42537(Uv_4than, Uh_5tlreg42535 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+            const u32 Uh_5tlreg42538 = Uh_6tlref42537.read(); //gcnl:Node.cpp:698
+            const u32 Uh_5tlreg42539 = _Unsigned32ToInt32(Uh_5tlreg42538, 8, 9); //gcnl:NodeCast.cpp:748
+            const u32 Uh_5tlreg42540 = _BinOpCompareLessThanInt32(Uh_5tlreg42539, Uh_5tlreg42533, 9); //gcnl:NodeBinaryOpCompare.cpp:441
+            if(_Bool32ToCbool(Uh_5tlreg42540, 1)) //gcnl:NodeControl.cpp:213
             {
 
 //! ColorUtils.ulam:56:       if (than[i] < 3) than[i] = 3;
-                const u32 Uh_5tlreg42460 = 3; //gcnl:NodeTerminal.cpp:690
-                const u32 Uh_5tlreg42461 = _Int32ToUnsigned32(Uh_5tlreg42460, 3, 8); //gcnl:NodeCast.cpp:748
-                const u32 Uh_5tlreg42463 = Uv_1i.read(); //gcnl:Node.cpp:698
-                if(Uh_5tlreg42463 >= 4) //gcnl:NodeSquareBracket.cpp:874
+                const u32 Uh_5tlreg42541 = 3; //gcnl:NodeTerminal.cpp:690
+                const u32 Uh_5tlreg42542 = _Int32ToUnsigned32(Uh_5tlreg42541, 3, 8); //gcnl:NodeCast.cpp:748
+                const u32 Uh_5tlreg42544 = Uv_1i.read(); //gcnl:Node.cpp:698
+                if(Uh_5tlreg42544 >= 4) //gcnl:NodeSquareBracket.cpp:874
                   FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-                Ui_Ut_r10181u<EC> Uh_6tlref42465(Uv_4than, Uh_5tlreg42463 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-                Uh_6tlref42465.write(Uh_5tlreg42461);
+                Ui_Ut_r10181u<EC> Uh_6tlref42546(Uv_4than, Uh_5tlreg42544 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+                Uh_6tlref42546.write(Uh_5tlreg42542);
             } // end if
           }
 
 //! ColorUtils.ulam:57:       than[i] = (Channel) (100*than[i]/70);
-          const u32 Uh_5tlreg42466 = 70; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42467 = _Int32ToInt32(Uh_5tlreg42466, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42469 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42469 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42547 = 70; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42548 = _Int32ToInt32(Uh_5tlreg42547, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42550 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42550 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42471(Uv_4than, Uh_5tlreg42469 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          const u32 Uh_5tlreg42472 = Uh_6tlref42471.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42473 = _Unsigned32ToInt32(Uh_5tlreg42472, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42474 = 100; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42475 = _Int32ToInt32(Uh_5tlreg42474, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42476 = _BinOpMultiplyInt32(Uh_5tlreg42475, Uh_5tlreg42473, 17); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42477 = _BinOpDivideInt32(Uh_5tlreg42476, Uh_5tlreg42467, 17); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42478 = _Int32ToUnsigned32(Uh_5tlreg42477, 17, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42480 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42480 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          Ui_Ut_r10181u<EC> Uh_6tlref42552(Uv_4than, Uh_5tlreg42550 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          const u32 Uh_5tlreg42553 = Uh_6tlref42552.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42554 = _Unsigned32ToInt32(Uh_5tlreg42553, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42555 = 100; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42556 = _Int32ToInt32(Uh_5tlreg42555, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42557 = _BinOpMultiplyInt32(Uh_5tlreg42556, Uh_5tlreg42554, 17); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42558 = _BinOpDivideInt32(Uh_5tlreg42557, Uh_5tlreg42548, 17); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42559 = _Int32ToUnsigned32(Uh_5tlreg42558, 17, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42561 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42561 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42482(Uv_4than, Uh_5tlreg42480 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42482.write(Uh_5tlreg42478);
+          Ui_Ut_r10181u<EC> Uh_6tlref42563(Uv_4than, Uh_5tlreg42561 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42563.write(Uh_5tlreg42559);
         }
 
 //! ColorUtils.ulam:55:     for (Int i = 1; i < 4; ++i) {
@@ -419,17 +419,17 @@ Ul_214endcontrolloop218:
         __attribute__((__unused__)); //gcnl:NodeLabel.cpp:68
 
 //! ColorUtils.ulam:55:     for (Int i = 1; i < 4; ++i) {
-        const u32 Uh_5tlreg42483 = 1; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42485 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42486 = _BinOpAddInt32(Uh_5tlreg42485, Uh_5tlreg42483, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-        Uv_1i.write(Uh_5tlreg42486); //gcnl:Node.cpp:892
+        const u32 Uh_5tlreg42564 = 1; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42566 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42567 = _BinOpAddInt32(Uh_5tlreg42566, Uh_5tlreg42564, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
+        Uv_1i.write(Uh_5tlreg42567); //gcnl:Node.cpp:892
       } // end while //gcnl:NodeControlWhile.cpp:145
     }
 
 //! ColorUtils.ulam:60:     return than;
-    const u32 Uh_5tlreg42488 = Uv_4than.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42489(Uh_5tlreg42488); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42489); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42569 = Uv_4than.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42570(Uh_5tlreg42569); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42570); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_8brighter
 
@@ -441,70 +441,70 @@ Ul_214endcontrolloop218:
   {
 
 //! ColorUtils.ulam:67:     than[0] = 0xff;
-    const u32 Uh_5tlreg42490 = 255u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42491 = 0; //gcnl:NodeTerminal.cpp:690
-    if(Uh_5tlreg42491 >= 4) //gcnl:NodeSquareBracket.cpp:874
+    const u32 Uh_5tlreg42571 = 255u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42572 = 0; //gcnl:NodeTerminal.cpp:690
+    if(Uh_5tlreg42572 >= 4) //gcnl:NodeSquareBracket.cpp:874
       FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-    Ui_Ut_r10181u<EC> Uh_6tlref42493(Uv_4than, Uh_5tlreg42491 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-    Uh_6tlref42493.write(Uh_5tlreg42490);
+    Ui_Ut_r10181u<EC> Uh_6tlref42574(Uv_4than, Uh_5tlreg42572 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+    Uh_6tlref42574.write(Uh_5tlreg42571);
 
 //! ColorUtils.ulam:68:     for (Int i = 1; i < 4; ++i)
     {
 
 //! ColorUtils.ulam:68:     for (Int i = 1; i < 4; ++i)
-      const u32 Uh_5tlreg42494 = 1; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42495 = _Int32ToInt32(Uh_5tlreg42494, 2, 32); //gcnl:NodeCast.cpp:748
-      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42495); //gcnl:NodeVarDecl.cpp:1081
+      const u32 Uh_5tlreg42575 = 1; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42576 = _Int32ToInt32(Uh_5tlreg42575, 2, 32); //gcnl:NodeCast.cpp:748
+      Ui_Ut_102321i<EC> Uv_1i(Uh_5tlreg42576); //gcnl:NodeVarDecl.cpp:1081
 
 //! ColorUtils.ulam:68:     for (Int i = 1; i < 4; ++i)
       while(true)
       {
-        const u32 Uh_5tlreg42496 = 4; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42497 = _Int32ToInt32(Uh_5tlreg42496, 4, 32); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42499 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42500 = _BinOpCompareLessThanInt32(Uh_5tlreg42499, Uh_5tlreg42497, 32); //gcnl:NodeBinaryOpCompare.cpp:441
+        const u32 Uh_5tlreg42577 = 4; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42578 = _Int32ToInt32(Uh_5tlreg42577, 4, 32); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42580 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42581 = _BinOpCompareLessThanInt32(Uh_5tlreg42580, Uh_5tlreg42578, 32); //gcnl:NodeBinaryOpCompare.cpp:441
 
-        if(!_Bool32ToCbool(Uh_5tlreg42500, 1))
+        if(!_Bool32ToCbool(Uh_5tlreg42581, 1))
           break; //gcnl:NodeControlWhile.cpp:135
 
 //! ColorUtils.ulam:69:       than[i] = (Channel) (70*than[i]/100);
 
 //! ColorUtils.ulam:69:       than[i] = (Channel) (70*than[i]/100);
-          const u32 Uh_5tlreg42501 = 100; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42502 = _Int32ToInt32(Uh_5tlreg42501, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42504 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42504 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42582 = 100; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42583 = _Int32ToInt32(Uh_5tlreg42582, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42585 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42585 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42506(Uv_4than, Uh_5tlreg42504 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          const u32 Uh_5tlreg42507 = Uh_6tlref42506.read(); //gcnl:Node.cpp:698
-          const u32 Uh_5tlreg42508 = _Unsigned32ToInt32(Uh_5tlreg42507, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42509 = 70; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42510 = _Int32ToInt32(Uh_5tlreg42509, 8, 17); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42511 = _BinOpMultiplyInt32(Uh_5tlreg42510, Uh_5tlreg42508, 17); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42512 = _BinOpDivideInt32(Uh_5tlreg42511, Uh_5tlreg42502, 17); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42513 = _Int32ToUnsigned32(Uh_5tlreg42512, 17, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42515 = Uv_1i.read(); //gcnl:Node.cpp:698
-          if(Uh_5tlreg42515 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          Ui_Ut_r10181u<EC> Uh_6tlref42587(Uv_4than, Uh_5tlreg42585 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          const u32 Uh_5tlreg42588 = Uh_6tlref42587.read(); //gcnl:Node.cpp:698
+          const u32 Uh_5tlreg42589 = _Unsigned32ToInt32(Uh_5tlreg42588, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42590 = 70; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42591 = _Int32ToInt32(Uh_5tlreg42590, 8, 17); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42592 = _BinOpMultiplyInt32(Uh_5tlreg42591, Uh_5tlreg42589, 17); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42593 = _BinOpDivideInt32(Uh_5tlreg42592, Uh_5tlreg42583, 17); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42594 = _Int32ToUnsigned32(Uh_5tlreg42593, 17, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42596 = Uv_1i.read(); //gcnl:Node.cpp:698
+          if(Uh_5tlreg42596 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42517(Uv_4than, Uh_5tlreg42515 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42517.write(Uh_5tlreg42513);
+          Ui_Ut_r10181u<EC> Uh_6tlref42598(Uv_4than, Uh_5tlreg42596 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42598.write(Uh_5tlreg42594);
 
 //! ColorUtils.ulam:68:     for (Int i = 1; i < 4; ++i)
 Ul_214endcontrolloop219:
         __attribute__((__unused__)); //gcnl:NodeLabel.cpp:68
 
 //! ColorUtils.ulam:68:     for (Int i = 1; i < 4; ++i)
-        const u32 Uh_5tlreg42518 = 1; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42520 = Uv_1i.read(); //gcnl:Node.cpp:698
-        const u32 Uh_5tlreg42521 = _BinOpAddInt32(Uh_5tlreg42520, Uh_5tlreg42518, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
-        Uv_1i.write(Uh_5tlreg42521); //gcnl:Node.cpp:892
+        const u32 Uh_5tlreg42599 = 1; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42601 = Uv_1i.read(); //gcnl:Node.cpp:698
+        const u32 Uh_5tlreg42602 = _BinOpAddInt32(Uh_5tlreg42601, Uh_5tlreg42599, 32); //gcnl:NodeBinaryOpEqualArith.cpp:244
+        Uv_1i.write(Uh_5tlreg42602); //gcnl:Node.cpp:892
       } // end while //gcnl:NodeControlWhile.cpp:145
     }
 
 //! ColorUtils.ulam:70:     return than;
-    const u32 Uh_5tlreg42523 = Uv_4than.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42524(Uh_5tlreg42523); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42524); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42604 = Uv_4than.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42605(Uh_5tlreg42604); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42605); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_6dimmer
 

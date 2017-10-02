@@ -11,7 +11,7 @@ element BondParameters{
   parameter Bool cSHOW_BONDS = false;
 
 	/**
-     How many bonds Elements can have
+     max # of bonds
 
      \unit Bond Number
      \range 1..5
@@ -19,7 +19,7 @@ element BondParameters{
 	parameter Unsigned cMAX_BONDS = 2;
 
 	/**
-     How far out a bond can be
+     bonding distance:
 
      \unit Site Number
      \range 4..40

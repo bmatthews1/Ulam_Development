@@ -30,25 +30,25 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:36: 		if (once.new()){
-      UlamRef<EC> Uh_3tur42526(ur, 35u, 1u, &Uq_10114Once10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-      const Ui_Ut_10111b<EC> Uh_5tlval42528 = Uq_10115OnceT11102151y10<EC>::THE_INSTANCE.Uf_3new(uc, Uh_3tur42526); //gcnl:NodeFunctionCall.cpp:1043
-      const u32 Uh_5tlreg42529 = Uh_5tlval42528.read(); //gcnl:Node.cpp:1170
-      if(_Bool32ToCbool(Uh_5tlreg42529, 1)) //gcnl:NodeControl.cpp:213
+      UlamRef<EC> Uh_3tur42757(ur, 35u, 1u, &Uq_10114Once10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
+      const Ui_Ut_10111b<EC> Uh_5tlval42759 = Uq_10115OnceT11102151y10<EC>::THE_INSTANCE.Uf_3new(uc, Uh_3tur42757); //gcnl:NodeFunctionCall.cpp:1043
+      const u32 Uh_5tlreg42760 = Uh_5tlval42759.read(); //gcnl:Node.cpp:1170
+      if(_Bool32ToCbool(Uh_5tlreg42760, 1)) //gcnl:NodeControl.cpp:213
       {
         {
 
 //! JumperCell.ulam:37: 			moveType = (SiteNum)rm.between(5, 8);
-          UlamRef<EC> Uh_3tur42531(ur, 29u, 0u, &Uq_10106Random10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
-          const u32 Uh_5tlreg42532 = 5; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42533 = _Int32ToInt32(Uh_5tlreg42532, 4, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321i<EC> Uh_5tlval42534(Uh_5tlreg42533); //gcnl:Node.cpp:1142
-          const u32 Uh_5tlreg42535 = 8; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42536 = _Int32ToInt32(Uh_5tlreg42535, 5, 32); //gcnl:NodeCast.cpp:748
-          Ui_Ut_102321i<EC> Uh_5tlval42537(Uh_5tlreg42536); //gcnl:Node.cpp:1142
-          const Ui_Ut_102321i<EC> Uh_5tlval42539 = Uq_10106Random10<EC>::THE_INSTANCE.Uf_7between(uc, Uh_3tur42531, Uh_5tlval42534, Uh_5tlval42537); //gcnl:NodeFunctionCall.cpp:1043
-          const u32 Uh_5tlreg42540 = Uh_5tlval42539.read(); //gcnl:Node.cpp:1170
-          const u32 Uh_5tlreg42541 = _Int32ToUnsigned32(Uh_5tlreg42540, 32, 6); //gcnl:NodeCast.cpp:748
-          UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42541); //gcnl:Node.cpp:892
+          UlamRef<EC> Uh_3tur42762(ur, 29u, 0u, &Uq_10106Random10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC); //gcnl:NodeFunctionCall.cpp:960
+          const u32 Uh_5tlreg42763 = 5; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42764 = _Int32ToInt32(Uh_5tlreg42763, 4, 32); //gcnl:NodeCast.cpp:748
+          Ui_Ut_102321i<EC> Uh_5tlval42765(Uh_5tlreg42764); //gcnl:Node.cpp:1142
+          const u32 Uh_5tlreg42766 = 8; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42767 = _Int32ToInt32(Uh_5tlreg42766, 5, 32); //gcnl:NodeCast.cpp:748
+          Ui_Ut_102321i<EC> Uh_5tlval42768(Uh_5tlreg42767); //gcnl:Node.cpp:1142
+          const Ui_Ut_102321i<EC> Uh_5tlval42770 = Uq_10106Random10<EC>::THE_INSTANCE.Uf_7between(uc, Uh_3tur42762, Uh_5tlval42765, Uh_5tlval42768); //gcnl:NodeFunctionCall.cpp:1043
+          const u32 Uh_5tlreg42771 = Uh_5tlval42770.read(); //gcnl:Node.cpp:1170
+          const u32 Uh_5tlreg42772 = _Int32ToUnsigned32(Uh_5tlreg42771, 32, 6); //gcnl:NodeCast.cpp:748
+          UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Write(Uh_5tlreg42772); //gcnl:Node.cpp:892
         }
       } // end if
     }
@@ -57,8 +57,8 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:39: 		if (active){
-      const u32 Uh_5tlreg42544 = UlamRef<EC>(ur, 0u, 1u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      if(_Bool32ToCbool(Uh_5tlreg42544, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg42775 = UlamRef<EC>(ur, 0u, 1u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      if(_Bool32ToCbool(Uh_5tlreg42775, 1)) //gcnl:NodeControl.cpp:213
       {
         {
 
@@ -69,10 +69,10 @@ namespace MFM{
           Uq_102294Bond10<EC>::THE_INSTANCE.Uf_919findBonds(uc, ur); //gcnl:NodeFunctionCall.cpp:1043
 
 //! JumperCell.ulam:42: 			moveTo(moveType);
-          const u32 Uh_5tlreg42551 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          Ui_Ut_10161u<EC> Uh_5tlval42552(Uh_5tlreg42551); //gcnl:Node.cpp:1142
-          const Ui_Ut_10111b<EC> Uh_5tlval42554 = Uq_102294Bond10<EC>::THE_INSTANCE.Uf_6moveTo(uc, ur, Uh_5tlval42552); //gcnl:NodeFunctionCall.cpp:1043
-          const u32 Uh_5tlreg42555 = Uh_5tlval42554.read(); //gcnl:Node.cpp:1170
+          const u32 Uh_5tlreg42782 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          Ui_Ut_10161u<EC> Uh_5tlval42783(Uh_5tlreg42782); //gcnl:Node.cpp:1142
+          const Ui_Ut_10111b<EC> Uh_5tlval42785 = Uq_102294Bond10<EC>::THE_INSTANCE.Uf_6moveTo(uc, ur, Uh_5tlval42783); //gcnl:NodeFunctionCall.cpp:1043
+          const u32 Uh_5tlreg42786 = Uh_5tlval42785.read(); //gcnl:Node.cpp:1170
         }
       } // end if
     }
@@ -93,52 +93,52 @@ namespace MFM{
     Ui_Uq_10109210ColorUtils10<EC> Uv_2cu; //gcnl:NodeVarDecl.cpp:1118
 
 //! JumperCell.ulam:24:     ARGB ret = cu.color(0x00000000U);
-    UlamRef<EC> Uh_3tur42559(0u, 0u, Uv_2cu, &Uq_10109210ColorUtils10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
-    const u32 Uh_5tlreg42560 = 0u; //gcnl:NodeTerminal.cpp:690
-    const u32 Uh_5tlreg42561 = _Unsigned32ToUnsigned32(Uh_5tlreg42560, 1, 32); //gcnl:NodeCast.cpp:748
-    Ui_Ut_102321u<EC> Uh_5tlval42562(Uh_5tlreg42561); //gcnl:Node.cpp:1142
-    const Ui_Ut_14181u<EC> Uh_5tlval42564 = Uq_10109210ColorUtils10<EC>::THE_INSTANCE.Uf_5color(uc, Uh_3tur42559, Uh_5tlval42562); //gcnl:NodeFunctionCall.cpp:1043
-    const u32 Uh_5tlreg42565 = Uh_5tlval42564.read(); //gcnl:Node.cpp:1170
-    Ui_Ut_14181u<EC> Uv_3ret(Uh_5tlreg42565); //gcnl:NodeVarDecl.cpp:1081
+    UlamRef<EC> Uh_3tur42790(0u, 0u, Uv_2cu, &Uq_10109210ColorUtils10<EC>::THE_INSTANCE, UlamRef<EC>::CLASSIC, uc); //gcnl:NodeFunctionCall.cpp:960
+    const u32 Uh_5tlreg42791 = 0u; //gcnl:NodeTerminal.cpp:690
+    const u32 Uh_5tlreg42792 = _Unsigned32ToUnsigned32(Uh_5tlreg42791, 1, 32); //gcnl:NodeCast.cpp:748
+    Ui_Ut_102321u<EC> Uh_5tlval42793(Uh_5tlreg42792); //gcnl:Node.cpp:1142
+    const Ui_Ut_14181u<EC> Uh_5tlval42795 = Uq_10109210ColorUtils10<EC>::THE_INSTANCE.Uf_5color(uc, Uh_3tur42790, Uh_5tlval42793); //gcnl:NodeFunctionCall.cpp:1043
+    const u32 Uh_5tlreg42796 = Uh_5tlval42795.read(); //gcnl:Node.cpp:1170
+    Ui_Ut_14181u<EC> Uv_3ret(Uh_5tlreg42796); //gcnl:NodeVarDecl.cpp:1081
 
 //! JumperCell.ulam:25:     if (moveType == 5 || moveType == 6) ret[1] = (Byte)(bondCount*63);
     {
 
 //! JumperCell.ulam:25:     if (moveType == 5 || moveType == 6) ret[1] = (Byte)(bondCount*63);
-      u32 Uh_5tlreg42566 = false; //gcnl:NodeBinaryOpLogicalOr.cpp:113
-      const u32 Uh_5tlreg42567 = 5; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42568 = _Int32ToInt32(Uh_5tlreg42567, 4, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42570 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42571 = _Unsigned32ToInt32(Uh_5tlreg42570, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42572 = _BinOpCompareEqEqInt32(Uh_5tlreg42571, Uh_5tlreg42568, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(!_Bool32ToCbool(Uh_5tlreg42572, 1)) //gcnl:NodeBinaryOpLogicalOr.cpp:132
+      u32 Uh_5tlreg42797 = false; //gcnl:NodeBinaryOpLogicalOr.cpp:113
+      const u32 Uh_5tlreg42798 = 5; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42799 = _Int32ToInt32(Uh_5tlreg42798, 4, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42801 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42802 = _Unsigned32ToInt32(Uh_5tlreg42801, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42803 = _BinOpCompareEqEqInt32(Uh_5tlreg42802, Uh_5tlreg42799, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(!_Bool32ToCbool(Uh_5tlreg42803, 1)) //gcnl:NodeBinaryOpLogicalOr.cpp:132
       {
-        const u32 Uh_5tlreg42573 = 6; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42574 = _Int32ToInt32(Uh_5tlreg42573, 4, 7); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42576 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-        const u32 Uh_5tlreg42577 = _Unsigned32ToInt32(Uh_5tlreg42576, 6, 7); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42578 = _BinOpCompareEqEqInt32(Uh_5tlreg42577, Uh_5tlreg42574, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-        Uh_5tlreg42566 = Uh_5tlreg42578; //gcnl:NodeBinaryOpLogicalOr.cpp:146
+        const u32 Uh_5tlreg42804 = 6; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42805 = _Int32ToInt32(Uh_5tlreg42804, 4, 7); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42807 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+        const u32 Uh_5tlreg42808 = _Unsigned32ToInt32(Uh_5tlreg42807, 6, 7); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42809 = _BinOpCompareEqEqInt32(Uh_5tlreg42808, Uh_5tlreg42805, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+        Uh_5tlreg42797 = Uh_5tlreg42809; //gcnl:NodeBinaryOpLogicalOr.cpp:146
       }
       else
       {
-        Uh_5tlreg42566 = Uh_5tlreg42572; //gcnl:NodeBinaryOpLogicalOr.cpp:163
+        Uh_5tlreg42797 = Uh_5tlreg42803; //gcnl:NodeBinaryOpLogicalOr.cpp:163
       }
-      if(_Bool32ToCbool(Uh_5tlreg42566, 1)) //gcnl:NodeControl.cpp:213
+      if(_Bool32ToCbool(Uh_5tlreg42797, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:25:     if (moveType == 5 || moveType == 6) ret[1] = (Byte)(bondCount*63);
-          const u32 Uh_5tlreg42579 = 63; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42580 = _Int32ToInt32(Uh_5tlreg42579, 7, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42582 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42583 = _Unsigned32ToInt32(Uh_5tlreg42582, 3, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42584 = _BinOpMultiplyInt32(Uh_5tlreg42583, Uh_5tlreg42580, 11); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42585 = _Int32ToUnsigned32(Uh_5tlreg42584, 11, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42586 = 1; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42586 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42810 = 63; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42811 = _Int32ToInt32(Uh_5tlreg42810, 7, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42813 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42814 = _Unsigned32ToInt32(Uh_5tlreg42813, 3, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42815 = _BinOpMultiplyInt32(Uh_5tlreg42814, Uh_5tlreg42811, 11); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42816 = _Int32ToUnsigned32(Uh_5tlreg42815, 11, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42817 = 1; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42817 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42588(Uv_3ret, Uh_5tlreg42586 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42588.write(Uh_5tlreg42585);
+          Ui_Ut_r10181u<EC> Uh_6tlref42819(Uv_3ret, Uh_5tlreg42817 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42819.write(Uh_5tlreg42816);
       } // end if
     }
 
@@ -146,26 +146,26 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:26:     if (moveType == 8) ret[1] = (Byte)(bondCount*31);
-      const u32 Uh_5tlreg42589 = 8; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42590 = _Int32ToInt32(Uh_5tlreg42589, 5, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42592 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42593 = _Unsigned32ToInt32(Uh_5tlreg42592, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42594 = _BinOpCompareEqEqInt32(Uh_5tlreg42593, Uh_5tlreg42590, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg42594, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg42820 = 8; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42821 = _Int32ToInt32(Uh_5tlreg42820, 5, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42823 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42824 = _Unsigned32ToInt32(Uh_5tlreg42823, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42825 = _BinOpCompareEqEqInt32(Uh_5tlreg42824, Uh_5tlreg42821, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg42825, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:26:     if (moveType == 8) ret[1] = (Byte)(bondCount*31);
-          const u32 Uh_5tlreg42595 = 31; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42596 = _Int32ToInt32(Uh_5tlreg42595, 6, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42598 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42599 = _Unsigned32ToInt32(Uh_5tlreg42598, 3, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42600 = _BinOpMultiplyInt32(Uh_5tlreg42599, Uh_5tlreg42596, 10); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42601 = _Int32ToUnsigned32(Uh_5tlreg42600, 10, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42602 = 1; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42602 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42826 = 31; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42827 = _Int32ToInt32(Uh_5tlreg42826, 6, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42829 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42830 = _Unsigned32ToInt32(Uh_5tlreg42829, 3, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42831 = _BinOpMultiplyInt32(Uh_5tlreg42830, Uh_5tlreg42827, 10); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42832 = _Int32ToUnsigned32(Uh_5tlreg42831, 10, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42833 = 1; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42833 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42604(Uv_3ret, Uh_5tlreg42602 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42604.write(Uh_5tlreg42601);
+          Ui_Ut_r10181u<EC> Uh_6tlref42835(Uv_3ret, Uh_5tlreg42833 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42835.write(Uh_5tlreg42832);
       } // end if
     }
 
@@ -173,40 +173,40 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:27:     if (moveType == 5 || moveType == 7) ret[2] = (Byte)(bondCount*31);
-      u32 Uh_5tlreg42605 = false; //gcnl:NodeBinaryOpLogicalOr.cpp:113
-      const u32 Uh_5tlreg42606 = 5; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42607 = _Int32ToInt32(Uh_5tlreg42606, 4, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42609 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42610 = _Unsigned32ToInt32(Uh_5tlreg42609, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42611 = _BinOpCompareEqEqInt32(Uh_5tlreg42610, Uh_5tlreg42607, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(!_Bool32ToCbool(Uh_5tlreg42611, 1)) //gcnl:NodeBinaryOpLogicalOr.cpp:132
+      u32 Uh_5tlreg42836 = false; //gcnl:NodeBinaryOpLogicalOr.cpp:113
+      const u32 Uh_5tlreg42837 = 5; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42838 = _Int32ToInt32(Uh_5tlreg42837, 4, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42840 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42841 = _Unsigned32ToInt32(Uh_5tlreg42840, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42842 = _BinOpCompareEqEqInt32(Uh_5tlreg42841, Uh_5tlreg42838, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(!_Bool32ToCbool(Uh_5tlreg42842, 1)) //gcnl:NodeBinaryOpLogicalOr.cpp:132
       {
-        const u32 Uh_5tlreg42612 = 7; //gcnl:NodeTerminal.cpp:690
-        const u32 Uh_5tlreg42613 = _Int32ToInt32(Uh_5tlreg42612, 4, 7); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42615 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-        const u32 Uh_5tlreg42616 = _Unsigned32ToInt32(Uh_5tlreg42615, 6, 7); //gcnl:NodeCast.cpp:748
-        const u32 Uh_5tlreg42617 = _BinOpCompareEqEqInt32(Uh_5tlreg42616, Uh_5tlreg42613, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-        Uh_5tlreg42605 = Uh_5tlreg42617; //gcnl:NodeBinaryOpLogicalOr.cpp:146
+        const u32 Uh_5tlreg42843 = 7; //gcnl:NodeTerminal.cpp:690
+        const u32 Uh_5tlreg42844 = _Int32ToInt32(Uh_5tlreg42843, 4, 7); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42846 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+        const u32 Uh_5tlreg42847 = _Unsigned32ToInt32(Uh_5tlreg42846, 6, 7); //gcnl:NodeCast.cpp:748
+        const u32 Uh_5tlreg42848 = _BinOpCompareEqEqInt32(Uh_5tlreg42847, Uh_5tlreg42844, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+        Uh_5tlreg42836 = Uh_5tlreg42848; //gcnl:NodeBinaryOpLogicalOr.cpp:146
       }
       else
       {
-        Uh_5tlreg42605 = Uh_5tlreg42611; //gcnl:NodeBinaryOpLogicalOr.cpp:163
+        Uh_5tlreg42836 = Uh_5tlreg42842; //gcnl:NodeBinaryOpLogicalOr.cpp:163
       }
-      if(_Bool32ToCbool(Uh_5tlreg42605, 1)) //gcnl:NodeControl.cpp:213
+      if(_Bool32ToCbool(Uh_5tlreg42836, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:27:     if (moveType == 5 || moveType == 7) ret[2] = (Byte)(bondCount*31);
-          const u32 Uh_5tlreg42618 = 31; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42619 = _Int32ToInt32(Uh_5tlreg42618, 6, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42621 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42622 = _Unsigned32ToInt32(Uh_5tlreg42621, 3, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42623 = _BinOpMultiplyInt32(Uh_5tlreg42622, Uh_5tlreg42619, 10); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42624 = _Int32ToUnsigned32(Uh_5tlreg42623, 10, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42625 = 2; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42625 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42849 = 31; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42850 = _Int32ToInt32(Uh_5tlreg42849, 6, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42852 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42853 = _Unsigned32ToInt32(Uh_5tlreg42852, 3, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42854 = _BinOpMultiplyInt32(Uh_5tlreg42853, Uh_5tlreg42850, 10); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42855 = _Int32ToUnsigned32(Uh_5tlreg42854, 10, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42856 = 2; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42856 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42627(Uv_3ret, Uh_5tlreg42625 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42627.write(Uh_5tlreg42624);
+          Ui_Ut_r10181u<EC> Uh_6tlref42858(Uv_3ret, Uh_5tlreg42856 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42858.write(Uh_5tlreg42855);
       } // end if
     }
 
@@ -214,26 +214,26 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:28:     if (moveType == 8) ret[2] = (Byte)(bondCount*63);
-      const u32 Uh_5tlreg42628 = 8; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42629 = _Int32ToInt32(Uh_5tlreg42628, 5, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42631 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42632 = _Unsigned32ToInt32(Uh_5tlreg42631, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42633 = _BinOpCompareEqEqInt32(Uh_5tlreg42632, Uh_5tlreg42629, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg42633, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg42859 = 8; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42860 = _Int32ToInt32(Uh_5tlreg42859, 5, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42862 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42863 = _Unsigned32ToInt32(Uh_5tlreg42862, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42864 = _BinOpCompareEqEqInt32(Uh_5tlreg42863, Uh_5tlreg42860, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg42864, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:28:     if (moveType == 8) ret[2] = (Byte)(bondCount*63);
-          const u32 Uh_5tlreg42634 = 63; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42635 = _Int32ToInt32(Uh_5tlreg42634, 7, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42637 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42638 = _Unsigned32ToInt32(Uh_5tlreg42637, 3, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42639 = _BinOpMultiplyInt32(Uh_5tlreg42638, Uh_5tlreg42635, 11); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42640 = _Int32ToUnsigned32(Uh_5tlreg42639, 11, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42641 = 2; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42641 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42865 = 63; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42866 = _Int32ToInt32(Uh_5tlreg42865, 7, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42868 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42869 = _Unsigned32ToInt32(Uh_5tlreg42868, 3, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42870 = _BinOpMultiplyInt32(Uh_5tlreg42869, Uh_5tlreg42866, 11); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42871 = _Int32ToUnsigned32(Uh_5tlreg42870, 11, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42872 = 2; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42872 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42643(Uv_3ret, Uh_5tlreg42641 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42643.write(Uh_5tlreg42640);
+          Ui_Ut_r10181u<EC> Uh_6tlref42874(Uv_3ret, Uh_5tlreg42872 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42874.write(Uh_5tlreg42871);
       } // end if
     }
 
@@ -241,26 +241,26 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:30:     if (moveType == 7) ret[3] = (Byte)(bondCount*63);
-      const u32 Uh_5tlreg42644 = 7; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42645 = _Int32ToInt32(Uh_5tlreg42644, 4, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42647 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42648 = _Unsigned32ToInt32(Uh_5tlreg42647, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42649 = _BinOpCompareEqEqInt32(Uh_5tlreg42648, Uh_5tlreg42645, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg42649, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg42875 = 7; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42876 = _Int32ToInt32(Uh_5tlreg42875, 4, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42878 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42879 = _Unsigned32ToInt32(Uh_5tlreg42878, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42880 = _BinOpCompareEqEqInt32(Uh_5tlreg42879, Uh_5tlreg42876, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg42880, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:30:     if (moveType == 7) ret[3] = (Byte)(bondCount*63);
-          const u32 Uh_5tlreg42650 = 63; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42651 = _Int32ToInt32(Uh_5tlreg42650, 7, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42653 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42654 = _Unsigned32ToInt32(Uh_5tlreg42653, 3, 11); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42655 = _BinOpMultiplyInt32(Uh_5tlreg42654, Uh_5tlreg42651, 11); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42656 = _Int32ToUnsigned32(Uh_5tlreg42655, 11, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42657 = 3; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42657 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42881 = 63; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42882 = _Int32ToInt32(Uh_5tlreg42881, 7, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42884 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42885 = _Unsigned32ToInt32(Uh_5tlreg42884, 3, 11); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42886 = _BinOpMultiplyInt32(Uh_5tlreg42885, Uh_5tlreg42882, 11); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42887 = _Int32ToUnsigned32(Uh_5tlreg42886, 11, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42888 = 3; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42888 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42659(Uv_3ret, Uh_5tlreg42657 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42659.write(Uh_5tlreg42656);
+          Ui_Ut_r10181u<EC> Uh_6tlref42890(Uv_3ret, Uh_5tlreg42888 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42890.write(Uh_5tlreg42887);
       } // end if
     }
 
@@ -268,33 +268,33 @@ namespace MFM{
     {
 
 //! JumperCell.ulam:31:     if (moveType == 6) ret[2] = (Byte)(bondCount*31);
-      const u32 Uh_5tlreg42660 = 6; //gcnl:NodeTerminal.cpp:690
-      const u32 Uh_5tlreg42661 = _Int32ToInt32(Uh_5tlreg42660, 4, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42663 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-      const u32 Uh_5tlreg42664 = _Unsigned32ToInt32(Uh_5tlreg42663, 6, 7); //gcnl:NodeCast.cpp:748
-      const u32 Uh_5tlreg42665 = _BinOpCompareEqEqInt32(Uh_5tlreg42664, Uh_5tlreg42661, 7); //gcnl:NodeBinaryOpCompare.cpp:441
-      if(_Bool32ToCbool(Uh_5tlreg42665, 1)) //gcnl:NodeControl.cpp:213
+      const u32 Uh_5tlreg42891 = 6; //gcnl:NodeTerminal.cpp:690
+      const u32 Uh_5tlreg42892 = _Int32ToInt32(Uh_5tlreg42891, 4, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42894 = UlamRef<EC>(ur, 29u, 6u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+      const u32 Uh_5tlreg42895 = _Unsigned32ToInt32(Uh_5tlreg42894, 6, 7); //gcnl:NodeCast.cpp:748
+      const u32 Uh_5tlreg42896 = _BinOpCompareEqEqInt32(Uh_5tlreg42895, Uh_5tlreg42892, 7); //gcnl:NodeBinaryOpCompare.cpp:441
+      if(_Bool32ToCbool(Uh_5tlreg42896, 1)) //gcnl:NodeControl.cpp:213
       {
 
 //! JumperCell.ulam:31:     if (moveType == 6) ret[2] = (Byte)(bondCount*31);
-          const u32 Uh_5tlreg42666 = 31; //gcnl:NodeTerminal.cpp:690
-          const u32 Uh_5tlreg42667 = _Int32ToInt32(Uh_5tlreg42666, 6, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42669 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
-          const u32 Uh_5tlreg42670 = _Unsigned32ToInt32(Uh_5tlreg42669, 3, 10); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42671 = _BinOpMultiplyInt32(Uh_5tlreg42670, Uh_5tlreg42667, 10); //gcnl:NodeBinaryOp.cpp:805
-          const u32 Uh_5tlreg42672 = _Int32ToUnsigned32(Uh_5tlreg42671, 10, 8); //gcnl:NodeCast.cpp:748
-          const u32 Uh_5tlreg42673 = 2; //gcnl:NodeTerminal.cpp:690
-          if(Uh_5tlreg42673 >= 4) //gcnl:NodeSquareBracket.cpp:874
+          const u32 Uh_5tlreg42897 = 31; //gcnl:NodeTerminal.cpp:690
+          const u32 Uh_5tlreg42898 = _Int32ToInt32(Uh_5tlreg42897, 6, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42900 = UlamRef<EC>(ur, 1u, 3u, NULL, UlamRef<EC>::PRIMITIVE).Read(); //gcnl:Node.cpp:664
+          const u32 Uh_5tlreg42901 = _Unsigned32ToInt32(Uh_5tlreg42900, 3, 10); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42902 = _BinOpMultiplyInt32(Uh_5tlreg42901, Uh_5tlreg42898, 10); //gcnl:NodeBinaryOp.cpp:805
+          const u32 Uh_5tlreg42903 = _Int32ToUnsigned32(Uh_5tlreg42902, 10, 8); //gcnl:NodeCast.cpp:748
+          const u32 Uh_5tlreg42904 = 2; //gcnl:NodeTerminal.cpp:690
+          if(Uh_5tlreg42904 >= 4) //gcnl:NodeSquareBracket.cpp:874
             FAIL(ARRAY_INDEX_OUT_OF_BOUNDS); //gcnl:NodeSquareBracket.cpp:878
-          Ui_Ut_r10181u<EC> Uh_6tlref42675(Uv_3ret, Uh_5tlreg42673 * 8u + 0u, uc); //gcnl:Node.cpp:1317
-          Uh_6tlref42675.write(Uh_5tlreg42672);
+          Ui_Ut_r10181u<EC> Uh_6tlref42906(Uv_3ret, Uh_5tlreg42904 * 8u + 0u, uc); //gcnl:Node.cpp:1317
+          Uh_6tlref42906.write(Uh_5tlreg42903);
       } // end if
     }
 
 //! JumperCell.ulam:32:     return ret;
-    const u32 Uh_5tlreg42677 = Uv_3ret.read(); //gcnl:Node.cpp:698
-    Ui_Ut_14181u<EC> Uh_5tlval42678(Uh_5tlreg42677); //gcnl:Node.cpp:1142
-    return (Uh_5tlval42678); //gcnl:NodeReturnStatement.cpp:343
+    const u32 Uh_5tlreg42908 = Uv_3ret.read(); //gcnl:Node.cpp:698
+    Ui_Ut_14181u<EC> Uh_5tlval42909(Uh_5tlreg42908); //gcnl:Node.cpp:1142
+    return (Uh_5tlval42909); //gcnl:NodeReturnStatement.cpp:343
 
   } // Uf_8getColor
 
@@ -371,9 +371,9 @@ namespace MFM{
       initdone = true;
       initBV.FromArray(vales); //gcnl:CompilerState.cpp:1417
       //correct runtime regnum for strings
-      const Ui_Uq_10114Once10<EC> Uh_5tlreg42679; //gcnl:NodeVarDeclDM.cpp:801
-      const u32 Uh_5tlreg42680(Uh_5tlreg42679.read()); //gcnl:NodeVarDeclDM.cpp:811
-      initBV.Write(60u, 1, Uh_5tlreg42680); //Um_4once //gcnl:NodeVarDeclDM.cpp:832
+      const Ui_Uq_10114Once10<EC> Uh_5tlreg42910; //gcnl:NodeVarDeclDM.cpp:801
+      const u32 Uh_5tlreg42911(Uh_5tlreg42910.read()); //gcnl:NodeVarDeclDM.cpp:811
+      initBV.Write(60u, 1, Uh_5tlreg42911); //Um_4once //gcnl:NodeVarDeclDM.cpp:832
     } //gcnl:CompilerState.cpp:1439
     initBV.Write(0u, T::ATOM_FIRST_STATE_BIT, da.Read(0u, T::ATOM_FIRST_STATE_BIT)); //gcnl:NodeBlockClass.cpp:2087
     da.WriteBV(0u, initBV); //gcnl:NodeBlockClass.cpp:2089

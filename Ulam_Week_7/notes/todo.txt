@@ -1,0 +1,13 @@
+- implement cell parameters
+
+improved cell wall:
+---------------------
+- cell wall majority
+- cell wall exclusion
+- cell types based on color
+
+
+Other issues:
+-------------
+- fix the radius issues
+- fix text for Bond parameters

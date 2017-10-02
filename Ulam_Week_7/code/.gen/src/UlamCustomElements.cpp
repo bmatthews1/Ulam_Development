@@ -23,25 +23,35 @@ extern "C" {
       MFM::Ue_10109214BondParameters10<MFM::StdEventConfig>::THE_INSTANCE,
       &_ueinfo12);
 
-  static MFM::UlamElementInfoForUe_10168CellWall10<MFM::StdEventConfig> _ueinfo13(MFM::Ue_10168CellWall10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementInfoForUe_10109214CellParameters10<MFM::StdEventConfig> _ueinfo13(MFM::Ue_10109214CellParameters10<MFM::StdEventConfig>::THE_INSTANCE);
   static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub13 (
-      MFM::Ue_10168CellWall10<MFM::StdEventConfig>::THE_INSTANCE,
+      MFM::Ue_10109214CellParameters10<MFM::StdEventConfig>::THE_INSTANCE,
       &_ueinfo13);
 
-  static MFM::UlamElementInfoForUe_102299210RandomCell10<MFM::StdEventConfig> _ueinfo14(MFM::Ue_102299210RandomCell10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementInfoForUe_10168CellWall10<MFM::StdEventConfig> _ueinfo14(MFM::Ue_10168CellWall10<MFM::StdEventConfig>::THE_INSTANCE);
   static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub14 (
-      MFM::Ue_102299210RandomCell10<MFM::StdEventConfig>::THE_INSTANCE,
+      MFM::Ue_10168CellWall10<MFM::StdEventConfig>::THE_INSTANCE,
       &_ueinfo14);
 
-  static MFM::UlamElementInfoForUe_102369210JumperCell10<MFM::StdEventConfig> _ueinfo15(MFM::Ue_102369210JumperCell10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementInfoForUe_102299210RandomCell10<MFM::StdEventConfig> _ueinfo15(MFM::Ue_102299210RandomCell10<MFM::StdEventConfig>::THE_INSTANCE);
   static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub15 (
-      MFM::Ue_102369210JumperCell10<MFM::StdEventConfig>::THE_INSTANCE,
+      MFM::Ue_102299210RandomCell10<MFM::StdEventConfig>::THE_INSTANCE,
       &_ueinfo15);
 
-  static MFM::UlamElementInfoForUe_102369213DirectionCell10<MFM::StdEventConfig> _ueinfo16(MFM::Ue_102369213DirectionCell10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementInfoForUe_102364Cell10<MFM::StdEventConfig> _ueinfo16(MFM::Ue_102364Cell10<MFM::StdEventConfig>::THE_INSTANCE);
   static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub16 (
-      MFM::Ue_102369213DirectionCell10<MFM::StdEventConfig>::THE_INSTANCE,
+      MFM::Ue_102364Cell10<MFM::StdEventConfig>::THE_INSTANCE,
       &_ueinfo16);
+
+  static MFM::UlamElementInfoForUe_102369210JumperCell10<MFM::StdEventConfig> _ueinfo17(MFM::Ue_102369210JumperCell10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub17 (
+      MFM::Ue_102369210JumperCell10<MFM::StdEventConfig>::THE_INSTANCE,
+      &_ueinfo17);
+
+  static MFM::UlamElementInfoForUe_102369213DirectionCell10<MFM::StdEventConfig> _ueinfo18(MFM::Ue_102369213DirectionCell10<MFM::StdEventConfig>::THE_INSTANCE);
+  static MFM::UlamElementLibraryStub<MFM::StdEventConfig> _uelstub18 (
+      MFM::Ue_102369213DirectionCell10<MFM::StdEventConfig>::THE_INSTANCE,
+      &_ueinfo18);
 
   static MFM::ElementLibraryStub<MFM::StdEventConfig> * (_elementStubPtrArray_[]) = {
     &_uelstub10,
@@ -50,7 +60,9 @@ extern "C" {
     &_uelstub13,
     &_uelstub14,
     &_uelstub15,
-    &_uelstub16
+    &_uelstub16,
+    &_uelstub17,
+    &_uelstub18
   };
 
   static MFM::UlamClass<MFM::StdEventConfig> * (_otherUlamClassPtrArray_[]) = {
@@ -75,7 +87,7 @@ extern "C" {
     0,
     MFM_BUILD_DATE,
     MFM_BUILD_TIME,
-    7,
+    9,
     _elementStubPtrArray_,
     13,
     _otherUlamClassPtrArray_
